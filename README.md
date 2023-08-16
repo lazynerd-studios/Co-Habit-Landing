@@ -2,7 +2,7 @@
 
  Co Habit Landing Page
 
-<img src="/src/assets/Cohabit Logo C 1.png" width="40%" alt="logo"/>
+<img src="/src/assets/Cohabit Logo C 1.png" width="20%" alt="logo"/>
 
 <p>
 
