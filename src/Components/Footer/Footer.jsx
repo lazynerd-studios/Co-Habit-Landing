@@ -16,7 +16,7 @@ const Footer = () => {
     <div className="">
 
       {/* copyright */}
-      <p className="pt-3 pb-4 copyright laptop:float-right tablet:float-right lg:float-right text-center">
+      <p className="pt-3 pb-4 copyright text-center">
         Copyright
         @
         <span>{theDate} </span>
