@@ -1,6 +1,6 @@
-# Co Habit
+# Co-Habit
 
- Co Habit Landing Page
+ Co-Habit Landing Page
 
 <img src="/src/assets/Cohabit Logo C-white.png" width="30%" alt="logo"/>
 
