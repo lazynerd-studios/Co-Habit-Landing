@@ -17,10 +17,10 @@ const Footer = () => {
 
       {/* copyright */}
       <p className="pt-3 pb-4 copyright text-center">
-        Copyright
-        @
         <span>{theDate} </span>
-        Atlantic Marine & Oilfield Services Limited. All rights reserved
+        @
+        Co-habit.
+        All rights reserved.
       </p>
 
     </div>
