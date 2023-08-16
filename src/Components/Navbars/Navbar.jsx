@@ -5,39 +5,47 @@ import CoHabit from "../../assets/Cohabit Logo C 1.png"
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-white fixed">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost laptop:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
+            {NavbarData.map((item, index) => {
+              return (
+                <li key={index} className="">
+                  {/* "flex min-w-max p-4" */}
+                  <NavLink to={item.path} className={({ isActive }) =>
+                    isActive ? 'flex min-w-max rounded-none p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none min-w-max py-2 px-2'
+                  }>
+                    <span className="item-title">{item.title}</span>
+                  </NavLink>
+                </li>
+              );
+            })}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a>
+          <img className="logo" src={CoHabit} alt="web Logo" />
+        </a>
       </div>
+
+      {/* displays on wide screen */}
       <div className="navbar-center hidden laptop:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Item 3</a></li>
+          {NavbarData.map((item, index) => {
+            return (
+              <li key={index} className="">
+                {/* "flex min-w-max p-4" */}
+                <NavLink to={item.path} className={({ isActive }) =>
+                  isActive ? 'flex min-w-max rounded-none font-medium bg-none hover:bg-none border-b-[3px] border-[#010886]' : 'flex rounded-none font-medium min-w-max py-2 px-3'
+                }>
+                  <span className="">{item.title}</span>
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="navbar-end">
