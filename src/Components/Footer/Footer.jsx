@@ -11,16 +11,19 @@ const Footer = () => {
   return (
     <div className="bg-[#010886]">
 
-      <div className=" text-[#D6DDEB] laptop:mx-[8rem]">
-        <a href="#" className="mr-4">
-          <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
-        <a href="#" className="mr-4">
-          <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
-        <a href="#">
-          <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
+      <div className=" text-[#D6DDEB] laptop:mx-[8rem] mx-6">
+
+        <div className="pt-4">
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#">
+            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+        </div>
 
         {/* copyright */}
         <p className="p-4 copyright">
