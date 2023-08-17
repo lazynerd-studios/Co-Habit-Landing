@@ -8,9 +8,12 @@ const Navbar = () => {
     <div className="navbar bg-white fixed">
       <div className="navbar-start">
         <div className="dropdown">
+          {/* hamburger menu */}
           <label tabIndex={0} className="btn btn-ghost laptop:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </label>
+          {/* end of hamburger menu */}
+          {/* mobile navbar */}
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             {NavbarData.map((item, index) => {
               return (
@@ -19,12 +22,13 @@ const Navbar = () => {
                   <NavLink to={item.path} className={({ isActive }) =>
                     isActive ? 'flex min-w-max rounded-none p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none min-w-max py-2 px-2'
                   }>
-                    <span className="item-title">{item.title}</span>
+                    <span className="">{item.title}</span>
                   </NavLink>
                 </li>
               );
             })}
           </ul>
+          {/* end of mobile navbar */}
         </div>
         <a>
           <img className="logo" src={CoHabit} alt="web Logo" />
@@ -39,7 +43,7 @@ const Navbar = () => {
               <li key={index} className="">
                 {/* "flex min-w-max p-4" */}
                 <NavLink to={item.path} className={({ isActive }) =>
-                  isActive ? 'flex min-w-max rounded-none font-medium bg-none hover:bg-none border-b-[3px] border-[#010886]' : 'flex rounded-none font-medium min-w-max py-2 px-3'
+                  isActive ? 'flex min-w-max rounded-none font-medium bg-none hover:bg-white border-b-[3px] border-[#010886]' : 'flex rounded-none bg-none hover:bg-white font-medium min-w-max py-2 px-3'
                 }>
                   <span className="">{item.title}</span>
                 </NavLink>
