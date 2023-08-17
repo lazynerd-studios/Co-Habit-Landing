@@ -17,8 +17,8 @@ export const NavbarData = [
   },
 
   {
-    title: "Listings",
-    path: "/listings",
+    title: "Listing",
+    path: "/listing",
     icon: "",
     className: "nav-text",
   },
