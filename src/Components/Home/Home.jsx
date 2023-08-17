@@ -15,7 +15,7 @@ const Home = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 3 }}
       >
         <div className="hero min-h-screen bg-[#f8f8fd]">
           <div className="hero-content text-center">
