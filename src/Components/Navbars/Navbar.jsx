@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-white fixed -mt-1 z-10">
-      <div className="navbar-start laptop:ml-[8rem]">
+      <div className="navbar-start laptop:ml-[6.2rem]">
         <div className="dropdown">
           {/* hamburger menu */}
           <label onClick={() => setshowNav(!showNav)}
@@ -57,7 +57,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navbar-end laptop:mr-[8rem]">
+      <div className="navbar-end laptop:mr-[7.5rem]">
         <a className="btn bg-white hover:bg-white border-none normal-case text-[#010886]">Login</a>
         <img src={Line} className="ml-2 mr-4" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
