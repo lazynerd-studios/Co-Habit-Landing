@@ -111,21 +111,21 @@ const Home = () => {
 
                 </p>
                 <span className="">
-                  <p className="absolute w-[50%] ml-[1.03rem] mt-[6.5rem] laptop:ml-[1.1rem] laptop:mt-[11rem] text-[0.875rem] font-medium">
+                  <p className="absolute w-[68%] ml-[3.5rem] mt-[10rem] laptop:ml-[1.1rem] laptop:mt-[11rem] text-[0.875rem] font-medium">
                     The apartment appeared to be well-cared-for <br className="laptop:flex hidden" />
                     and professionally managed. The overall <br className="laptop:flex hidden" />
                     maintenance of the house and the surrounding <br className="laptop:flex hidden" />
                     landscape reflected a high level of attention to <br className="laptop:flex hidden" />
                     detail.
                   </p>
-                  <h2 className="absolute w-[100%] ml-[6.5rem] mt-[4.8rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                  <h2 className="absolute w-[100%] ml-[3.5rem] mt-[6.7rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                     List your property
                   </h2>
-                  <p className="absolute text-[1rem] font-medium ml-[16.03rem] mt-[0.7rem] laptop:ml-[19rem] z-10 laptop:mt-[2rem]">
+                  <p className="absolute text-[1rem] font-medium ml-[18.45rem] mt-[1.9rem] laptop:ml-[19rem] z-10 laptop:mt-[2rem]">
                     1
                   </p>
-                  <img src={LocationPin} className="absolute laptop:w-[3rem] w-[10%] ml-[6.5rem] mt-[2.2rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
-                  <img src={SmallStyledRectangle} className="absolute w-[20%] laptop:w-auto ml-[15.03rem] mt-[0.04rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
+                  <img src={LocationPin} className="absolute laptop:w-[3rem] w-[10%] ml-[3rem] mt-[3.5rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                  <img src={SmallStyledRectangle} className="absolute w-[17%] laptop:w-auto ml-[16.8rem] mt-[0.06rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                   <img src={StyledRectangle} className="laptop:w-auto w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
                 </span>
               </div>
