@@ -55,8 +55,10 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn bg-white border-none normal-case text-[#010886]">Login</a>
+        <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
       </div>
     </div>
 
