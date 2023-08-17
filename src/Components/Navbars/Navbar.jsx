@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData"
 import CoHabit from "../../assets/Cohabit Logo C 1.png"
+import Line from "../../assets/Line 1.svg"
 
 const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
@@ -23,7 +24,7 @@ const Navbar = () => {
                 <li key={index} className="">
                   {/* "flex min-w-max p-4" */}
                   <NavLink to={item.path} className={({ isActive }) =>
-                    isActive ? 'flex min-w-max rounded-none p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none min-w-max py-2 px-2'
+                    isActive ? 'flex min-w-max rounded-none focus:bg-white p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none focus:bg-white min-w-max py-2 px-2'
                   }>
                     <span className="">{item.title}</span>
                   </NavLink>
@@ -57,7 +58,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <a className="btn bg-white border-none normal-case text-[#010886]">Login</a>
+        <a className="btn bg-white hover:bg-white border-none normal-case text-[#010886]">Login</a>
+        <img src={Line} className="mx-2" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
       </div>
     </div>
