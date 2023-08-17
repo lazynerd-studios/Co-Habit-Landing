@@ -9,7 +9,7 @@ const animationConfiguration = {
 
 const Home = () => {
   return (
-    <section>
+    <section className="">
 
       <div className="hero min-h-screen bg-[#f8f8fd]">
         <motion.div
