@@ -91,16 +91,65 @@ const Home = () => {
           </div>
           {/* end of hero section */}
         </div>
+
+        {/* how it works */}
         <div className="w-full bg-white my-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
-            <h1 className="text-[1.5rem] text-center mb-4 font-bold">How It Works ?</h1>
-            <p className="text-center laptop:w-[100%]">
+            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
               positive reputation in the industry
             </p>
-            <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
+
           </div>
         </div>
+        {/* end of 'how it works' */}
+
+        {/* 'recently uploaded' */}
+        <div className="w-full bg-[#f8f8fd] my-8">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+              Recently Uploaded
+            </h1>
+            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+              Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
+              find what is right for you.
+            </p>
+
+          </div>
+        </div>
+        {/* end of 'recently uploaded' */}
+
+        {/* find by location */}
+        <div className="w-full bg-white">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+              Find By Location
+            </h1>
+            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+              Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
+              find what is right for you.
+            </p>
+
+          </div>
+        </div>
+        {/* end of 'find by location' */}
+
+        {/* good reviews by customers */}
+        <div className="w-full bg-[#DF802633] mt-8 pb-8">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+              Good Reviews By Customers
+            </h1>
+            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+              Customer reviews play a crucial role in today's interconnected world, influencing the decisions of consumers and <br className="laptop:flex hidden" />
+              shaping the reputation of businesses.
+            </p>
+
+          </div>
+        </div>
+        {/* end of 'good reviews by customers' */}
+
       </motion.div>
     </section >
   );
