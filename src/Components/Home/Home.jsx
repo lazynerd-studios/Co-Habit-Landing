@@ -15,16 +15,16 @@ const animationConfiguration = {
 const Home = () => {
   return (
     <section className="">
+      <motion.div
+        variants={animationConfiguration}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ duration: 3 }}
+      >
 
-      <div className="hero min-h-screen bg-[#f8f8fd]">
-        <motion.div
-          variants={animationConfiguration}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          transition={{ duration: 3 }}
-        >
-
+        <div className="hero min-h-screen bg-[#f8f8fd]">
+          {/* hero section */}
           <div className="hero-content text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
             <div className="w-full laptop:mt-[5rem]">
               <h1 className="laptop:text-[3.125rem] text-[2.125rem] laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
@@ -41,7 +41,7 @@ const Home = () => {
 
               <div className="laptop:flex mt-8">
                 <span className="">
-                  <img src={HeroImage} className="laptop:max-w-[75rem] z-10 w-full mx-auto" alt="Hero Image" />
+                  <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
                 </span>
 
                 {/* full search bar */}
@@ -89,10 +89,20 @@ const Home = () => {
 
             </div>
           </div>
-        </motion.div>
-      </div>
-
-    </section>
+          {/* end of hero section */}
+        </div>
+        <div className="w-full bg-white my-8">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+            <h1 className="text-[1.5rem] text-center mb-4 font-bold">How It Works ?</h1>
+            <p className="text-center laptop:w-[100%]">
+              We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
+              positive reputation in the industry
+            </p>
+            <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
+          </div>
+        </div>
+      </motion.div>
+    </section >
   );
 };
 
