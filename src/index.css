@@ -7,9 +7,14 @@
 * {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
+    /* overflow: hidden; */
 }
 
 img {
     -webkit-user-drag: none;
     /* user-drag: none; */
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
