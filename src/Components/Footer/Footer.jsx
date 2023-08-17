@@ -18,7 +18,7 @@ const Footer = () => {
       <div className=" text-[#D6DDEB] laptop:mx-[8rem]">
 
         {/* copyright */}
-        <p className="p-4 copyright laptop:justify-start text-center">
+        <p className="p-4 copyright">
           <span>{theDate} </span>
           @
           Co-habit.
