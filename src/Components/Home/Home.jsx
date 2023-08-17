@@ -5,6 +5,7 @@ import Right from "../../assets/right.svg"
 import HeroImage from "../../assets/hero-image.png"
 import Search from "../../assets/Search.svg"
 import Location from "../../assets/Location.svg"
+import StyledRectangle from "../../assets/curved-edge rectangle.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -100,6 +101,10 @@ const Home = () => {
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
               positive reputation in the industry
             </p>
+
+            <div className="laptop:flex block">
+              <img src={StyledRectangle} className="" alt="styled-rectangle" />
+            </div>
 
           </div>
         </div>
