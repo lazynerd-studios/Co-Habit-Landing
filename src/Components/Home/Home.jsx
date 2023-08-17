@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Left from "../../assets/left.svg"
 import Right from "../../assets/right.svg"
 import HeroImage from "../../assets/hero-image.png"
+import Ellipse from "../../assets/Ellipse 1.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -31,7 +32,10 @@ const Home = () => {
                 <img src={Right} className="w-[15%] hidden laptop:flex" alt="right" />
                 {/* mx-auto w-[30%] */}
               </span>
-              <img src={HeroImage} className="laptop:max-w-[80%] w-full mx-auto" alt="Hero Image" />
+              <span className="">
+                <img src={HeroImage} className="laptop:max-w-[80%] w-full mx-auto" alt="Hero Image" />
+                <img src={Ellipse} className="mx-auto z-10 -mt-12 w-[7%]" alt="Ellipse" />
+              </span>
               {/* <button className="btn rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button> */}
             </div>
           </div>
