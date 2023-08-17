@@ -32,11 +32,46 @@ const Home = () => {
                 <img src={Right} className="w-[15%] hidden laptop:flex" alt="right" />
                 {/* mx-auto w-[30%] */}
               </span>
-              <span className="">
-                <img src={HeroImage} className="laptop:max-w-[80%] z-10 w-full mx-auto" alt="Hero Image" />
-                {/* <img src={Ellipse} className="mx-auto z-[2] -mt-12 w-[8%]" alt="Ellipse" /> */}
-              </span>
-              {/* <button className="btn rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button> */}
+
+              <div className="flex mt-8">
+                <span className="">
+                  <img src={HeroImage} className="laptop:max-w-[80%] z-10 w-full mx-auto" alt="Hero Image" />
+                </span>
+
+                {/* search */}
+                <div className="absolute -mt-8 laptop:flex laptop:ml-[11rem] w-[50%] rounded-md bg-white p-3 border-none">
+                  <input type="text"
+                    className="border-b-[#7C8493] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                    placeholder="Apartment/Workspace"
+                  />
+
+                  <select className="w-full p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                    name="Location">
+                    <option className="py-4" value='Apartment/Workspace'>
+                      Lagos/Abuja
+                    </option>
+                    <option value='Apartment/Workspace'>
+                      Ogun/Abuja
+                    </option>
+                    <option value='Apartment/Workspace'>
+                      Port-Harcourt/Abuja
+                    </option>
+                    <option value='Apartment/Workspace'>
+                      Ibadan/Abuja
+                    </option>
+                  </select>
+
+                  <button
+                    className="btn ml-4 rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    Search
+                  </button>
+                </div>
+                {/* end of search */}
+
+              </div>
+
+              {/* <img src={Ellipse} className="mx-auto z-[2] -mt-12 w-[8%]" alt="Ellipse" /> */}
+
             </div>
           </div>
         </motion.div>
