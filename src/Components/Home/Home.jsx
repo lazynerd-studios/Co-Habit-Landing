@@ -9,15 +9,16 @@ const animationConfiguration = {
 
 const Home = () => {
   return (
-    <section className="">
-      <motion.div
-        variants={animationConfiguration}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{ duration: 3 }}
-      >
-        <div className="hero min-h-screen bg-[#f8f8fd]">
+    <section>
+
+      <div className="hero min-h-screen bg-[#f8f8fd]">
+        <motion.div
+          variants={animationConfiguration}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 3 }}
+        >
           <div className="hero-content text-center">
             <div className="max-w-lg">
               <h1 className=" text-[3.125rem] leading-[3.4375rem] font-bold uppercase text-[#25324B]">FIND YOUR PERFECT</h1>
@@ -25,8 +26,9 @@ const Home = () => {
               <button className="py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
+
     </section>
   );
 };
