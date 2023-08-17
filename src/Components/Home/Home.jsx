@@ -23,13 +23,14 @@ const Home = () => {
           exit="exit"
           transition={{ duration: 3 }}
         >
+
           <div className="hero-content text-center laptop:mx-[8rem]">
-            <div className="w-full laptop:mt-[6rem]">
+            <div className="w-full laptop:mt-[5rem]">
               <h1 className="text-[3.125rem] leading-[3.4375rem] font-bold uppercase text-[#25324B]">FIND YOUR PERFECT</h1>
               <span className="laptop:flex">
-                <img src={Left} className=" w-[15%] hidden laptop:flex" alt="left" />
-                <h1 className="mx-auto text-5xl font-bold leading-[3.4375rem] text-[#010886]">SHARED APARTMENT</h1>
-                <img src={Right} className="w-[15%] hidden laptop:flex" alt="right" />
+                <img src={Left} className=" w-[15%] p-0 hidden laptop:flex" alt="left" />
+                <h1 className="mx-auto text-[3rem] font-bold leading-[3.4375rem] text-[#010886]">SHARED APARTMENT</h1>
+                <img src={Right} className="w-[15%] p-0 hidden laptop:flex" alt="right" />
                 {/* mx-auto w-[30%] */}
               </span>
 
@@ -39,10 +40,10 @@ const Home = () => {
                 </span>
 
                 {/* search */}
-                <div className="absolute -mt-8 laptop:flex laptop:ml-[11rem] w-[50%] rounded-md bg-white p-3 border-none">
+                <div className="absolute -mt-8 laptop:flex laptop:ml-[11rem] w-[50%] rounded-md bg-white px-2 py-2 border-none">
                   <input type="text"
                     className="border-b-[#7C8493] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
-                    placeholder="Apartment/Workspace"
+                    placeholder="Apartment/Workspace" autoComplete="true"
                   />
 
                   <select className="w-full p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
