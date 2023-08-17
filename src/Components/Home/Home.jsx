@@ -33,8 +33,8 @@ const Home = () => {
                 {/* mx-auto w-[30%] */}
               </span>
               <span className="">
-                <img src={HeroImage} className="laptop:max-w-[80%] w-full mx-auto" alt="Hero Image" />
-                <img src={Ellipse} className="mx-auto z-10 -mt-12 w-[7%]" alt="Ellipse" />
+                <img src={HeroImage} className="laptop:max-w-[80%] z-10 w-full mx-auto" alt="Hero Image" />
+                <img src={Ellipse} className="mx-auto z-[2] -mt-12 w-[7%]" alt="Ellipse" />
               </span>
               {/* <button className="btn rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button> */}
             </div>
