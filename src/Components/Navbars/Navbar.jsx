@@ -47,7 +47,7 @@ const Navbar = () => {
               <li key={index} className="">
                 {/* "flex min-w-max p-4" */}
                 <NavLink to={item.path} className={({ isActive }) =>
-                  isActive ? 'flex min-w-max rounded-none mx-4 font-medium bg-white focus:bg-white hover:bg-white border-b-[3px] px-1 border-[#010886]' : 'flex rounded-none bg-none hover:bg-white font-medium min-w-max py-2 px-1 mx-3'
+                  isActive ? 'flex min-w-max rounded-none mx-4 font-medium bg-white hover:bg-white border-b-[3px] px-1 border-[#010886]' : 'flex rounded-none focus:text-[red] bg-none hover:bg-white font-medium min-w-max py-2 px-1 mx-3'
                 }>
                   <span className="">{item.title}</span>
                 </NavLink>
