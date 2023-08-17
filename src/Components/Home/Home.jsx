@@ -7,6 +7,7 @@ import Search from "../../assets/Search.svg"
 import Location from "../../assets/Location.svg"
 import StyledRectangle from "../../assets/curved-edge rectangle.svg"
 import SmallStyledRectangle from "../../assets/small-styled-rectangle.svg"
+import LocationPin from "../../assets/u_location-pin-alt.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -110,7 +111,21 @@ const Home = () => {
 
                 </p>
                 <span className="">
-                  <img src={SmallStyledRectangle} className="w-[10%] laptop:w-auto absolute ml-[15.03rem] mt-[0.04rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
+                  <p className="absolute laptop:w-[] ml-[1.03rem] mt-[rem] laptop:ml-[1.1rem] laptop:mt-[11rem] text-[0.875rem] font-medium">
+                    The apartment appeared to be well-cared-for <br className="laptop:flex hidden" />
+                    and professionally managed. The overall <br className="laptop:flex hidden" />
+                    maintenance of the house and the surrounding <br className="laptop:flex hidden" />
+                    landscape reflected a high level of attention to <br className="laptop:flex hidden" />
+                    detail.
+                  </p>
+                  <h2 className="absolute ml-[1.03rem] mt-[rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                    List your property
+                  </h2>
+                  <p className="absolute text-[1rem] font-medium ml-[16.03rem] mt-[0.7rem] laptop:ml-[19rem] z-10 laptop:mt-[2rem]">
+                    1
+                  </p>
+                  <img src={LocationPin} className="absolute laptop:w-[3rem] w-[7%] ml-[6.5rem] mt-[2.6rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                  <img src={SmallStyledRectangle} className="absolute w-[10%] laptop:w-auto ml-[15.03rem] mt-[0.04rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                   <img src={StyledRectangle} className="laptop:w-auto w-[50%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
                 </span>
               </div>
