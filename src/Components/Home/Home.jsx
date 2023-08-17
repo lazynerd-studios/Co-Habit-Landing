@@ -11,7 +11,7 @@ const Home = () => {
               <h1 className=" text-[3.125rem] font-bold uppercase text-[#25324B]">FIND YOUR PERFECT</h1>
               <h1 className="text-5xl font-bold uppercase text-[#010886]">Shared APARTMENT</h1>
               <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button className="btn bg-[#01088675] hover:bg-[#010886] text-white hover:text-white">Search</button>
+              <button className="btn bg-[#010886e3] hover:bg-[#010886] text-white hover:text-white">Search</button>
             </div>
           </div>
         </div>
