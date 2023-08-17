@@ -13,16 +13,19 @@ const Footer = () => {
   // </a>
 
   return (
-    <div className="">
+    <div className="bg-[#010886]">
 
-      {/* copyright */}
-      <p className="pt-3 pb-4 copyright text-center">
-        <span>{theDate} </span>
-        @
-        Co-habit.
-        All rights reserved.
-      </p>
+      <div className=" text-[#D6DDEB] laptop:mx-[8rem]">
 
+        {/* copyright */}
+        <p className="p-4 copyright laptop:justify-start text-center">
+          <span>{theDate} </span>
+          @
+          Co-habit.
+          All rights reserved.
+        </p>
+
+      </div>
     </div>
 
   );
