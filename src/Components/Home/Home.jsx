@@ -6,6 +6,7 @@ import HeroImage from "../../assets/hero-image.png"
 import Search from "../../assets/Search.svg"
 import Location from "../../assets/Location.svg"
 import StyledRectangle from "../../assets/curved-edge rectangle.svg"
+import SmallStyledRectangle from "../../assets/small-styled-rectangle.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -103,7 +104,17 @@ const Home = () => {
             </p>
 
             <div className="laptop:flex block">
-              <img src={StyledRectangle} className="" alt="styled-rectangle" />
+
+              <div className="">
+                <p>
+
+                </p>
+                <span className="">
+                  <img src={SmallStyledRectangle} className="w-[10%] laptop:w-auto absolute ml-[15.03rem] mt-[0.04rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
+                  <img src={StyledRectangle} className="laptop:w-auto w-[50%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
+                </span>
+              </div>
+
             </div>
 
           </div>
