@@ -35,21 +35,24 @@ const Home = () => {
                 {/* mx-auto w-[30%] */}
               </span>
 
-              <div className="flex mt-8">
+              <div className="laptop:flex mt-8">
                 <span className="">
                   <img src={HeroImage} className="laptop:max-w-[80%] z-10 w-full mx-auto" alt="Hero Image" />
                 </span>
 
                 {/* search */}
-                <div className="absolute -mt-8 laptop:flex laptop:ml-[11rem] w-[50%] rounded-md bg-white px-2 py-2 border-none">
-                  <input type="text"
-                    className="border-b-[#7C8493] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
-                    placeholder="Apartment/Workspace" autoComplete="true"
-                  />
+                <div className="laptop:absolute relative w-[90%] -mt-8 laptop:flex laptop:ml-[11rem] laptop:w-[50%] rounded-md bg-white px-2 py-2 border-none">
+                  <span className="flex">
+                    <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" />
+                    <input type="text"
+                      className="border-b-[#7C8493] w-auto mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                      placeholder="Apartment/Workspace" autoComplete="true"
+                    />
+                  </span>
 
                   <span className="flex">
-                    <img src={Location} className="w-[13%] p-1 mr-1" alt="location" />
-                    <select className="w-full p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                    <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" />
+                    <select className="laptop:w-full w-[78%] p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
                       <option className="py-4" value='Apartment/Workspace'>
                         Lagos/Abuja
@@ -66,8 +69,9 @@ const Home = () => {
                     </select>
                   </span>
 
+                  {/* search button */}
                   <button
-                    className="btn ml-4 rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    className="btn ml-4 rounded-none w-[80%] mt-1 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
                   </button>
                 </div>
