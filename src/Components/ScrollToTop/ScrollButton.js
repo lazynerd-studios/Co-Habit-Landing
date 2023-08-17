@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const Button = styled.div`
 position: fixed;
 padding: 0;
-width: 50px;
+width: 35px;
 height: 17%;
-right: 10px;
-bottom: 40px;
+right: 1px;
+bottom: 50px;
 font-size: 3rem;
-z-index: 1;
+z-index: 10;
 cursor: pointer;
-color: #010886;
-transform: scale(0.7);
+color: black;
+transform: scale(2);
 `
