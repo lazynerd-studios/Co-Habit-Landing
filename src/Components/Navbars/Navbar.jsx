@@ -18,7 +18,7 @@ const Navbar = () => {
           </label>
           {/* end of hamburger menu */}
           {/* mobile navbar */}
-          {showNav && <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          {showNav && <ul tabIndex={0} className="dropdown-content mt-3 z-[1] p-2 bg-white focus:bg-white rounded-box w-52">
             {NavbarData.map((item, index) => {
               return (
                 <li key={index} className="">
@@ -41,13 +41,13 @@ const Navbar = () => {
 
       {/* displays on wide screen */}
       <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu-horizontal px-1">
           {NavbarData.map((item, index) => {
             return (
               <li key={index} className="">
                 {/* "flex min-w-max p-4" */}
                 <NavLink to={item.path} className={({ isActive }) =>
-                  isActive ? 'flex min-w-max rounded-none mx-4 font-medium bg-white hover:bg-white border-b-[3px] px-1 border-[#010886]' : 'flex rounded-none focus:text-[red] bg-none hover:bg-white font-medium min-w-max py-2 px-1 mx-3'
+                  isActive ? 'flex min-w-max rounded-none mx-2 pb-[0.3rem] border-b-[3px] px-1 border-[#010886]' : 'font-medium min-w-max px-1 mx-2'
                 }>
                   <span className="">{item.title}</span>
                 </NavLink>
