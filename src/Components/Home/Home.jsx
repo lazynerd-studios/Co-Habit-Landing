@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import Left from "../../assets/left.svg"
 import Right from "../../assets/right.svg"
 import HeroImage from "../../assets/hero-image.png"
-import Ellipse from "../../assets/Ellipse 1.png"
+import Search from "../../assets/Search.svg"
+import Location from "../../assets/Location.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -46,21 +47,24 @@ const Home = () => {
                     placeholder="Apartment/Workspace" autoComplete="true"
                   />
 
-                  <select className="w-full p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
-                    name="Location">
-                    <option className="py-4" value='Apartment/Workspace'>
-                      Lagos/Abuja
-                    </option>
-                    <option value='Apartment/Workspace'>
-                      Ogun/Abuja
-                    </option>
-                    <option value='Apartment/Workspace'>
-                      Port-Harcourt/Abuja
-                    </option>
-                    <option value='Apartment/Workspace'>
-                      Ibadan/Abuja
-                    </option>
-                  </select>
+                  <span className="flex">
+                    <img src={Location} className="w-[13%] p-1 mr-1" alt="location" />
+                    <select className="w-full p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                      name="Location">
+                      <option className="py-4" value='Apartment/Workspace'>
+                        Lagos/Abuja
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Ogun/Abuja
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Port-Harcourt/Abuja
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Ibadan/Abuja
+                      </option>
+                    </select>
+                  </span>
 
                   <button
                     className="btn ml-4 rounded-none normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
