@@ -1,5 +1,5 @@
 import React from "react";
-import CoHabit from "../../assets/Cohabit Logo C-white.png"
+import CoHabit from "../../assets/Cohabit Logo B 1.png"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div className="bg-[#010886] text-[#D6DDEB] ">
       <footer className="footer laptop:p-10 p-6 laptop:mx-[8rem] mx-0">
-        <div>
-          <img src={CoHabit} className="w-[20%]" alt="web-logo" />
+        <div className="laptop:-mr-[5rem] laptop:-ml-10">
+          <img src={CoHabit} className="laptop:-ml-5" alt="web-logo" />
           <p className="w-[23rem] text-[1rem] font-normal">
             Our mission is to help people find affordable homes <br className="hidden laptop:flex" />
             with a seamless and rewarding shared experiences.
