@@ -17,7 +17,7 @@ import ArrowDown from "../../assets/Arrow down.svg"
 // import Bungalow3 from "../../assets/bungalow-3.png"
 // import BathIcon from "../../assets/u_bath.svg"
 // import BedIcon from "../../assets/u_bed-double.svg"
-// import Slideshow from "../Slideshow/Slideshow";
+import Slideshow from "../Slideshow/Slideshow";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -44,10 +44,10 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
+                {/* <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
-                </span>
+                </span> */}
                 <h1 className="mx-auto laptop:text-[3rem] text-[2rem] font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
@@ -193,8 +193,6 @@ const Home = () => {
         {/* end of 'how it works' */}
 
 
-
-
         {/* 'recently uploaded' */}
         <div className="w-full bg-[#f8f8fd] my-8 mx-2 pb-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
@@ -207,7 +205,7 @@ const Home = () => {
             </p>
 
             {/* mobile slideshow */}
-            {/* <Slideshow /> */}
+            <Slideshow />
 
             {/* <div className="laptop:flex hidden gap-8">
               <div>
