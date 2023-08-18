@@ -2,6 +2,7 @@ import React from "react";
 import CoHabit from "../../assets/Cohabit Logo B 1.png"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
   // date for copyright
@@ -10,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className="bg-[#010886] text-[#D6DDEB] ">
-      <footer className="footer laptop:p-10 p-6 laptop:mx-[8rem] mx-0">
+      <footer className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[8rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
           <img src={CoHabit} className="-ml-5" alt="web-logo" />
           <p className="w-[21rem] text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
@@ -44,33 +45,51 @@ const Footer = () => {
           </p>
           <div className="flex-col w-[18rem]">
             <div className="relative">
-              <input type="email" placeholder="Email Address" className="input input-bordered w-full bg-white pr-16 mr-6" />
+              <input type="email"
+                placeholder="Email Address"
+                // required
+                className="input input-bordered text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
               <button className="btn hover:bg-[#DF8026] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case absolute top-0 right-0 rounded-l-none">Subscribe</button>
             </div>
           </div>
         </div>
       </footer>
 
-      <div className="py-2">
-        <a href="#" className="mr-4">
-          <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
-        <a href="#" className="mr-4">
-          <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
-        <a href="#" className="">
-          <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-        </a>
+      <div className="laptop:flex laptop:mx-[8rem] mx-auto">
+        <div className="flex laptop:hidden py-2">
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="">
+            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+        </div>
+
+        {/* copyright */}
+        <p className="p-4 copyright text-center">
+          <span>{theDate} </span>
+          @
+          Co-habit.
+          All rights reserved.
+        </p>
+        {/* end of copyright */}
+
+        <div className="py-2 laptop:flex hidden">
+          <a href="#" className="">
+            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <InstagramIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+          </a>
+
+        </div>
       </div>
-
-      <p className="p-4 copyright text-center">
-        <span>{theDate} </span>
-        @
-        Co-habit.
-        All rights reserved.
-      </p>
-
-
 
 
       {/* <div className=" text-[#D6DDEB] laptop:mx-[8rem] mx-6">
@@ -101,40 +120,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
-{/* <footer className="footer p-10 bg-base-200 text-base-content">
-  <div>
-    <span className="footer-title">Services</span> 
-    <a className="link link-hover">Branding</a> 
-    <a className="link link-hover">Design</a> 
-    <a className="link link-hover">Marketing</a> 
-    <a className="link link-hover">Advertisement</a>
-  </div> 
-  <div>
-    <span className="footer-title">Company</span> 
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
-  </div> 
-  <div>
-    <span className="footer-title">Legal</span> 
-    <a className="link link-hover">Terms of use</a> 
-    <a className="link link-hover">Privacy policy</a> 
-    <a className="link link-hover">Cookie policy</a>
-  </div> 
-  <div>
-    <span className="footer-title">Newsletter</span> 
-    <div className="form-control w-80">
-      <label className="label">
-        <span className="label-text">Enter your email address</span>
-      </label> 
-      <div className="relative">
-        <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
-        <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-      </div>
-    </div>
-  </div>
-</footer> */}
