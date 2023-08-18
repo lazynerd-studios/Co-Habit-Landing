@@ -60,7 +60,7 @@ const Footer = () => {
 
       <img src={FooterLine} className="w-[80%] laptop:mx-[8rem]" alt="footer-line" />
 
-      <div className="laptop:flex laptop:mx-[8rem] mx-auto">
+      <div className="laptop:flex laptop:mx-[8rem] laptop:py-6 mx-auto">
         <div className="flex laptop:hidden mx-12 py-2">
           <a href="#" className="mr-4">
             <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         {/* copyright */}
-        <p className="p-4 copyright text-center">
+        <p className="py-4 copyright laptop:mr-[31rem] text-center">
           <span>{theDate} </span>
           @
           Co-habit.
