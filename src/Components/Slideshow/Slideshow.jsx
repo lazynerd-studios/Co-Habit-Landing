@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import Bungalow1 from "../../assets/bungalow-1.png";
-import Bungalow2 from "../../assets/bungalow-2.png";
-import Bungalow3 from "../../assets/bungalow-3.png";
 import "./styles.css";
+import { slides } from "./slides"
+import BathIcon from "../../assets/u_bath.svg"
+import BedIcon from "../../assets/u_bed-double.svg"
+import LocationPin from "../../assets/u_location-pin-altt.svg"
+import Line from "../../assets/Line 9.svg"
 
-const slides = [
-    { image: Bungalow1, house: "Bungalow" },
-    { image: Bungalow2, house: "Bungalow" },
-    { image: Bungalow3, house: "Bungalow" }
-];
 const delay = 2500;
 
 function Slideshow() {
@@ -37,12 +34,58 @@ function Slideshow() {
     return (
         <div className="laptop:hidden block overflow-hidden w-[95%] mx-auto mt-8">
             <div className="slideshowSlider whitespace-nowrap">
-                <div className="slide">
+                <div className="slide bg-white p-0 rounded-[1rem]">
+
                     <img className="inline-block w-auto rounded-t-[1rem]" src={currentSlide.image} alt={`Slide ${index + 1}`} />
-                    <p>{currentSlide.house}</p>
+
+                    <span className="flex mt-4 mx-3 gap-[9.3rem]">
+                        <p className="text-[1rem]">
+                            {currentSlide.house}
+                        </p>
+                        <p className="text-[1rem] text-[#010886] font-bold">
+                            {currentSlide.price}
+                        </p>
+                    </span>
+
+                    <span className="flex gap-4 mt-4 mx-2">
+                        <span className="mx-1 flex">
+                            <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                            <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                                2 Rooms
+                            </p>
+                        </span>
+
+                        <span className="mx-1 flex">
+                            <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                            <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                                2 Baths
+                            </p>
+                        </span>
+
+                        <span className="mx-1 flex">
+                            <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                            <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                                1200sqft
+                            </p>
+                        </span>
+                    </span>
+
+                    <img src={Line} className="mt-5 mb-4" alt="line" />
+
+                    <span className="flex">
+                        <img src={LocationPin} className="pb-6 ml-3" alt="location-pin" />
+                        <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                            Surulere, Lagos
+                        </p>
+                        <a className="btn border-none hover:bg-[#010886] normal-case font-normal py-0 px-7 bg-[#010886eb] text-white text-[0.875rem]">
+                            View
+                        </a>
+                    </span>
+
                 </div>
             </div>
 
+            {/* slide dots/'controls' */}
             <div className="slideshowDots text-center">
                 {slides.map((_, idx) => (
                     <div
@@ -54,6 +97,8 @@ function Slideshow() {
                     ></div>
                 ))}
             </div>
+            {/* end of slide dots */}
+
         </div>
     );
 }
