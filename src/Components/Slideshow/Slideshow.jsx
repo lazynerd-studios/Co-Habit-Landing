@@ -36,7 +36,7 @@ function Slideshow() {
 
     return (
         <div className="laptop:hidden block overflow-hidden w-[95%] mx-auto mt-8">
-            <div className="slideshowSlider">
+            <div className="slideshowSlider whitespace-nowrap">
                 <div className="slide">
                     <img className="inline-block w-auto rounded-t-[1rem]" src={currentSlide.image} alt={`Slide ${index + 1}`} />
                     <p>{currentSlide.house}</p>
