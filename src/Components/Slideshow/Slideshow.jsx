@@ -39,7 +39,7 @@ function Slideshow() {
 
                     <img className="inline-block w-auto rounded-t-[1rem]" src={currentSlide.image} alt={`Slide ${index + 1}`} />
 
-                    <span className="flex mt-4 mx-3 gap-[9.3rem]">
+                    <span className="flex mt-4 mx-3 gap-[7.8rem]">
                         <p className="text-[1rem]">
                             {currentSlide.house}
                         </p>
@@ -48,7 +48,7 @@ function Slideshow() {
                         </p>
                     </span>
 
-                    <span className="flex gap-4 mt-4 mx-2">
+                    <span className="flex gap-[0.125rem] mt-4 mx-2">
                         <span className="mx-1 flex">
                             <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                             <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
@@ -78,7 +78,7 @@ function Slideshow() {
                         <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                             {currentSlide.area}
                         </p>
-                        <a className="inline-block absolute px-6 py-1 rounded-md border-none normal-case font-normal ml-[15.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                        <a className="inline-block absolute px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                             View
                         </a>
                     </span>
