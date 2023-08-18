@@ -39,7 +39,7 @@ const Home = () => {
         <div className="hero min-h-screen bg-[#f8f8fd]">
           {/* hero section */}
           <div className="hero-content text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
-            <div className="w-full laptop:mt-[5rem]">
+            <div className="w-auto laptop:mt-[5rem]">
               <h1 className="laptop:text-[3.125rem] text-[2.125rem] laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
                 FIND YOUR PERFECT
               </h1>
@@ -60,11 +60,11 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-full mt-12 laptop:-mt-8 laptop:flex laptop:mx-[5rem] laptop:w-[65%] rounded-md bg-white px-2 py-2 border-none">
+                <div className="laptop:absolute w-auto mt-12 laptop:-mt-8 laptop:flex laptop:mx-[5rem] laptop:w-[65%] rounded-md bg-white px-2 py-2 border-none">
                   <span className="flex">
                     <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" />
                     <input type="text"
-                      className="border-b-[#7C8493] laptop:w-full w-[77%] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                      className="border-b-[#7C8493] laptop:w-auto w-[77%] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
                       placeholder="Apartment/Workspace" autoComplete="true"
                     />
                   </span>
@@ -199,7 +199,7 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Recently Uploaded
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-full">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
@@ -236,7 +236,7 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Find By Location
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
@@ -261,12 +261,12 @@ const Home = () => {
         {/* end of 'find by location' */}
 
         {/* good reviews by customers */}
-        <div className="w-full bg-[#DF802633] mt-8 pb-8">
+        <div className="w-auto bg-[#DF802633] mt-8 pb-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Good Reviews By Customers
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
               Customer reviews play a crucial role in today's interconnected world, influencing the decisions of consumers and <br className="laptop:flex hidden" />
               shaping the reputation of businesses.
             </p>
