@@ -35,7 +35,7 @@ function Slideshow() {
     }, [index]);
 
     return (
-        <div className="laptop:hidden block overflow-hidden w-[80%] mx-0 mt-8">
+        <div className="laptop:hidden block overflow-hidden w-[95%] mx-0 mt-8">
             <div
                 className="slideshowSlider whitespace-nowrap"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
