@@ -6,7 +6,8 @@ import BedIcon from "../../assets/u_bed-double.svg"
 import LocationPin from "../../assets/u_location-pin-altt.svg"
 import Line from "../../assets/Line 9.svg"
 
-const delay = 2500;
+const delay = 2800;
+// formerly 2500
 
 function Slideshow() {
     const [index, setIndex] = useState(0);
@@ -51,21 +52,21 @@ function Slideshow() {
                         <span className="mx-1 flex">
                             <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                             <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                2 Rooms
+                                {currentSlide.rooms}
                             </p>
                         </span>
 
                         <span className="mx-1 flex">
                             <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
                             <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                2 Baths
+                                {currentSlide.baths}
                             </p>
                         </span>
 
                         <span className="mx-1 flex">
                             <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                             <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                1200sqft
+                                {currentSlide.measurement}
                             </p>
                         </span>
                     </span>
@@ -75,7 +76,7 @@ function Slideshow() {
                     <span className="flex">
                         <img src={LocationPin} className="pb-6 ml-3" alt="location-pin" />
                         <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                            Surulere, Lagos
+                            {currentSlide.area}
                         </p>
                         <a className="inline-block absolute px-6 py-1 rounded-md border-none normal-case font-normal ml-[15.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                             View
