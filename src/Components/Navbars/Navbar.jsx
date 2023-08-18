@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
 
   return (
-    <div className="navbar bg-white fixed -mt-1 z-10">
+    <div className="navbar bg-white fixed -mt-1 z-20">
       <div className="navbar-start laptop:ml-[6.2rem]">
         <div className="dropdown">
           {/* hamburger menu */}
