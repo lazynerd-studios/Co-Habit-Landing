@@ -1,8 +1,11 @@
 import React from "react";
 import CoHabit from "../../assets/Cohabit Logo B 1.png"
+import FooterLine from "../../assets/Footer-Line.svg"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
   // date for copyright
@@ -55,16 +58,24 @@ const Footer = () => {
         </div>
       </footer>
 
+      <img src={FooterLine} className="w-[80%] laptop:mx-[8rem]" alt="footer-line" />
+
       <div className="laptop:flex laptop:mx-[8rem] mx-auto">
-        <div className="flex laptop:hidden py-2">
+        <div className="flex laptop:hidden mx-12 py-2">
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
           </a>
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
           </a>
           <a href="#" className="">
-            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
           </a>
         </div>
 
@@ -78,14 +89,20 @@ const Footer = () => {
         {/* end of copyright */}
 
         <div className="py-2 laptop:flex hidden">
+          <a href="#" className="mr-4">
+            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
+          <a href="#" className="mr-4">
+            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+          </a>
           <a href="#" className="">
-            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-          </a>
-          <a href="#" className="mr-4">
-            <InstagramIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
-          </a>
-          <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
           </a>
 
         </div>
@@ -96,13 +113,13 @@ const Footer = () => {
 
         <div className="pt-4">
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
           </a>
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
           </a>
           <a href="#">
-            <FacebookIcon sx={{ fontSize: "2rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
+            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-md p-1 bg-[#eae7e741]" />
           </a>
         </div>
 
