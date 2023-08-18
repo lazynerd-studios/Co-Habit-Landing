@@ -12,11 +12,11 @@ import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
 import ArrowUp from "../../assets/Arrow up.svg"
 import ArrowDown from "../../assets/Arrow down.svg"
-// import Bungalow1 from "../../assets/bungalow-1.png"
-// import Bungalow2 from "../../assets/bungalow-2.png"
-// import Bungalow3 from "../../assets/bungalow-3.png"
-// import BathIcon from "../../assets/u_bath.svg"
-// import BedIcon from "../../assets/u_bed-double.svg"
+import Bungalow1 from "../../assets/bungalow-1.png"
+import Bungalow2 from "../../assets/bungalow-2.png"
+import Bungalow3 from "../../assets/bungalow-3.png"
+import BathIcon from "../../assets/u_bath.svg"
+import BedIcon from "../../assets/u_bed-double.svg"
 import Slideshow from "../Slideshow/Slideshow";
 
 const animationConfiguration = {
@@ -206,8 +206,10 @@ const Home = () => {
 
             {/* mobile slideshow */}
             <Slideshow />
+            {/* end of mobile slideshow */}
 
-            {/* <div className="laptop:flex hidden gap-8">
+            {/* wider screen */}
+            <div className="laptop:flex hidden gap-8">
               <div>
                 <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" />
               </div>
@@ -220,8 +222,8 @@ const Home = () => {
                 <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" />
               </div>
 
-            </div> */}
-
+            </div>
+            {/* end of wide screen */}
 
           </div>
         </div>
