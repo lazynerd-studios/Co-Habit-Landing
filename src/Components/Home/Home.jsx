@@ -10,6 +10,8 @@ import SmallStyledRectangle from "../../assets/small-styled-rectangle.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
+import ArrowUp from "../../assets/Arrow up.svg"
+import ArrowDown from "../../assets/Arrow down.svg"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -100,13 +102,16 @@ const Home = () => {
         {/* how it works */}
         <div className="w-full bg-white my-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+            {/* heading */}
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
             <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
               positive reputation in the industry
             </p>
 
-            <div className="gap-16 laptop:flex">
+            {/* text-in-shapes */}
+            <div className="laptop:flex">
+              {/* gap-16 */}
               {/* styled rectangle 1 */}
               <div className="">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[9rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
@@ -126,6 +131,10 @@ const Home = () => {
                 <img src={SmallStyledRectangle} className="absolute w-[17%] laptop:w-auto ml-[16.8rem] mt-[0.06rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
+              {/* end of styled rectangle 1 */}
+
+              {/* arrow up */}
+              <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" />
 
               {/* styled rectangle 2 */}
               <div className="">
@@ -146,6 +155,9 @@ const Home = () => {
                 <img src={SmallStyledRectangle} className="absolute w-[17%] laptop:w-auto ml-[16.8rem] mt-[0.06rem] laptop:ml-[17.3rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
+
+              {/* arrow up */}
+              <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" />
 
               {/* styled rectangle 3 */}
               <div className="">
