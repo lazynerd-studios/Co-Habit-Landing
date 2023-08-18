@@ -77,7 +77,7 @@ function Slideshow() {
                         <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                             Surulere, Lagos
                         </p>
-                        <a className="inline-block p-4 absolute border-none normal-case font-normal ml-[7rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                        <a className="inline-block absolute px-6 py-1 rounded-md border-none normal-case font-normal ml-[15.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                             View
                         </a>
                     </span>
