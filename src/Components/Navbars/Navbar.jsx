@@ -58,8 +58,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end laptop:mr-[7.5rem]">
-        <a className="btn bg-white hover:bg-white border-none normal-case text-[#010886]">Login</a>
-        <img src={Line} className="ml-2 mr-4" alt="line" />
+        <a className="btn bg-white hover:bg-white border-none -mr-1 normal-case text-[#010886]">Login</a>
+        <img src={Line} className="ml-0 mr-2" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
       </div>
     </div>
