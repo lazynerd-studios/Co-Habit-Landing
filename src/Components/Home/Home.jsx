@@ -12,6 +12,12 @@ import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
 import ArrowUp from "../../assets/Arrow up.svg"
 import ArrowDown from "../../assets/Arrow down.svg"
+import Bungalow1 from "../../assets/bungalow-1.png"
+import Bungalow2 from "../../assets/bungalow-2.png"
+import Bungalow3 from "../../assets/bungalow-3.png"
+import BathIcon from "../../assets/u_bath.svg"
+import BedIcon from "../../assets/u_bed-double.svg"
+import Slideshow from "../Slideshow/Slideshow";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -38,12 +44,13 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                <img src={Left} className=" w-[15%] p-0 hidden laptop:flex" alt="left" />
+                <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
+                  <img src={Left} className=" w-[25%]" alt="left" />
+                  <img src={Right} className="w-[25%]" alt="right" />
+                </span>
                 <h1 className="mx-auto laptop:text-[3rem] text-[2rem] font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
-                <img src={Right} className="w-[15%] p-0 hidden laptop:flex" alt="right" />
-                {/* mx-auto w-[30%] */}
               </span>
 
               <div className="laptop:flex mt-8">
@@ -185,20 +192,45 @@ const Home = () => {
         </div>
         {/* end of 'how it works' */}
 
+
+
+
         {/* 'recently uploaded' */}
-        <div className="w-full bg-[#f8f8fd] my-8">
+        <div className="w-full bg-[#f8f8fd] my-8 mx-2 pb-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Recently Uploaded
             </h1>
-            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
 
+            {/* mobile slideshow */}
+            <Slideshow />
+
+            <div className="laptop:flex hidden gap-8">
+              <div>
+                <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" />
+              </div>
+
+              <div>
+                <img src={Bungalow2} className="laptop:w-[21.875] w-[90%]" alt="bungalow-2" />
+              </div>
+
+              <div>
+                <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" />
+              </div>
+
+            </div>
+
+
           </div>
         </div>
         {/* end of 'recently uploaded' */}
+
+
+
 
         {/* find by location */}
         <div className="w-full bg-white">
@@ -206,10 +238,25 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Find By Location
             </h1>
-            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
+
+            <div className="laptop:flex gap-8">
+              <div>
+                <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" />
+              </div>
+
+              <div>
+                <img src={Bungalow2} className="laptop:w-[21.875] w-[90%]" alt="bungalow-2" />
+              </div>
+
+              <div>
+                <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" />
+              </div>
+
+            </div>
 
           </div>
         </div>
@@ -221,10 +268,25 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Good Reviews By Customers
             </h1>
-            <p className="text-center laptop:mb-[] laptop:w-[100%]">
+            <p className="text-center laptop:mb-[2.5rem] laptop:w-[100%]">
               Customer reviews play a crucial role in today's interconnected world, influencing the decisions of consumers and <br className="laptop:flex hidden" />
               shaping the reputation of businesses.
             </p>
+
+            <div className="laptop:flex gap-8">
+              <div>
+                <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" />
+              </div>
+
+              <div>
+                <img src={Bungalow2} className="laptop:w-[21.875] w-[90%]" alt="bungalow-2" />
+              </div>
+
+              <div>
+                <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" />
+              </div>
+
+            </div>
 
           </div>
         </div>
