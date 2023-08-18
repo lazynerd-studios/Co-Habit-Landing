@@ -106,10 +106,7 @@ const Home = () => {
 
             <div className="laptop:flex block">
 
-              <div className="">
-                <p>
-
-                </p>
+              <div className="laptop:relative static">
                 <span className="">
                   <p className="absolute w-[68%] ml-[3.5rem] mt-[10rem] laptop:ml-[1.1rem] laptop:mt-[11rem] text-[0.875rem] font-medium">
                     The apartment appeared to be well-cared-for <br className="laptop:flex hidden" />
