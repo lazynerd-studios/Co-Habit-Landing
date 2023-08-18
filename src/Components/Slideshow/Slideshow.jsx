@@ -41,11 +41,12 @@ function Slideshow() {
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
                 {colors.map((backgroundColor, index) => (
-                    <div
-                        className="slide inline-block w-[100%] h-[400px] rounded-t-[40px]"
+                    <img
+                        className="inline-block w-auto rounded-t-[1rem]"
                         key={index}
-                        style={{ backgroundColor }}
-                    ></div>
+                        // style={{ backgroundColor }}
+                        src={Bungalow3}
+                    />
                 ))}
             </div>
 
