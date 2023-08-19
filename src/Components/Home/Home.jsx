@@ -20,6 +20,7 @@ import BedIcon from "../../assets/u_bed-double.svg"
 import Slideshow from "../Slideshow/Slideshow";
 import { slides } from "../Slideshow/slides";
 import Line from "../../assets/Line 9.svg"
+import Building11 from "../../assets/building11.png"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -382,16 +383,24 @@ const Home = () => {
             </p>
 
             <div className="laptop:flex gap-8">
-              <div>
-                {/* <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" /> */}
-              </div>
+              <div className="border-2 rounded-md p-4 laptop:w-[] w-[]">
+                <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
 
-              <div>
-                {/* <img src={Bungalow2} className="laptop:w-[21.875] w-[90%]" alt="bungalow-2" /> */}
-              </div>
+                <div className="">
+                  <span className="">
+                    <p className="text-[#010886] font-normal leading-[1.6rem]">
+                      Surulere, Lagos
+                    </p>
+                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
+                      823 Properties
+                    </p>
+                  </span>
+                  <span className="">
+                    <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
+                    <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
+                  </span>
+                </div>
 
-              <div>
-                {/* <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" /> */}
               </div>
 
             </div>
