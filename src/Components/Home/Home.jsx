@@ -494,6 +494,52 @@ const Home = () => {
                 </div>
               </div>
 
+              {/* 02 */}
+              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
+
+                <div className="pt-4">
+
+                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
+                    Temitope Williams
+                  </p>
+                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
+                    CEO Of Property-pro
+                  </p>
+                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
+                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
+                    I recently had the pleasure of using Co-habit, and I <br className="laptop:flex hidden" />
+                    must say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
+                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
+                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    unforgettable moments.
+                  </p>
+                </div>
+              </div>
+
+              {/* 03 */}
+              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
+
+                <div className="pt-4">
+
+                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
+                    Temitope Williams
+                  </p>
+                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
+                    CEO Of Property-pro
+                  </p>
+                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
+                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
+                    I recently had the pleasure of using Co-habit, and I must <br className="laptop:flex hidden" />
+                    say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
+                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
+                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    unforgettable moments.
+                  </p>
+                </div>
+              </div>
+
             </div>
 
           </div>
