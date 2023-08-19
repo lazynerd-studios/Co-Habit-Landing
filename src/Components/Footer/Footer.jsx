@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
           {/* <br className="hidden laptop:flex" /> */}
         </div>
-        <div className="laptop:ml-[6rem]">
+        <div className="laptop:ml-[2.5rem]">
           <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
           <a className="link link-hover leading-[1.6rem]">Companies</a>
           <a className="link link-hover leading-[1.6rem]">Pricing</a>
