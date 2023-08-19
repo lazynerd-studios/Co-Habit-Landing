@@ -99,6 +99,9 @@ const Home = () => {
                       <option value='Apartment/Workspace'>
                         Ibadan/Abuja
                       </option>
+                      <option value='Apartment/Workspace'>
+                        Edo/Minna
+                      </option>
                     </select>
                   </span>
 
