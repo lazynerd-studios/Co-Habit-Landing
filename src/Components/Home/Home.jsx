@@ -403,7 +403,7 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
@@ -423,7 +423,7 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
@@ -443,7 +443,7 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
@@ -470,9 +470,9 @@ const Home = () => {
               shaping the reputation of businesses.
             </p>
 
-            <div className="laptop:flex gap-8">
+            <div className="laptop:flex gap-5">
               {/* 01 */}
-              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
                 <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
                 <div className="pt-4">
@@ -485,17 +485,17 @@ const Home = () => {
                   </p>
                   <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
                   <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I must <br className="laptop:flex hidden" />
-                    say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
-                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
-                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    I recently had the pleasure of using Co-habit, and I must
+                    say it was an exceptional experience from start to finish.
+                    I wanted to take a moment to share my thoughts and
+                    express my gratitude for the fantastic service and
                     unforgettable moments.
                   </p>
                 </div>
               </div>
 
               {/* 02 */}
-              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
                 <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
                 <div className="pt-4">
@@ -508,17 +508,17 @@ const Home = () => {
                   </p>
                   <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
                   <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I <br className="laptop:flex hidden" />
-                    must say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
-                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
-                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    I recently had the pleasure of using Co-habit, and I must
+                    say it was an exceptional experience from start to finish.
+                    I wanted to take a moment to share my thoughts and
+                    express my gratitude for the fantastic service and
                     unforgettable moments.
                   </p>
                 </div>
               </div>
 
               {/* 03 */}
-              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
                 <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
                 <div className="pt-4">
@@ -531,10 +531,10 @@ const Home = () => {
                   </p>
                   <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
                   <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I must <br className="laptop:flex hidden" />
-                    say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
-                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
-                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    I recently had the pleasure of using Co-habit, and I must
+                    say it was an exceptional experience from start to finish.
+                    I wanted to take a moment to share my thoughts and
+                    express my gratitude for the fantastic service and
                     unforgettable moments.
                   </p>
                 </div>
