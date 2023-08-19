@@ -72,7 +72,7 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-auto mt-12 laptop:-mt-8 laptop:flex  laptop:mx-[5rem] laptop:w-[65%] rounded-md bg-white px-2 py-2 border-none">
+                <div className="laptop:absolute w-auto mt-12 laptop:-mt-8 laptop:flex  laptop:mx-[5rem] laptop:w-[51%] rounded-md bg-white px-2 py-2 border-none">
                   <span className="flex">
                     <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" />
                     <input type="text"
