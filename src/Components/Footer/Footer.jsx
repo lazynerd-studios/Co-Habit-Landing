@@ -63,24 +63,24 @@ const Footer = () => {
       <div className="laptop:flex laptop:mx-[8rem] laptop:py-6 mx-auto">
         <div className="flex laptop:hidden mx-12 py-2">
           <a href="#" className="mr-4">
-            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="">
-            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
         </div>
 
         {/* copyright */}
-        <p className="py-4 copyright laptop:mr-[31rem] text-center">
+        <p className="py-4 copyright laptop:mr-[31rem] text-[#ffffff74] text-center">
           <span>{theDate} </span>
           @
           Co-habit.
@@ -90,19 +90,19 @@ const Footer = () => {
 
         <div className="py-2 laptop:flex hidden">
           <a href="#" className="mr-4">
-            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="mr-4">
-            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
           <a href="#" className="">
-            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#eae7e741]" />
+            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
 
         </div>
