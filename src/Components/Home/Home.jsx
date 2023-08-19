@@ -94,7 +94,7 @@ const Home = () => {
                         Ogun/Oyo
                       </option>
                       <option value='Apartment/Workspace'>
-                        Port-Harcourt/Abuja
+                        Port-Harcourt/Delta
                       </option>
                       <option value='Apartment/Workspace'>
                         Ibadan/Abuja
