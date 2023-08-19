@@ -83,7 +83,7 @@ const Home = () => {
                   </span>
 
                   {/* location */}
-                  <span className="flex">
+                  <span className="flex ">
                     <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" />
                     <select className="laptop:w-auto laptop:mr-[] w-[78%] p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
