@@ -25,7 +25,8 @@ import Building12 from "../../assets/building12.png"
 import Building13 from "../../assets/building13.png"
 import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"
-import Frame from "../../assets/Frame 5540.png"
+import TemitopeWilliams from "../../assets/temitope williams.png"
+import Stars from "../../assets/Stars.png"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -470,16 +471,27 @@ const Home = () => {
             </p>
 
             <div className="laptop:flex gap-8">
-              <div>
-                {/* <img src={Bungalow1} className="laptop:w-[21.875] w-[90%]" alt="bungalow-1" /> */}
-              </div>
+              {/* 01 */}
+              <div className="bg-white border-none rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
-              <div>
-                {/* <img src={Bungalow2} className="laptop:w-[21.875] w-[90%]" alt="bungalow-2" /> */}
-              </div>
+                <div className="pt-4">
 
-              <div>
-                {/* <img src={Bungalow3} className="laptop:w-[21.875] w-[90%]" alt="bungalow-3" /> */}
+                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
+                    Temitope Williams
+                  </p>
+                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
+                    CEO Of Property-pro
+                  </p>
+                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
+                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
+                    I recently had the pleasure of using Co-habit, and I must <br className="laptop:flex hidden" />
+                    say it was an exceptional experience from start to finish. <br className="laptop:flex hidden" />
+                    I wanted to take a moment to share my thoughts and <br className="laptop:flex hidden" />
+                    express my gratitude for the fantastic service and <br className="laptop:flex hidden" />
+                    unforgettable moments.
+                  </p>
+                </div>
               </div>
 
             </div>
