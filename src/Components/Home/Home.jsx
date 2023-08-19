@@ -21,6 +21,11 @@ import Slideshow from "../Slideshow/Slideshow";
 import { slides } from "../Slideshow/slides";
 import Line from "../../assets/Line 9.svg"
 import Building11 from "../../assets/building11.png"
+import Building12 from "../../assets/building12.png"
+import Building13 from "../../assets/building13.png"
+import BlueCircle from "../../assets/blue-circle.svg"
+import ArrowLeft from "../../assets/u_angle-left-b.png"
+import Frame from "../../assets/Frame 5540.png"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -383,11 +388,12 @@ const Home = () => {
             </p>
 
             <div className="laptop:flex gap-8">
-              <div className="border-2 rounded-md p-4 laptop:w-[] w-[]">
+              {/* 01 */}
+              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
                 <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
 
-                <div className="">
-                  <span className="">
+                <div className="flex pt-4">
+                  <span className="laptop:mr-[7rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Surulere, Lagos
                     </p>
@@ -395,12 +401,51 @@ const Home = () => {
                       823 Properties
                     </p>
                   </span>
-                  <span className="">
-                    <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
-                    <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
+                  <span className="laptop:ml-[]">
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
+              </div>
 
+              {/* 02 */}
+              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
+                <img src={Building12} className="laptop:w-[] w-[]" alt="building-2" />
+
+                <div className="flex pt-4">
+                  <span className="laptop:mr-[8rem]">
+                    <p className="text-[#010886] font-normal leading-[1.6rem]">
+                      Yaba, Lagos
+                    </p>
+                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
+                      823 Properties
+                    </p>
+                  </span>
+                  <span className="laptop:ml-[]">
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
+                  </span>
+                </div>
+              </div>
+
+              {/* 03 */}
+              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
+                <img src={Building13} className="laptop:w-[] w-[]" alt="building-3" />
+
+                <div className="flex pt-4">
+                  <span className="laptop:mr-[8rem]">
+                    <p className="text-[#010886] font-normal leading-[1.6rem]">
+                      Lekki, Lagos
+                    </p>
+                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
+                      823 Properties
+                    </p>
+                  </span>
+                  <span className="laptop:ml-[]">
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
+                  </span>
+                </div>
               </div>
 
             </div>
