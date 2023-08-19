@@ -315,7 +315,7 @@ const Home = () => {
 
               {/* 03 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow3} className="w-auto" alt="bungalow-1" />
+                <img src={Bungalow3} className="w-auto" alt="bungalow-3" />
                 <span className="flex mt-4 mx-3 gap-[7.8rem]">
                   <p className="text-[1rem]">
                     {currentSlide.house}
