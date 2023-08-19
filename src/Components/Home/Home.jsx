@@ -111,8 +111,6 @@ const Home = () => {
 
               </div>
 
-              {/* <img src={Ellipse} className="mx-auto z-[2] -mt-12 w-[8%]" alt="Ellipse" /> */}
-
             </div>
           </div>
           {/* end of hero section */}
