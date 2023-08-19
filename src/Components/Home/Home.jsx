@@ -394,7 +394,7 @@ const Home = () => {
                 <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
 
                 <div className="flex pt-4">
-                  <span className="laptop:mr-[7rem]">
+                  <span className="laptop:mr-[8rem] mr-[8.5rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Surulere, Lagos
                     </p>
@@ -414,7 +414,7 @@ const Home = () => {
                 <img src={Building12} className="laptop:w-[] w-[]" alt="building-2" />
 
                 <div className="flex pt-4">
-                  <span className="laptop:mr-[8rem]">
+                  <span className="laptop:mr-[8rem] mr-[9.5rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Yaba, Lagos
                     </p>
@@ -434,7 +434,7 @@ const Home = () => {
                 <img src={Building13} className="laptop:w-[] w-[]" alt="building-3" />
 
                 <div className="flex pt-4">
-                  <span className="laptop:mr-[8rem]">
+                  <span className="laptop:mr-[8rem] mr-[9.5rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Lekki, Lagos
                     </p>
