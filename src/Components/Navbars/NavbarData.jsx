@@ -5,28 +5,24 @@ export const NavbarData = [
   {
     title: "Home",
     path: "/",
-    icon: "",
     className: "nav-text",
   },
 
   {
     title: "About Us",
     path: "/about-us",
-    // icon: <RiArrowDropDownFill className="" />,
     className: "nav-text",
   },
 
   {
     title: "Listing",
     path: "/listing",
-    icon: "",
     className: "nav-text",
   },
 
   // {
-  //   title: "About us",
-  //   path: "/about-us",
-  //   icon: "",
+  //   title: "Login",
+  //   path: "",
   //   className: "nav-text",
   // }
 ];
