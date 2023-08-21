@@ -525,7 +525,7 @@ const Home = () => {
 
                 <div className="pt-4">
 
-                  <p className="text-[#010886] text-center font-semibold leading-[1.6rem]">
+                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
                     Temitope Williams
                   </p>
                   <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
