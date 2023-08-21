@@ -11,12 +11,6 @@ const Navbar = () => {
     <div className="navbar bg-white fixed -mt-1 z-20">
       <div className="navbar-start laptop:ml-[6.2rem]">
         <div className="dropdown">
-          {/* hamburger menu */}
-          <label onClick={() => setshowNav(!showNav)}
-            tabIndex={0} className="btn btn-ghost laptop:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-          </label>
-          {/* end of hamburger menu */}
           {/* mobile navbar */}
           {showNav && <ul tabIndex={0} className="dropdown-content mt-3 z-[1] p-2 bg-white focus:bg-white rounded-box w-52">
             {NavbarData.map((item, index) => {
@@ -57,7 +51,16 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navbar-end laptop:mr-[7.5rem]">
+      <div className="navbar-end laptop:mr-[] ">
+        {/* hamburger menu */}
+        <label onClick={() => setshowNav(!showNav)}
+          tabIndex={0} className="btn btn-ghost laptop:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        {/* end of hamburger menu */}
+      </div>
+
+      <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
         <a className="btn bg-white hover:bg-white border-none -mr-1 normal-case text-[#010886]">Login</a>
         <img src={Line} className="ml-0 mr-2" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
