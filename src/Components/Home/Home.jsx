@@ -549,7 +549,7 @@ const Home = () => {
         {/* end of 'good reviews by customers' */}
 
       </motion.div>
-    </section >
+    </section>
   );
 };
 
