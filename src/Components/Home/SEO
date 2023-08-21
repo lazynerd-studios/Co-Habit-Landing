@@ -1,0 +1,21 @@
+// SEO
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import './App.css'; // Import your CSS file
+
+function App() {
+    return (
+        <div>
+            {/* Your app content */}
+            <Helmet>
+                <meta property="og:title" content="Dynamic Title" />
+                <meta property="og:description" content="Dynamic description." />
+                <meta property="og:image" content="https://example.com/dynamic-image.png" />
+                <meta property="og:url" content="https://example.com/dynamic-url" />
+                <meta property="og:type" content="website" />
+            </Helmet>
+        </div>
+    );
+}
+
+export default App;
