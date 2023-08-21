@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* end of hamburger menu */}
 
           {/* mobile navbar */}
-          {showNav && <ul tabIndex={0} className="absolute w-full pb-3 p-4 -ml-[19rem] h-auto mt-2 border border-t-2 z-[10] bg-white focus:bg-white rounded-box">
+          {showNav && <ul tabIndex={0} className="absolute w-[94%] pb-3 p-4 -ml-[18rem] h-auto mt-2 border border-t-2 z-[10] bg-white focus:bg-white rounded-b-box">
             {/* dropdown-content */}
             {NavbarData.map((item, index) => {
               return (
