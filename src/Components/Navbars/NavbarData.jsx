@@ -1,5 +1,4 @@
 import React from "react";
-import { RiArrowDropDownFill } from "react-icons/ri";
 
 export const NavbarData = [
   {
