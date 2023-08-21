@@ -34,7 +34,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="dropdown">
+        <div className="">
+          {/* dropdown */}
           {/* hamburger menu */}
           <label onClick={() => setshowNav(!showNav)}
             tabIndex={0} className="btn btn-ghost laptop:hidden">
@@ -43,7 +44,8 @@ const Navbar = () => {
           {/* end of hamburger menu */}
 
           {/* mobile navbar */}
-          {showNav && <ul tabIndex={0} className="dropdown-content mt-3 z-[1] p-2 bg-white focus:bg-white rounded-box w-52">
+          {showNav && <ul tabIndex={0} className="absolute w-full pb-3 p-4 -ml-[19rem] h-auto mt-3 z-[10] bg-white focus:bg-white rounded-box">
+            {/* dropdown-content */}
             {NavbarData.map((item, index) => {
               return (
                 <li key={index} className="">
