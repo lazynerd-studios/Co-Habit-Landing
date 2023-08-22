@@ -59,10 +59,10 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                {/* <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
+                <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
-                </span> */}
+                </span>
                 <h1 className="mx-auto laptop:text-[3rem] text-[2rem] font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
