@@ -14,7 +14,8 @@ const Footer = () => {
 
   return (
     <div className="bg-[#010886] text-[#D6DDEB] ">
-      <footer className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[8rem] mx-0">
+      <footer id="footer"
+        className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[8rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
           <img src={CoHabit} className="-ml-5" alt="web-logo" />
           <p className="w-[21rem] text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
