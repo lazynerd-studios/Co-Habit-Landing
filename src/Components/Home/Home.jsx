@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+
+
 import Left from "../../assets/left.svg"
 import Right from "../../assets/right.svg"
 import HeroImage from "../../assets/hero-image.png"
+import ScrollToExplore from "../../assets/Scroll to explore.png"
 import Search from "../../assets/Search.svg"
 import Location from "../../assets/Location.svg"
 import StyledRectangle from "../../assets/curved-edge rectangle.svg"
@@ -68,6 +71,9 @@ const Home = () => {
               <div className="laptop:flex mt-8">
                 <span className="">
                   <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
+                  <a href="" className="">
+                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] absolute -mt-[5.9rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
+                  </a>
                 </span>
 
                 {/* full search bar */}
@@ -121,8 +127,8 @@ const Home = () => {
         </div>
 
         {/* how it works */}
-        <div className="w-full bg-white my-8 relative">
-          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+        <div className="w-auto bg-white my-8 relative">
+          <div className="laptop:mx-[8rem] relative mx-2 mt-8 text-[#25324B]">
             {/* heading */}
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
             <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
