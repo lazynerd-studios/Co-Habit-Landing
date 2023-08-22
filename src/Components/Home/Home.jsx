@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 
 import Left from "../../assets/left.svg"
 import Right from "../../assets/right.svg"
