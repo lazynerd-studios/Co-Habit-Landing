@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-white fixed -mt-1 z-20">
-      <div className="navbar-start laptop:ml-[2.2rem]">
+      <div className="navbar-start laptop:ml-[6.2rem]">
         <a>
           <img className="logo" src={CoHabit} alt="web Logo" />
         </a>
