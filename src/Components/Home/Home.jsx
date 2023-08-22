@@ -69,11 +69,11 @@ const Home = () => {
               </span>
 
               <div className="laptop:flex mt-8">
-                <span className="">
+                <span className="mb-6">
                   <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
-                  <Link to="footer">
-                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] absolute -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
-                  </Link>
+                  <a href="#footer">
+                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
+                  </a>
                 </span>
 
                 {/* full search bar */}
