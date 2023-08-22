@@ -25,7 +25,7 @@ const Navbar = () => {
                 <NavLink to={item.path} className={({ isActive }) =>
                   isActive ? 'flex min-w-max rounded-none mx-2 pb-[0.3rem] border-b-[3px] px-1 border-[#010886]' : 'font-medium min-w-max px-1 mx-2'
                 }>
-                  <span className="">{item.title}</span>
+                  <span className={item.className}>{item.title}</span>
                 </NavLink>
               </li>
             );

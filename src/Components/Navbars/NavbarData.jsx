@@ -4,19 +4,19 @@ export const NavbarData = [
   {
     title: "Home",
     path: "/",
-    className: "nav-text",
+    className: "",
   },
 
   {
     title: "About Us",
     path: "/about-us",
-    className: "nav-text",
+    className: "",
   },
 
   {
     title: "Listing",
     path: "/listing",
-    className: "nav-text",
+    className: "",
   },
 
   {
