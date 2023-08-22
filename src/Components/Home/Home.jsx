@@ -54,7 +54,7 @@ const Home = () => {
         <div className="hero min-h-screen bg-[#f8f8fd]">
           {/* hero section */}
           <div className="hero-content text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
-            <div className="w-auto laptop:mt-[5rem]">
+            <div className="w-auto laptop:mt-[7rem]">
               <h1 className="laptop:text-[3.125rem] text-[2.125rem] laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
                 FIND YOUR PERFECT
               </h1>
@@ -63,7 +63,7 @@ const Home = () => {
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
                 </span>
-                <h1 className="mx-auto laptop:text-[3rem] text-[2rem] font-bold laptop:leading-[3.4375rem] text-[#010886]">
+                <h1 className="mx-auto laptop:text-[3rem] text-[2rem] laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
               </span>
