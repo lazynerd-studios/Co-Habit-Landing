@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-white fixed -mt-1 z-20">
-      <div className="navbar-start laptop:ml-[6.2rem]">
+      <div className="navbar-start laptop:ml-[6.5rem]">
         <a>
           <img className="logo" src={CoHabit} alt="web Logo" />
         </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <li key={index} className="">
                   {/* "flex min-w-max p-4" */}
                   <NavLink to={item.path} className={({ isActive }) =>
-                    isActive ? 'flex min-w-max rounded-none focus:bg-white p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none focus:bg-white min-w-max py-2 px-2'
+                    isActive ? 'flex min-w-max rounded-none font-semibold focus:bg-white p-2 border-b-[3px] border-[#305D96]' : 'flex rounded-none focus:bg-white min-w-max py-2 px-2'
                   }>
                     <span className="">{item.title}</span>
                   </NavLink>
@@ -63,8 +63,17 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* <Link to="/login" className="btn bg-white hover:bg-white border-none -mr-1 normal-case text-[#010886]">
+        Login
+      </Link>
+      <img src={Line} className="ml-0 mr-2" alt="line" />
+      <Link to="/signup" className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+        Sign Up
+      </Link> */}
+
+
       <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
-        <a className="btn bg-white hover:bg-white border-none -mr-1 normal-case text-[#010886]">Login</a>
+        <a className="btn bg-white hover:bg-white border-none mr-[0.009rem] normal-case text-[#010886]">Login</a>
         <img src={Line} className="ml-0 mr-2" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
       </div>
