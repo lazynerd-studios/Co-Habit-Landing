@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showNav, setshowNav] = useState(false)
 
   return (
-    <div className="navbar bg-white fixed -mt-1 z-20">
+    <div className="navbar bg-white border-b-2 fixed -mt-1 z-20">
       <div className="navbar-start laptop:ml-[6.5rem]">
         <a>
           <img className="logo" src={CoHabit} alt="web Logo" />
