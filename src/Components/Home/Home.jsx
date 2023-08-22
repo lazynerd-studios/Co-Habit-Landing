@@ -164,7 +164,7 @@ const Home = () => {
 
               {/* styled rectangle 2 */}
               <div className="laptop:relative">
-                <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
                   overall maintenance of the house and the <br className="laptop:flex hidden" />
@@ -187,7 +187,7 @@ const Home = () => {
 
               {/* styled rectangle 3 */}
               <div className="laptop:relative">
-                <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
                   overall maintenance of the house and the <br className="laptop:flex hidden" />
