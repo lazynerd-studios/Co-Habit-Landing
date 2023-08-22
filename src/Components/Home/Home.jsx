@@ -132,6 +132,7 @@ const Home = () => {
 
             {/* text-in-shapes */}
             <div className="laptop:flex">
+              {/* styled rectangle 1 */}
               <div className="">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
@@ -150,9 +151,12 @@ const Home = () => {
                 <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[4.5%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
+              {/* end of styled rectangle 1 */}
 
+              {/* arrow up */}
               <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" />
 
+              {/* styled rectangle 2 */}
               <div className="">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
@@ -172,8 +176,10 @@ const Home = () => {
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
 
+              {/* arrow up */}
               <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" />
 
+              {/* styled rectangle 3 */}
               <div className="">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
@@ -193,7 +199,9 @@ const Home = () => {
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
             </div>
+
           </div>
+
         </div>
         {/* end of 'how it works' */}
 
