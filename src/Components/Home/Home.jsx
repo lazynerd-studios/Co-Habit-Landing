@@ -71,7 +71,7 @@ const Home = () => {
               <div className="laptop:flex mt-8">
                 <span className="mb-6">
                   <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
-                  <a href="#footer">
+                  <a href="#reviews">
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
                   </a>
                 </span>
@@ -467,7 +467,7 @@ const Home = () => {
         {/* end of 'find by location' */}
 
         {/* good reviews by customers */}
-        <div className="w-auto bg-[#DF802633] mt-8 pb-8">
+        <div id="reviews" className="w-auto bg-[#DF802633] mt-8 pb-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Good Reviews By Customers
