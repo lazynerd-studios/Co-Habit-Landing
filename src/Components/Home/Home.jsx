@@ -127,8 +127,8 @@ const Home = () => {
         </div>
 
         {/* how it works */}
-        <div className="w-auto bg-white my-8 relative">
-          <div className="laptop:mx-[8rem] relative mx-2 mt-8 text-[#25324B]">
+        <div className="w-auto bg-white my-8">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             {/* heading */}
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
             <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
@@ -139,12 +139,12 @@ const Home = () => {
             {/* text-in-shapes */}
             <div className="laptop:flex">
               {/* styled rectangle 1 */}
-              <div className="">
-                <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
-                  The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
-                  for and professionally managed. The <br className="laptop:flex hidden" />
-                  overall maintenance of the house and the <br className="laptop:flex hidden" />
-                  surrounding landscape reflected a high <br className="laptop:flex hidden" />
+              <div className="laptop:relative">
+                <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                  The apartment appeared to be well-cared-
+                  for and professionally managed. The
+                  overall maintenance of the house and the
+                  surrounding landscape reflected a high
                   level of attention to detail.
                 </p>
                 <h2 className="absolute w-auto ml-[3.5rem] mt-[6.3rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
@@ -163,7 +163,7 @@ const Home = () => {
               <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" />
 
               {/* styled rectangle 2 */}
-              <div className="">
+              <div className="laptop:relative">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
@@ -186,7 +186,7 @@ const Home = () => {
               <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" />
 
               {/* styled rectangle 3 */}
-              <div className="">
+              <div className="laptop:relative">
                 <p className="absolute w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
