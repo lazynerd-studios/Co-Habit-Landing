@@ -71,9 +71,9 @@ const Home = () => {
               <div className="laptop:flex mt-8">
                 <span className="">
                   <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
-                  <a href="" className="">
-                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] absolute -mt-[5.9rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
-                  </a>
+                  <Link to="footer">
+                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] absolute -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
+                  </Link>
                 </span>
 
                 {/* full search bar */}
