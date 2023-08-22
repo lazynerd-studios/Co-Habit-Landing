@@ -178,7 +178,7 @@ const Home = () => {
                   2
                 </p>
                 <img src={Users} className="absolute laptop:w-[3rem] w-[10%] ml-[3.5rem] mt-[3.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
-                <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[4.5%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
+                <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[19.3%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
               </div>
 
