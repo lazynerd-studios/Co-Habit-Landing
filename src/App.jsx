@@ -10,6 +10,8 @@ import HomePage from "./Pages/HomePage";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ContactPage from "./Pages/ContactPage";
 import ListingsPage from "./Pages/ListingsPage";
+import LoginPage from "./Pages/LoginPage";
+import SignUpPage from "./Pages/SignUpPage";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -19,6 +21,8 @@ export default function App() {
         <Route path="/listing" element={<ListingsPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUpPage />} />
       </Route>
     )
   );
