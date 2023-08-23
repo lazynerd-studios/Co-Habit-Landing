@@ -13,6 +13,7 @@ import BedIcon from "../../assets/u_bed-double.svg"
 import Line from "../../assets/Line 9.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
+import "./styles.css"
 
 
 const animationConfiguration = {
@@ -37,7 +38,7 @@ const Listings = () => {
         transition={{ duration: 3 }}
       >
         {/* bg-[#f8f8fd] */}
-        <div className="hero laptop:min-h-[screen] min-h-screen bg-header-image laptop:bg-contain bg-contain">
+        <div className="hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain">
 
           <div className="laptop:mt-0 laptop:mx-[2rem]">
 
