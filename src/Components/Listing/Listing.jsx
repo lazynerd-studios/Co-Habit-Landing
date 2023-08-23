@@ -8,6 +8,10 @@ import { BsChevronDown } from "react-icons/bs";
 import Scribble from "../../assets/scribble-lines.svg"
 import DivideLine from "../../assets/line-Divider.png"
 import Bungalow1 from "../../assets/bungalow-1.png"
+import BathIcon from "../../assets/u_bath.svg"
+import BedIcon from "../../assets/u_bed-double.svg"
+import Line from "../../assets/Line 9.svg"
+import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
 
 
@@ -403,8 +407,8 @@ const Listings = () => {
 
 
           {/* all property */}
-          <div className="">
-            <p className="text-[#25324B] font-bold text-[1.5rem] leading-[1.8rem]">
+          <div className="laptop:px-8 px-0 -mx-4">
+            <p className="text-[#25324B] mb-4 font-bold text-[1.5rem] leading-[1.8rem]">
               All Property
             </p>
             <span className="flex laptop:justify-between w-full">
@@ -462,11 +466,11 @@ const Listings = () => {
               </span>
             </span>
 
-            <div className="laptop:flex block gap-4">
+            <div class="grid grid-cols-1 gap-4 laptop:grid-cols-3 laptop:gap-8">
               {/* 01 */}
-              <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow1} className=" w-auto" alt="bungalow-1" />
-                <span className="flex mt-4 mx-3  gap-[7.8rem]">
+              <div class=" border-2 rounded-[1rem]">
+                <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
+                <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
                   </p>
@@ -475,7 +479,7 @@ const Listings = () => {
                   </p>
                 </span>
 
-                <span className="flex laptop:gap-4 gap-[0.125rem] mt-4 mx-2">
+                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
                   <span className="mx-1 flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
@@ -490,30 +494,100 @@ const Listings = () => {
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.measurement}
-                    </p>
-                  </span>
                 </span>
 
-                <img src={Line} className="mt-5 mb-4" alt="line" />
+                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
-                  <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                    View
-                  </a>
                 </span>
               </div>
               {/* end of 01 */}
 
               {/* 02 */}
+              <div class=" border-2 rounded-[1rem]">
+                <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
+                <span className="flex mt-2 mx-3 justify-between">
+                  <p className="text-[1rem]">
+                    {currentSlide.house}
+                  </p>
+                  <p className="text-[1rem] text-[#010886] font-bold">
+                    {currentSlide.price}
+                  </p>
+                </span>
+
+                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
+                  <span className="mx-1 flex">
+                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.rooms}
+                    </p>
+                  </span>
+
+                  <span className="mx-1 flex">
+                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.baths}
+                    </p>
+                  </span>
+
+                </span>
+
+                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
+
+                <span className="flex">
+                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
+                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                    {currentSlide.area}
+                  </p>
+                </span>
+              </div>
               {/* end of 02 */}
+
+              {/* 03 */}
+              <div class=" border-2 rounded-[1rem]">
+                <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
+                <span className="flex mt-2 mx-3 justify-between">
+                  <p className="text-[1rem]">
+                    {currentSlide.house}
+                  </p>
+                  <p className="text-[1rem] text-[#010886] font-bold">
+                    {currentSlide.price}
+                  </p>
+                </span>
+
+                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
+                  <span className="mx-1 flex">
+                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.rooms}
+                    </p>
+                  </span>
+
+                  <span className="mx-1 flex">
+                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.baths}
+                    </p>
+                  </span>
+
+                </span>
+
+                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
+
+                <span className="flex">
+                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
+                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                    {currentSlide.area}
+                  </p>
+                </span>
+              </div>
+              {/* end of 03 */}
+
+
             </div>
           </div>
           {/* end of all property */}
