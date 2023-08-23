@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { BiSearch } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
@@ -8,6 +8,7 @@ import { BsChevronDown } from "react-icons/bs";
 import Scribble from "../../assets/scribble-lines.svg"
 import DivideLine from "../../assets/line-Divider.png"
 import Bungalow1 from "../../assets/bungalow-1.png"
+import { slides } from "../Slideshow/slides";
 
 
 const animationConfiguration = {
@@ -18,6 +19,7 @@ const animationConfiguration = {
 
 
 const Listings = () => {
+  const [index, setIndex] = useState(0);
   const currentSlide = slides[index];
 
 
