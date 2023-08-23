@@ -12,4 +12,11 @@ z-index: 10;
 cursor: pointer;
 color: black;
 transform: scale(2);
+  @media (max-width: 768px) {
+width: 35px;
+height: 13.5%;
+right: -8px;
+bottom: 10px;
+/* color: pink; */
+  }
 `
