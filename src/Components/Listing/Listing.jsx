@@ -115,84 +115,325 @@ const Listings = () => {
 
         {/* listings */}
         <div className="bg-white p-8 w-full">
+
           {/* sidebar */}
-          <div>
-            <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
-              <p className="">
-                Property Type
-              </p>
-              <span className="px-12 py-1">
-                <BsChevronUp />
-              </span>
-            </span>
-
-            <form className=''>
-              <span className='block'>
-                <input type="checkbox"
-                  id="apartment"
-                  name=""
-                  value=""
-                  size={30}
-                  className="" />
-                <label for="apartment"
-                  className="text-[#515B6F] px-4">
-                  Apartment (7,997)
-                </label>
+          <div className=''>
+            {/* 01 */}
+            <section className=''>
+              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+                <p className="">
+                  Property Type
+                </p>
+                <span className="px-12 py-1">
+                  <BsChevronUp />
+                </span>
               </span>
 
-              <span className='block'>
-                <input type="checkbox"
-                  id="apartment"
-                  name=""
-                  value=""
-                  size={30}
-                  className="" />
-                <label for="apartment"
-                  className="text-[#515B6F] px-4">
-                  Duplex (5)
-                </label>
+              <form className=''>
+                <span className='block'>
+                  <input type="checkbox"
+                    id="apartment"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="apartment"
+                    className="text-[#515B6F] px-4">
+                    Apartment (7,997)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="duplex"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="duplex"
+                    className="text-[#515B6F] px-4">
+                    Duplex (5)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="mini-flat"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="mini-flat"
+                    className="text-[#515B6F] px-4">
+                    Mini-Flat(2)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="bungalow"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="bungalow"
+                    className="text-[#515B6F] px-4">
+                    Bungalow (24)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="workspace"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="workspace"
+                    className="text-[#515B6F] px-4">
+                    Workspace (3)
+                  </label>
+                </span>
+              </form>
+            </section>
+
+            {/* 02 */}
+            <section className=''>
+              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+                <p className="">
+                  Property Type
+                </p>
+                <span className="px-12 py-1">
+                  <BsChevronUp />
+                </span>
               </span>
 
-              <span className='block'>
-                <input type="checkbox"
-                  id="apartment"
-                  name=""
-                  value=""
-                  size={30}
-                  className="" />
-                <label for="apartment"
-                  className="text-[#515B6F] px-4">
-                  Mini-Flat(2)
-                </label>
+              <form className=''>
+                <span className='block'>
+                  <input type="checkbox"
+                    id="apartment"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="apartment"
+                    className="text-[#515B6F] px-4">
+                    Apartment (7,997)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="duplex"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="duplex"
+                    className="text-[#515B6F] px-4">
+                    Duplex (5)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="mini-flat"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="mini-flat"
+                    className="text-[#515B6F] px-4">
+                    Mini-Flat(2)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="bungalow"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="bungalow"
+                    className="text-[#515B6F] px-4">
+                    Bungalow (24)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="workspace"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="workspace"
+                    className="text-[#515B6F] px-4">
+                    Workspace (3)
+                  </label>
+                </span>
+              </form>
+            </section>
+
+            {/* 03 */}
+            <section className=''>
+              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+                <p className="">
+                  Property Type
+                </p>
+                <span className="px-12 py-1">
+                  <BsChevronUp />
+                </span>
               </span>
 
-              <span className='block'>
-                <input type="checkbox"
-                  id="bungalow"
-                  name=""
-                  value=""
-                  size={30}
-                  className="" />
-                <label for="bungalow"
-                  className="text-[#515B6F] px-4">
-                  Bungalow (24)
-                </label>
+              <form className=''>
+                <span className='block'>
+                  <input type="checkbox"
+                    id="apartment"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="apartment"
+                    className="text-[#515B6F] px-4">
+                    Apartment (7,997)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="duplex"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="duplex"
+                    className="text-[#515B6F] px-4">
+                    Duplex (5)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="mini-flat"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="mini-flat"
+                    className="text-[#515B6F] px-4">
+                    Mini-Flat(2)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="bungalow"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="bungalow"
+                    className="text-[#515B6F] px-4">
+                    Bungalow (24)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="workspace"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="workspace"
+                    className="text-[#515B6F] px-4">
+                    Workspace (3)
+                  </label>
+                </span>
+              </form>
+            </section>
+
+            {/* 04 */}
+            <section className=''>
+              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+                <p className="">
+                  Property Type
+                </p>
+                <span className="px-12 py-1">
+                  <BsChevronUp />
+                </span>
               </span>
 
-              <span className='block'>
-                <input type="checkbox"
-                  id="workspace"
-                  name=""
-                  value=""
-                  size={30}
-                  className="" />
-                <label for="workspace"
-                  className="text-[#515B6F] px-4">
-                  Workspace (3)
-                </label>
-              </span>
+              <form className=''>
+                <span className='block'>
+                  <input type="checkbox"
+                    id="apartment"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="apartment"
+                    className="text-[#515B6F] px-4">
+                    Apartment (7,997)
+                  </label>
+                </span>
 
-            </form>
+                <span className='block'>
+                  <input type="checkbox"
+                    id="duplex"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="duplex"
+                    className="text-[#515B6F] px-4">
+                    Duplex (5)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="mini-flat"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="mini-flat"
+                    className="text-[#515B6F] px-4">
+                    Mini-Flat(2)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="bungalow"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="bungalow"
+                    className="text-[#515B6F] px-4">
+                    Bungalow (24)
+                  </label>
+                </span>
+
+                <span className='block'>
+                  <input type="checkbox"
+                    id="workspace"
+                    name=""
+                    value=""
+                    size={30}
+                    className="" />
+                  <label for="workspace"
+                    className="text-[#515B6F] px-4">
+                    Workspace (3)
+                  </label>
+                </span>
+              </form>
+            </section>
+
           </div>
           {/* end of sidebar */}
 
