@@ -1,5 +1,5 @@
 import React from "react";
-import Bungalow1 from "../../assets/bungalow-1.png";
+import Bungalow1 from "../../assets/Bungalow 01.png";
 import Bungalow2 from "../../assets/bungalow-2.png";
 import Bungalow3 from "../../assets/bungalow-3.png";
 
@@ -11,7 +11,7 @@ export const slides = [
         measurement: "1200sqft",
         rooms: "2 Rooms",
         baths: "2 Baths",
-        area: "Surulere, Lagos"
+        area: "Surulere, Mainland"
     },
     {
         image: Bungalow2,
