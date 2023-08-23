@@ -132,8 +132,8 @@ const Listings = () => {
           {/* sidebar */}
           <div className='laptop:block min-w-fit hidden'>
             {/* 01 */}
-            <section className=''>
-              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
+            <section className='mb-10'>
+              <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Property Type
                 </p>
@@ -211,8 +211,8 @@ const Listings = () => {
             </section>
 
             {/* 02 */}
-            <section className=''>
-              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
+            <section className='mb-10'>
+              <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Location
                 </p>
@@ -252,8 +252,8 @@ const Listings = () => {
             </section>
 
             {/* 03 */}
-            <section className=''>
-              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
+            <section className='mb-10'>
+              <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Areas
                 </p>
@@ -333,8 +333,8 @@ const Listings = () => {
             </section>
 
             {/* 04 */}
-            <section className=''>
-              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
+            <section className='mb-10'>
+              <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Budget
                 </p>
@@ -916,8 +916,8 @@ const Listings = () => {
 
 
 
-      </motion.div>
-    </section>
+      </motion.div >
+    </section >
   )
 }
 
