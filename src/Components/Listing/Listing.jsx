@@ -130,10 +130,10 @@ const Listings = () => {
         <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
           {/* sidebar */}
-          <div className='laptop:block  hidden'>
+          <div className='laptop:block min-w-fit hidden'>
             {/* 01 */}
             <section className=''>
-              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Property Type
                 </p>
@@ -212,7 +212,7 @@ const Listings = () => {
 
             {/* 02 */}
             <section className=''>
-              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Location
                 </p>
@@ -253,7 +253,7 @@ const Listings = () => {
 
             {/* 03 */}
             <section className=''>
-              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Areas
                 </p>
@@ -334,7 +334,7 @@ const Listings = () => {
 
             {/* 04 */}
             <section className=''>
-              <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
+              <span className="flex mb-6 font-semibold justify-between text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Budget
                 </p>
@@ -407,7 +407,7 @@ const Listings = () => {
 
 
           {/* all property */}
-          <div className="laptop:px px-0  laptop:ml-10 mx-0">
+          <div className="laptop:px px-0 tablet:mx-auto  laptop:ml-10 mx-0">
             <p className="text-[#25324B] mb-4 font-bold text-[1.5rem] leading-[1.8rem]">
               All Property
             </p>
