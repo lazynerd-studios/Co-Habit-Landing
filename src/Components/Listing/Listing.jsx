@@ -7,6 +7,7 @@ import { BsChevronUp } from "react-icons/bs";
 import { BsChevronDown } from "react-icons/bs";
 import Scribble from "../../assets/scribble-lines.svg"
 import DivideLine from "../../assets/line-Divider.png"
+import Bungalow1 from "../../assets/bungalow-1.png"
 
 
 const animationConfiguration = {
@@ -17,6 +18,9 @@ const animationConfiguration = {
 
 
 const Listings = () => {
+  const currentSlide = slides[index];
+
+
   return (
     <section className=''>
       <motion.div
@@ -120,7 +124,7 @@ const Listings = () => {
         <div className="bg-white flex p-8 w-full">
 
           {/* sidebar */}
-          <div className='laptop:block'>
+          <div className='laptop:block  hidden'>
             {/* 01 */}
             <section className=''>
               <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
@@ -395,19 +399,20 @@ const Listings = () => {
           </div>
           {/* end of sidebar */}
 
+
           {/* all property */}
           <div className="">
             <p className="text-[#25324B] font-bold text-[1.5rem] leading-[1.8rem]">
               All Property
             </p>
-            <span className="flex justify-between w-full">
+            <span className="flex laptop:justify-between w-full">
               <p className="text-[#25324B] font-normal text-base leading-[1.6rem]">
                 Showing 73 results
               </p>
-              <p className="text-[#7C8493] font-normal text-base leading-[1.6rem]">
+              <p className="text-[#7C8493] ml-4 font-normal text-base leading-[1.6rem]">
                 Sort by:
               </p>
-              <select className="pr-4 px-1"
+              <select className="pr-4 px-1 font-medium text-[#25324B]"
                 name="search-filter">
                 <option className="" value='Most relevant'>
                   Most relevant
@@ -422,16 +427,10 @@ const Listings = () => {
                   Location
                 </option>
               </select>
-              {/* <p className="text-[#25324B] font-medium text-base leading-[1.6rem]">
-                Most relevant
-              </p>
-              <span className="py-1 px-2">
-                <BsChevronDown />
-              </span> */}
 
               {/* <img src={DivideLine} className="" alt='' /> */}
 
-              <span className="">
+              <span className="mx-2" title='Grid view'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clip-path="url(#clip0_1014_972)">
                     <path d="M9 4.49998H5C4.44772 4.49998 4 4.9477 4 5.49998V9.49998C4 10.0523 4.44772 10.5 5 10.5H9C9.55228 10.5 10 10.0523 10 9.49998V5.49998C10 4.9477 9.55228 4.49998 9 4.49998Z" fill="#010886" stroke="#010886" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -446,7 +445,7 @@ const Listings = () => {
                   </defs>
                 </svg>
               </span>
-              <span>
+              <span className="mx-2" title='List view'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g opacity="0.5" clip-path="url(#clip0_1014_854)">
                     <path d="M18 4.49998H6C4.89543 4.49998 4 5.39542 4 6.49998V8.49998C4 9.60455 4.89543 10.5 6 10.5H18C19.1046 10.5 20 9.60455 20 8.49998V6.49998C20 5.39542 19.1046 4.49998 18 4.49998Z" stroke="#515B6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -461,8 +460,58 @@ const Listings = () => {
               </span>
             </span>
 
-            <div className="">
+            <div className="laptop:flex block gap-4">
+              {/* 01 */}
+              <div className="slide bg-white p-0 rounded-[1rem]">
+                <img src={Bungalow1} className=" w-auto" alt="bungalow-1" />
+                <span className="flex mt-4 mx-3  gap-[7.8rem]">
+                  <p className="text-[1rem]">
+                    {currentSlide.house}
+                  </p>
+                  <p className="text-[1rem] text-[#010886] font-bold">
+                    {currentSlide.price}
+                  </p>
+                </span>
 
+                <span className="flex laptop:gap-4 gap-[0.125rem] mt-4 mx-2">
+                  <span className="mx-1 flex">
+                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.rooms}
+                    </p>
+                  </span>
+
+                  <span className="mx-1 flex">
+                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.baths}
+                    </p>
+                  </span>
+
+                  <span className="mx-1 flex">
+                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                      {currentSlide.measurement}
+                    </p>
+                  </span>
+                </span>
+
+                <img src={Line} className="mt-5 mb-4" alt="line" />
+
+                <span className="flex">
+                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] opacity-50" alt="location-pin" />
+                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                    {currentSlide.area}
+                  </p>
+                  <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                    View
+                  </a>
+                </span>
+              </div>
+              {/* end of 01 */}
+
+              {/* 02 */}
+              {/* end of 02 */}
             </div>
           </div>
           {/* end of all property */}
