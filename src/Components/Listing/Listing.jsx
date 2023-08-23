@@ -24,7 +24,9 @@ const Listings = () => {
         exit="exit"
         transition={{ duration: 3 }}
       >
-        <div className="hero laptop:min-h-[screen] min-h-screen bg-[#f8f8fd]">
+        {/* bg-[#f8f8fd] */}
+        <div className="hero laptop:min-h-[screen] min-h-screen bg-[url(https://placekitten.com/1400)] 
+bg-no-repeat">
 
           <div className="laptop:mt-0 laptop:mx-[8rem]">
 
