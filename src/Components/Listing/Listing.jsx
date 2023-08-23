@@ -38,7 +38,7 @@ const Listings = () => {
                     Shared Apartment
                   </span>
                   <img src={Scribble}
-                    className='absolute laptop:mx-[18rem] mx-8 laptop:w-auto w-[80%]'
+                    className='absolute laptop:mx-[26rem] mx-8 laptop:w-auto w-[80%]'
                     alt='scribble-lines' />
                 </span>
               </h1>
@@ -106,7 +106,7 @@ const Listings = () => {
             </div>
             {/* end of search */}
 
-            <p className="text-[#515B6F] py-4 mx-5">
+            <p className="text-[#515B6F] py-4 mx-1">
               Popular : Apartment, Bungalow, 2 Bedroom
             </p>
           </div>
@@ -117,19 +117,19 @@ const Listings = () => {
         <div className="bg-white p-8 w-full">
 
           {/* sidebar */}
-          <div className=''>
+          <div className='laptop:block flex'>
             {/* 01 */}
             <section className=''>
               <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
                 <p className="">
                   Property Type
                 </p>
-                <span className="px-12 py-1">
+                <span className="py-1">
                   <BsChevronUp />
                 </span>
               </span>
 
-              <form className=''>
+              <form className='select-none'>
                 <span className='block'>
                   <input type="checkbox"
                     id="apartment"
@@ -201,76 +201,38 @@ const Listings = () => {
             <section className=''>
               <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
                 <p className="">
-                  Property Type
+                  Location
                 </p>
-                <span className="px-12 py-1">
+                <span className="py-1">
                   <BsChevronUp />
                 </span>
               </span>
 
-              <form className=''>
+              <form className='select-none'>
                 <span className='block'>
                   <input type="checkbox"
-                    id="apartment"
+                    id="abuja"
                     name=""
                     value=""
                     size={30}
-                    className="" />
-                  <label for="apartment"
+                    className=""
+                    checked />
+                  <label for="abuja"
                     className="text-[#515B6F] px-4">
-                    Apartment (7,997)
+                    Abuja(24)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="duplex"
+                    id="lagos"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="duplex"
+                  <label for="lagos"
                     className="text-[#515B6F] px-4">
-                    Duplex (5)
-                  </label>
-                </span>
-
-                <span className='block'>
-                  <input type="checkbox"
-                    id="mini-flat"
-                    name=""
-                    value=""
-                    size={30}
-                    className="" />
-                  <label for="mini-flat"
-                    className="text-[#515B6F] px-4">
-                    Mini-Flat(2)
-                  </label>
-                </span>
-
-                <span className='block'>
-                  <input type="checkbox"
-                    id="bungalow"
-                    name=""
-                    value=""
-                    size={30}
-                    className="" />
-                  <label for="bungalow"
-                    className="text-[#515B6F] px-4">
-                    Bungalow (24)
-                  </label>
-                </span>
-
-                <span className='block'>
-                  <input type="checkbox"
-                    id="workspace"
-                    name=""
-                    value=""
-                    size={30}
-                    className="" />
-                  <label for="workspace"
-                    className="text-[#515B6F] px-4">
-                    Workspace (3)
+                    Lagos(3)
                   </label>
                 </span>
               </form>
@@ -280,76 +242,78 @@ const Listings = () => {
             <section className=''>
               <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
                 <p className="">
-                  Property Type
+                  Areas
                 </p>
-                <span className="px-12 py-1">
+                <span className="py-1">
                   <BsChevronUp />
                 </span>
               </span>
 
-              <form className=''>
+              <form className='select-none'>
                 <span className='block'>
                   <input type="checkbox"
-                    id="apartment"
+                    id="abaji"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="apartment"
+                  <label for="abaji"
                     className="text-[#515B6F] px-4">
-                    Apartment (7,997)
+                    Abaji (57)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="duplex"
+                    id="bwari"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="duplex"
+                  <label for="bwari"
                     className="text-[#515B6F] px-4">
-                    Duplex (5)
+                    Bwari (3)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="mini-flat"
+                    id="Gwagwalada"
                     name=""
                     value=""
                     size={30}
-                    className="" />
-                  <label for="mini-flat"
+                    className=""
+                  />
+                  <label for="Gwagwalada"
                     className="text-[#515B6F] px-4">
-                    Mini-Flat(2)
+                    Gwagwalada(5)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="bungalow"
+                    id="kuje"
                     name=""
                     value=""
                     size={30}
-                    className="" />
-                  <label for="bungalow"
+                    className=""
+                    checked />
+                  <label for="kuje"
                     className="text-[#515B6F] px-4">
-                    Bungalow (24)
+                    Kuje (12)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="workspace"
+                    id="kwali"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="workspace"
+                  <label for="kwali"
                     className="text-[#515B6F] px-4">
-                    Workspace (3)
+                    Kwali (8)
                   </label>
                 </span>
               </form>
@@ -359,77 +323,69 @@ const Listings = () => {
             <section className=''>
               <span className="flex mb-6 font-semibold text-[1rem] leading-[1.6rem]">
                 <p className="">
-                  Property Type
+                  Budget
                 </p>
-                <span className="px-12 py-1">
+                <span className="py-1">
                   <BsChevronUp />
                 </span>
               </span>
 
-              <form className=''>
+              <form className='select-none'>
                 <span className='block'>
                   <input type="checkbox"
-                    id="apartment"
+                    id="100-500k"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="apartment"
+                  <label for="100-500k"
                     className="text-[#515B6F] px-4">
-                    Apartment (7,997)
+                    100k -500k (4)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="duplex"
+                    id="600-900k"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="duplex"
+                  <label for="600-900k"
                     className="text-[#515B6F] px-4">
-                    Duplex (5)
+                    600 - 900k (6)
                   </label>
                 </span>
 
                 <span className='block'>
                   <input type="checkbox"
-                    id="mini-flat"
+                    id="1-2m"
                     name=""
                     value=""
                     size={30}
                     className="" />
-                  <label for="mini-flat"
+                  <label for="1-2m"
                     className="text-[#515B6F] px-4">
-                    Mini-Flat(2)
+                    1m - 2m (10)
                   </label>
                 </span>
 
                 <span className='block'>
-                  <input type="checkbox"
-                    id="bungalow"
+                  {/* <input type="checkbox"
+                    id="3m-above"
                     name=""
                     value=""
                     size={30}
-                    className="" />
-                  <label for="bungalow"
-                    className="text-[#515B6F] px-4">
-                    Bungalow (24)
-                  </label>
-                </span>
+                    className=" checked:bg-[#010886]"
+                    checked
+                  />
 
-                <span className='block'>
-                  <input type="checkbox"
-                    id="workspace"
-                    name=""
-                    value=""
-                    size={30}
-                    className="" />
-                  <label for="workspace"
+                  <label for="3m-above"
                     className="text-[#515B6F] px-4">
-                    Workspace (3)
-                  </label>
+                    3m or above (4)
+                  </label> */}
+                  <input id="vue-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-blue-800 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-900 dark:border-blue-500" />
+                  <label for="vue-checkbox-list" class="w-full py-3 ml-2 text-sm font-semibold text-black dark:text-black">Vue JS</label>
                 </span>
               </form>
             </section>
@@ -440,8 +396,6 @@ const Listings = () => {
 
         </div>
         {/* end of listings */}
-
-
 
 
 
