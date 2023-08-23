@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    backgroundImage: {
+      'header-image': 'url(https://placekitten.com/1400)'
+    },
     screens: {
       'smaller': '350px',
       // formerly 450
