@@ -407,13 +407,30 @@ const Listings = () => {
               <p className="text-[#7C8493] font-normal text-base leading-[1.6rem]">
                 Sort by:
               </p>
-              <p className="text-[#25324B] font-medium text-base leading-[1.6rem]">
+              <select className="pr-4 px-1"
+                name="search-filter">
+                <option className="" value='Most relevant'>
+                  Most relevant
+                </option>
+                <option className="" value='Least relevant'>
+                  Least relevant
+                </option>
+                <option className="" value='most relevant'>
+                  Budget
+                </option>
+                <option className="" value='most relevant'>
+                  Location
+                </option>
+              </select>
+              {/* <p className="text-[#25324B] font-medium text-base leading-[1.6rem]">
                 Most relevant
               </p>
               <span className="py-1 px-2">
                 <BsChevronDown />
-              </span>
-              <img src={DivideLine} className="" alt='' />
+              </span> */}
+
+              {/* <img src={DivideLine} className="" alt='' /> */}
+
               <span className="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                   <g clip-path="url(#clip0_1014_972)">
