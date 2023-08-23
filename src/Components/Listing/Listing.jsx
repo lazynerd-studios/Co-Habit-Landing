@@ -844,7 +844,7 @@ const Listings = () => {
           <li>
             <a
               href="#"
-              className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
+              className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
             >
               <span className="sr-only">Prev Page</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -869,14 +869,14 @@ const Listings = () => {
           </li>
 
           <li
-            className="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
           >
             2
           </li>
 
           <li>
             <a
-              className="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
             >
               3
             </a>
@@ -884,7 +884,7 @@ const Listings = () => {
 
           <li>
             <a
-              className="block h-8 w-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900"
+              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
             >
               4
             </a>
@@ -892,7 +892,31 @@ const Listings = () => {
 
           <li>
             <a
-              className="inline-flex h-8 w-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180"
+              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
+            >
+              5
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
+            >
+              ...
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
+            >
+              33
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
             >
               <span className="sr-only">Next Page</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
