@@ -2,7 +2,7 @@ import React from "react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Route, BrowserRouter,
+  Route,
   RouterProvider,
 } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
