@@ -12,7 +12,7 @@ import ContactPage from "./Pages/ContactPage";
 import ListingsPage from "./Pages/ListingsPage";
 import LoginPage from "./Pages/LoginPage";
 import SignUpPage from "./Pages/SignUpPage";
-import NotFoundPage from "./Components/404 Page/NotFoundPage";
+// import NotFoundPage from "./Components/404 Page/NotFoundPage";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -24,7 +24,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignUpPage />} />
-        <Route component={<NotFoundPage />} />
+        {/* <Route component={<NotFoundPage />} /> */}
       </Route>
     )
   );
