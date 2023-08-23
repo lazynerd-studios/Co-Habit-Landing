@@ -134,7 +134,7 @@ const Listings = () => {
             {/* 01 */}
             <section className='mb-10'>
               <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
-                <p className="">
+                <p className="mb-5">
                   Property Type
                 </p>
                 <span className="py-1">
@@ -143,7 +143,7 @@ const Listings = () => {
               </span>
 
               <form className='select-none'>
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="apartment"
                     name=""
@@ -156,7 +156,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="duplex"
                     name=""
@@ -169,7 +169,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="mini-flat"
                     name=""
@@ -182,7 +182,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="bungalow"
                     name=""
@@ -195,7 +195,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="workspace"
                     name=""
@@ -213,7 +213,7 @@ const Listings = () => {
             {/* 02 */}
             <section className='mb-10'>
               <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
-                <p className="">
+                <p className="mb-5">
                   Location
                 </p>
                 <span className="py-1">
@@ -222,7 +222,7 @@ const Listings = () => {
               </span>
 
               <form className='select-none'>
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="abuja"
                     name=""
@@ -236,7 +236,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="lagos"
                     name=""
@@ -254,7 +254,7 @@ const Listings = () => {
             {/* 03 */}
             <section className='mb-10'>
               <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
-                <p className="">
+                <p className="mb-5">
                   Areas
                 </p>
                 <span className="py-1">
@@ -263,7 +263,7 @@ const Listings = () => {
               </span>
 
               <form className='select-none'>
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="abaji"
                     name=""
@@ -276,7 +276,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="bwari"
                     name=""
@@ -289,7 +289,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="Gwagwalada"
                     name=""
@@ -303,7 +303,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="kuje"
                     name=""
@@ -317,7 +317,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="kwali"
                     name=""
@@ -335,7 +335,7 @@ const Listings = () => {
             {/* 04 */}
             <section className='mb-10'>
               <span className="flex font-semibold justify-between text-[1rem] leading-[1.6rem]">
-                <p className="">
+                <p className="mb-5">
                   Budget
                 </p>
                 <span className="py-1">
@@ -344,7 +344,7 @@ const Listings = () => {
               </span>
 
               <form className='select-none'>
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="100-500k"
                     name=""
@@ -357,7 +357,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="600-900k"
                     name=""
@@ -370,7 +370,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="1-2m"
                     name=""
@@ -383,7 +383,7 @@ const Listings = () => {
                   </label>
                 </span>
 
-                <span className='block'>
+                <span className='block mb-5'>
                   <input type="checkbox"
                     id="3m-above"
                     name=""
