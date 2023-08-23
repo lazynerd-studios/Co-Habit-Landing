@@ -466,7 +466,7 @@ const Listings = () => {
               </span>
             </span>
 
-            <div class="grid grid-cols-1 gap-4 laptop:grid-cols-3 laptop:gap-8">
+            <div class="grid grid-cols-1 gap-6 laptop:grid-cols-3 laptop:gap-8">
               {/* 01 */}
               <div class=" border-2 rounded-[1rem]">
                 <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
