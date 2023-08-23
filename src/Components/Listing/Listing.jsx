@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import Search from "../../assets/Search.svg"
+import { BiSearch } from 'react-icons/fa';
 import Location from "../../assets/Location.svg"
 import Scribble from "../../assets/scribble-lines.svg"
 
@@ -51,21 +52,26 @@ const Listings = () => {
 
 
           {/* search */}
-          <div className="w-auto mt-[] laptop: laptop:flex laptop:mx-[] laptop:w-auto rounded-md bg-white px-2 py-2 border-2 border-none">
+          <div className="mt-[] laptop: laptop:flex justify-between laptop:mx-[] rounded-md bg-white p-2 border-2 border-none">
             {/* laptop:w-[65%] laptop:mx-[5rem] */}
             <span className="flex">
-              <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" />
+
+              {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
+              <BiSearch />
+
               <input type="text"
-                className="border-b-[#7C8493] laptop:w-auto w-[77%] mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                className="border-b-[#7C8493] w-full  mr-[2rem] laptop:px-0 px-2 py-2 border-2 border-t-white border-x-white outline-none text-[#7C8493]"
                 placeholder="Apartment/Workspace"
                 autoComplete="true"
+                size={50}
               />
             </span>
 
             {/* location */}
             <span className="flex ">
               <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" />
-              <select className="laptop:w-full laptop:mr-[] w-[78%] p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+              <select
+                className="laptop:w-full laptop:mr-[] w-[78%] p-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                 name="Location">
                 <option className="py-4" value='Apartment/Workspace'>
                   Lagos/Abuja
