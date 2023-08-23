@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     backgroundImage: {
-      'header-image': 'url(https://placekitten.com/1400)'
+      // 'header-image': 'url(https://placekitten.com/1400)'
+      'header-image': 'url(../../src/assets/header-BG.png)'
     },
     screens: {
       'smaller': '350px',
