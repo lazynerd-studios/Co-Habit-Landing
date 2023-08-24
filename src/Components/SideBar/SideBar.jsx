@@ -54,7 +54,8 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
+
                                 <label for="apartment"
                                     className="text-[#515B6F] px-4">
                                     Apartment (7,997)
@@ -67,7 +68,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="duplex"
                                     className="text-[#515B6F] px-4">
                                     Duplex (5)
@@ -80,7 +81,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="mini-flat"
                                     className="text-[#515B6F] px-4">
                                     Mini-Flat(2)
@@ -93,7 +94,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="bungalow"
                                     className="text-[#515B6F] px-4">
                                     Bungalow (24)
@@ -106,7 +107,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="workspace"
                                     className="text-[#515B6F] px-4">
                                     Workspace (3)
@@ -144,8 +145,9 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className=""
-                                    checked />
+                                    className="w-4 h-4"
+                                />
+                                {/* checked */}
                                 <label for="abuja"
                                     className="text-[#515B6F] px-4">
                                     Abuja(24)
@@ -158,7 +160,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="lagos"
                                     className="text-[#515B6F] px-4">
                                     Lagos(3)
@@ -195,7 +197,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="abaji"
                                     className="text-[#515B6F] px-4">
                                     Abaji (57)
@@ -208,7 +210,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="bwari"
                                     className="text-[#515B6F] px-4">
                                     Bwari (3)
@@ -221,7 +223,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className=""
+                                    className="w-4 h-4"
                                 />
                                 <label for="Gwagwalada"
                                     className="text-[#515B6F] px-4">
@@ -235,8 +237,9 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className=""
-                                    checked />
+                                    className="w-4 h-4"
+                                />
+                                {/* checked */}
                                 <label for="kuje"
                                     className="text-[#515B6F] px-4">
                                     Kuje (12)
@@ -249,7 +252,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="kwali"
                                     className="text-[#515B6F] px-4">
                                     Kwali (8)
@@ -286,7 +289,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="100-500k"
                                     className="text-[#515B6F] px-4">
                                     100k -500k (4)
@@ -299,7 +302,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="600-900k"
                                     className="text-[#515B6F] px-4">
                                     600 - 900k (6)
@@ -312,7 +315,7 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className="" />
+                                    className="w-4 h-4" />
                                 <label for="1-2m"
                                     className="text-[#515B6F] px-4">
                                     1m - 2m (10)
@@ -325,8 +328,9 @@ export function SidebarWithContentSeparator() {
                                     name=""
                                     value=""
                                     size={30}
-                                    className=" checked:bg-[#010886]"
-                                    checked
+                                    className="w-4 h-4"
+
+                                // checked
                                 />
                                 <label for="3m-above"
                                     className="text-[#515B6F] px-4">
