@@ -14,7 +14,7 @@
 }
 
 .four_zero_four_bg {
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
     height: 400px;
     background-position: center;
@@ -38,5 +38,5 @@
 }
 
 .contant_box_404 {
-    margin-top: -50px;
+    margin-top: -20px;
 }
