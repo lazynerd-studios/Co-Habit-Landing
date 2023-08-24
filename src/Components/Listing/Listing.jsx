@@ -147,7 +147,7 @@ const Listings = () => {
                 Showing 73 results
               </p>
               <span className="flex mb-4 laptop:mb-0">
-                <label for="search-filter" className="text-[#7C8493] laptop:ml-4 font-normal text-base leading-[1.6rem]">
+                <label htmlFor="search-filter" className="text-[#7C8493] laptop:ml-4 font-normal text-base leading-[1.6rem]">
                   Sort by:
                 </label>
                 <select id="search-filter" className="pr-4 px-1 font-medium text-[#25324B]"
