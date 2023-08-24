@@ -283,7 +283,7 @@ export function SidebarWithContentSeparator() {
                     <ListItem className="p-0" selected={open === 4}>
                         <AccordionHeader onClick={() => handleOpen(4)} className="border-b-0 p-3">
                             <Typography color="blue-gray" className="mr-auto font-normal">
-                                E-Commerce
+                                Budget
                             </Typography>
                         </AccordionHeader>
                     </ListItem>
@@ -291,7 +291,42 @@ export function SidebarWithContentSeparator() {
                     <AccordionBody className="py-1">
                         <List className="p-0">
                             <ListItem>
+                                <input type="checkbox"
+                                    id="100-500k"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="100-500k"
+                                    className="text-[#515B6F] px-4">
+                                    100k -500k (4)
+                                </label>
+                            </ListItem>
 
+                            <ListItem>
+                                <input type="checkbox"
+                                    id="600-900k"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="600-900k"
+                                    className="text-[#515B6F] px-4">
+                                    600 - 900k (6)
+                                </label>
+                            </ListItem>
+
+                            <ListItem>
+                                <input type="checkbox"
+                                    id="1-2m"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="1-2m"
+                                    className="text-[#515B6F] px-4">
+                                    1m - 2m (10)
+                                </label>
                             </ListItem>
 
                             <ListItem>
