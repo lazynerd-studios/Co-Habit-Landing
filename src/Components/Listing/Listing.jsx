@@ -15,6 +15,7 @@ import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
 import "./styles.css"
 import { SidebarWithContentSeparator } from "../SideBar/SideBar";
+import { FiFilter } from "react-icons/fi";
 
 
 
@@ -87,7 +88,7 @@ const Listings = () => {
             </span> */}
 
               {/* location */}
-              <span className="flex ">
+              <span className="flex w-auto ">
 
                 <span className="my-3 mx-2">
                   <GrLocation size={25} />
@@ -146,7 +147,7 @@ const Listings = () => {
               <p className="text-[#25324B] font-normal text-base leading-[1.6rem]">
                 Showing 73 results
               </p>
-              <span className="flex mb-4 laptop:mb-0">
+              <span className="flex mb-4 mt-2 laptop:mb-0">
                 <label htmlFor="search-filter" className="text-[#7C8493] laptop:ml-4 font-normal text-base leading-[1.6rem]">
                   Sort by:
                 </label>
@@ -194,6 +195,12 @@ const Listings = () => {
                       </defs>
                     </svg>
                   </span>
+
+                  {/* filter icon */}
+                  <span className="px-2 laptop:hidden" title="Filter">
+                    <FiFilter size={22} />
+                  </span>
+
                 </span>
               </span>
 
