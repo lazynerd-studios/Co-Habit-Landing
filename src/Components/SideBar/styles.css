@@ -1,0 +1,6 @@
+[type=checkbox]:checked {
+    /* background-image: none; */
+    /*to remove the tickmark when checked*/
+    background-color: #1e3;
+    /* change the color when checked */
+}
