@@ -96,7 +96,7 @@ const Listings = () => {
 
                 {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
                 <select
-                  className="laptop:w-full pr-[12rem] w-[78%] tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                  className="laptop:w-full pr-[12rem] w-[78%] tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white outline-none text-[#7C8493]"
                   name="Location">
                   <option className="py-4" value='Apartment/Workspace'>
                     Lagos/Abuja
@@ -134,7 +134,7 @@ const Listings = () => {
         <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
           {/* sidebar */}
-          <span className="-mr- -ml-8">
+          <span className="-mr- laptop:-ml-8">
             <SidebarWithContentSeparator />
           </span>
           {/* end of sidebar */}
@@ -563,7 +563,7 @@ const Listings = () => {
                 <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-auto opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[10%] opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
