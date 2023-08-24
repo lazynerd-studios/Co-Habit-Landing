@@ -19,7 +19,7 @@ export function SidebarWithContentSeparator() {
     };
 
     return (
-        <Card className="h-[calc(100vh-2rem)] hidden select-none tablet:flex  laptop:flex w-full max-w-[20rem] p-4">
+        <Card className="h-[calc(100vh-2rem)] hidden select-none tablet:flex  laptop:flex w-auto max-w-[20rem] p-4">
             {/* shadow-xl shadow-blue-gray-900/5 */}
 
             {/* <div className="mb-2 p-4">
