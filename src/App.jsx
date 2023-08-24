@@ -37,6 +37,7 @@ export default function App() {
 //   RouterProvider,
 // } from "react-router-dom";
 
+// export default function App() {
 
 // const router = createBrowserRouter(
   //   createRoutesFromElements(
@@ -51,7 +52,7 @@ export default function App() {
   //     </Route>
   //   )
   // );
-
+// }
   
   // return (
   //   <div className="App">
