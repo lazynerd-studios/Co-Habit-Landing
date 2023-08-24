@@ -85,19 +85,42 @@ export function SidebarWithContentSeparator() {
                             </ListItem>
 
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="mini-flat"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="mini-flat"
+                                    className="text-[#515B6F] px-4">
+                                    Mini-Flat(2)
+                                </label>
                             </ListItem>
 
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="bungalow"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="bungalow"
+                                    className="text-[#515B6F] px-4">
+                                    Bungalow (24)
+                                </label>
                             </ListItem>
 
                             <ListItem>
-
-                            </ListItem>
-
-                            <ListItem>
-
+                                <input type="checkbox"
+                                    id="workspace"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="workspace"
+                                    className="text-[#515B6F] px-4">
+                                    Workspace (3)
+                                </label>
                             </ListItem>
 
                         </List>
@@ -118,7 +141,7 @@ export function SidebarWithContentSeparator() {
                     <ListItem className="p-0" selected={open === 2}>
                         <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
                             <Typography color="blue-gray" className="mr-auto font-normal">
-                                E-Commerce
+                                Location
                             </Typography>
                         </AccordionHeader>
                     </ListItem>
@@ -126,11 +149,30 @@ export function SidebarWithContentSeparator() {
                     <AccordionBody className="py-1">
                         <List className="p-0">
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="abuja"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className=""
+                                    checked />
+                                <label for="abuja"
+                                    className="text-[#515B6F] px-4">
+                                    Abuja(24)
+                                </label>
                             </ListItem>
 
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="lagos"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="lagos"
+                                    className="text-[#515B6F] px-4">
+                                    Lagos(3)
+                                </label>
                             </ListItem>
                         </List>
                     </AccordionBody>
@@ -150,7 +192,7 @@ export function SidebarWithContentSeparator() {
                     <ListItem className="p-0" selected={open === 3}>
                         <AccordionHeader onClick={() => handleOpen(3)} className="border-b-0 p-3">
                             <Typography color="blue-gray" className="mr-auto font-normal">
-                                E-Commerce
+                                Areas
                             </Typography>
                         </AccordionHeader>
                     </ListItem>
@@ -158,11 +200,70 @@ export function SidebarWithContentSeparator() {
                     <AccordionBody className="py-1">
                         <List className="p-0">
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="abaji"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="abaji"
+                                    className="text-[#515B6F] px-4">
+                                    Abaji (57)
+                                </label>
                             </ListItem>
 
                             <ListItem>
+                                <input type="checkbox"
+                                    id="bwari"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="bwari"
+                                    className="text-[#515B6F] px-4">
+                                    Bwari (3)
+                                </label>
+                            </ListItem>
 
+                            <ListItem>
+                                <input type="checkbox"
+                                    id="Gwagwalada"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className=""
+                                />
+                                <label for="Gwagwalada"
+                                    className="text-[#515B6F] px-4">
+                                    Gwagwalada(5)
+                                </label>
+                            </ListItem>
+
+                            <ListItem>
+                                <input type="checkbox"
+                                    id="kuje"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className=""
+                                    checked />
+                                <label for="kuje"
+                                    className="text-[#515B6F] px-4">
+                                    Kuje (12)
+                                </label>
+                            </ListItem>
+
+                            <ListItem>
+                                <input type="checkbox"
+                                    id="kwali"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className="" />
+                                <label for="kwali"
+                                    className="text-[#515B6F] px-4">
+                                    Kwali (8)
+                                </label>
                             </ListItem>
                         </List>
                     </AccordionBody>
