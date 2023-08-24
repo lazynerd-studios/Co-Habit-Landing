@@ -10,6 +10,11 @@ export default {
       // 'header-image': 'url(https://placekitten.com/1400)'
       'header-image': 'url(../../src/assets/header-BG.png)'
     },
+
+    // colors: {
+    //   'co-habit': '#010886',
+    // },
+
     screens: {
       'smaller': '350px',
       // formerly 450
