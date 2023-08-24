@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     Card,
     Typography,
@@ -11,8 +11,8 @@ import {
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export function SidebarWithContentSeparator() {
-    const [open, setOpen] = React.useState(0);
-
+    const [open, setOpen] = React.useState(1);
+    // set useState above to '0' to close all on-load
     const handleOpen = (value) => {
         setOpen(open === value ? 0 : value);
     };
