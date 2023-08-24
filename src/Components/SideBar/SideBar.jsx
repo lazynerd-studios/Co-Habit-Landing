@@ -4,22 +4,12 @@ import {
     Typography,
     List,
     ListItem,
-    ListItemPrefix,
-    ListItemSuffix,
-    Chip,
     Accordion,
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-import {
-    PresentationChartBarIcon,
-    ShoppingBagIcon,
-    UserCircleIcon,
-    Cog6ToothIcon,
-    InboxIcon,
-    PowerIcon,
-} from "@heroicons/react/24/solid";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import "./styles.css"
 
 export function SidebarWithContentSeparator() {
     const [open, setOpen] = React.useState(0);
@@ -29,7 +19,7 @@ export function SidebarWithContentSeparator() {
     };
 
     return (
-        <Card className="h-[calc(100vh-2rem)] hidden laptop:flex w-full max-w-[20rem] p-4">
+        <Card className="h-[calc(100vh-2rem)] hidden select-none tablet:flex  laptop:flex w-full max-w-[20rem] p-4">
             {/* shadow-xl shadow-blue-gray-900/5 */}
 
             {/* <div className="mb-2 p-4">
@@ -330,22 +320,31 @@ export function SidebarWithContentSeparator() {
                             </ListItem>
 
                             <ListItem>
-
+                                <input type="checkbox"
+                                    id="3m-above"
+                                    name=""
+                                    value=""
+                                    size={30}
+                                    className=" checked:bg-[#010886]"
+                                    checked
+                                />
+                                <label for="3m-above"
+                                    className="text-[#515B6F] px-4">
+                                    3m or above (4)
+                                </label>
                             </ListItem>
                         </List>
                     </AccordionBody>
                 </Accordion>
 
-                <hr className="my-2 border-blue-gray-50" />
+                {/* <hr className="my-2 border-blue-gray-50" />
 
                 <ListItem>
                     <ListItemPrefix>
                         <Cog6ToothIcon className="h-5 w-5" />
                     </ListItemPrefix>
                     Settings
-                </ListItem>
-
-
+                </ListItem> */}
             </List>
         </Card>
     );
