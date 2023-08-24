@@ -97,7 +97,7 @@ const Listings = () => {
 
                 {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
                 <select
-                  className="laptop:w-full pr-[12rem] w-[78%]  tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white outline-none text-[#7C8493]"
+                  className="laptop:w-full pr-[12rem] w-[78%] tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white outline-none text-[#7C8493]"
                   name="Location">
                   <option className="py-4" value='Apartment/Workspace'>
                     Lagos/Abuja
@@ -134,13 +134,17 @@ const Listings = () => {
         {/* listings */}
         <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
-          {/* filter - sidebar */}
-          <span className="-mr- laptop:-ml-8">
-            {showFilter &&
-              <SidebarWithContentSeparator />
-            }
+          {/* sidebar */}
+          <span className="-mr- laptop:-ml-8 hidden laptop:flex tablet:hidden">
+            <SidebarWithContentSeparator />
           </span>
-          {/* end of filter - sidebar */}
+
+          <span className="-mr- mt-[7rem] laptop:hidden absolute">
+            {showFilter && <SidebarWithContentSeparator />
+            }
+
+          </span>
+          {/* end of sidebar */}
 
 
           {/* all property */}
