@@ -41,7 +41,7 @@ export function SidebarWithContentSeparator() {
                 >
                     <ListItem className="p-0" selected={open === 1}>
                         <AccordionHeader onClick={() => handleOpen(1)} className="border-b-0 p-3">
-                            <Typography color="blue-gray" className="mr-auto font-normal">
+                            <Typography color="blue-gray" className="mr-auto font-semibold leading-[1.6rem] text-[#25324B]">
                                 Property Type
                             </Typography>
                         </AccordionHeader>
@@ -56,7 +56,7 @@ export function SidebarWithContentSeparator() {
                                     size={30}
                                     className="w-4 h-4" />
 
-                                <label for="apartment"
+                                <label htmlFor="apartment"
                                     className="text-[#515B6F] px-4">
                                     Apartment (7,997)
                                 </label>
@@ -69,7 +69,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="duplex"
+                                <label htmlFor="duplex"
                                     className="text-[#515B6F] px-4">
                                     Duplex (5)
                                 </label>
@@ -82,7 +82,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="mini-flat"
+                                <label htmlFor="mini-flat"
                                     className="text-[#515B6F] px-4">
                                     Mini-Flat(2)
                                 </label>
@@ -95,7 +95,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="bungalow"
+                                <label htmlFor="bungalow"
                                     className="text-[#515B6F] px-4">
                                     Bungalow (24)
                                 </label>
@@ -108,7 +108,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="workspace"
+                                <label htmlFor="workspace"
                                     className="text-[#515B6F] px-4">
                                     Workspace (3)
                                 </label>
@@ -131,7 +131,7 @@ export function SidebarWithContentSeparator() {
                 >
                     <ListItem className="p-0" selected={open === 2}>
                         <AccordionHeader onClick={() => handleOpen(2)} className="border-b-0 p-3">
-                            <Typography color="blue-gray" className="mr-auto font-normal">
+                            <Typography color="blue-gray" className="mr-auto font-semibold leading-[1.6rem] text-[#25324B]">
                                 Location
                             </Typography>
                         </AccordionHeader>
@@ -148,7 +148,7 @@ export function SidebarWithContentSeparator() {
                                     className="w-4 h-4"
                                 />
                                 {/* checked */}
-                                <label for="abuja"
+                                <label htmlFor="abuja"
                                     className="text-[#515B6F] px-4">
                                     Abuja(24)
                                 </label>
@@ -161,7 +161,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="lagos"
+                                <label htmlFor="lagos"
                                     className="text-[#515B6F] px-4">
                                     Lagos(3)
                                 </label>
@@ -183,7 +183,7 @@ export function SidebarWithContentSeparator() {
                 >
                     <ListItem className="p-0" selected={open === 3}>
                         <AccordionHeader onClick={() => handleOpen(3)} className="border-b-0 p-3">
-                            <Typography color="blue-gray" className="mr-auto font-normal">
+                            <Typography color="blue-gray" className="mr-auto font-semibold leading-[1.6rem] text-[#25324B]">
                                 Areas
                             </Typography>
                         </AccordionHeader>
@@ -198,7 +198,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="abaji"
+                                <label htmlFor="abaji"
                                     className="text-[#515B6F] px-4">
                                     Abaji (57)
                                 </label>
@@ -211,7 +211,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="bwari"
+                                <label htmlFor="bwari"
                                     className="text-[#515B6F] px-4">
                                     Bwari (3)
                                 </label>
@@ -225,7 +225,7 @@ export function SidebarWithContentSeparator() {
                                     size={30}
                                     className="w-4 h-4"
                                 />
-                                <label for="Gwagwalada"
+                                <label htmlFor="Gwagwalada"
                                     className="text-[#515B6F] px-4">
                                     Gwagwalada(5)
                                 </label>
@@ -240,7 +240,7 @@ export function SidebarWithContentSeparator() {
                                     className="w-4 h-4"
                                 />
                                 {/* checked */}
-                                <label for="kuje"
+                                <label htmlFor="kuje"
                                     className="text-[#515B6F] px-4">
                                     Kuje (12)
                                 </label>
@@ -253,7 +253,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="kwali"
+                                <label htmlFor="kwali"
                                     className="text-[#515B6F] px-4">
                                     Kwali (8)
                                 </label>
@@ -275,7 +275,7 @@ export function SidebarWithContentSeparator() {
                 >
                     <ListItem className="p-0" selected={open === 4}>
                         <AccordionHeader onClick={() => handleOpen(4)} className="border-b-0 p-3">
-                            <Typography color="blue-gray" className="mr-auto font-normal">
+                            <Typography color="blue-gray" className="mr-auto font-semibold leading-[1.6rem] text-[#25324B]">
                                 Budget
                             </Typography>
                         </AccordionHeader>
@@ -290,7 +290,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="100-500k"
+                                <label htmlFor="100-500k"
                                     className="text-[#515B6F] px-4">
                                     100k -500k (4)
                                 </label>
@@ -303,7 +303,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="600-900k"
+                                <label htmlFor="600-900k"
                                     className="text-[#515B6F] px-4">
                                     600 - 900k (6)
                                 </label>
@@ -316,7 +316,7 @@ export function SidebarWithContentSeparator() {
                                     value=""
                                     size={30}
                                     className="w-4 h-4" />
-                                <label for="1-2m"
+                                <label htmlFor="1-2m"
                                     className="text-[#515B6F] px-4">
                                     1m - 2m (10)
                                 </label>
@@ -332,7 +332,7 @@ export function SidebarWithContentSeparator() {
 
                                 // checked
                                 />
-                                <label for="3m-above"
+                                <label htmlFor="3m-above"
                                     className="text-[#515B6F] px-4">
                                     3m or above (4)
                                 </label>
