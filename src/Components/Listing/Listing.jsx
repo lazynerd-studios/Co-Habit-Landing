@@ -14,7 +14,7 @@ import Line from "../../assets/Line 9.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
 import "./styles.css"
-import { SidebarWithCta } from "../SideBar/SideBar";
+import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 
 
 
@@ -133,7 +133,7 @@ const Listings = () => {
         <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
           {/* sidebar */}
-          <SidebarWithCta />
+          <SidebarWithContentSeparator />
           {/* end of sidebar */}
 
 
