@@ -38,7 +38,7 @@ const Listings = () => {
         transition={{ duration: 3 }}
       >
         {/* bg-[#f8f8fd] */}
-        <div className="hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]">
+        <div className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]">
 
           <div className="laptop:mt-0 laptop:mx-[2rem]">
 
