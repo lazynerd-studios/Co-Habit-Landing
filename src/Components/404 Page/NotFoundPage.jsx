@@ -28,7 +28,7 @@ const NotFoundPage = () => {
 
                                     <p>the page you are looking for not avaible!</p>
 
-                                    <Link to="/" className="link_404">Go to Home</Link>
+                                    <Link to="/" className="btn text-white bg-[#010886] border-none hover:bg-[#010886]/75 ">Go to Home</Link>
                                 </div>
                             </div>
                         </div>
