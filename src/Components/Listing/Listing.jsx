@@ -28,6 +28,7 @@ const animationConfiguration = {
 
 const Listings = () => {
   const [index, setIndex] = useState(0);
+  const [showFilter, setshowFilter] = useState(false)
   const currentSlide = slides[index];
 
 
@@ -135,7 +136,9 @@ const Listings = () => {
 
           {/* sidebar */}
           <span className="-mr- laptop:-ml-8">
-            <SidebarWithContentSeparator />
+            {showFilter &&
+              <SidebarWithContentSeparator />
+            }
           </span>
           {/* end of sidebar */}
 
@@ -153,7 +156,7 @@ const Listings = () => {
                 <label htmlFor="search-filter" className="text-[#7C8493] laptop:ml-4 font-normal text-base leading-[1.6rem]">
                   Sort by:
                 </label>
-                <select id="search-filter" className="pr-4 px-1 font-medium text-[#25324B]"
+                <select id="search-filter" className="pr-4 px-1 outline-none select-none font-medium text-[#25324B]"
                   name="search-filter">
                   <option className="" value='Most relevant'>
                     Most relevant
@@ -200,7 +203,7 @@ const Listings = () => {
 
                   {/* filter icon */}
                   <span className="px-2 laptop:hidden" title="Filter">
-                    <FiFilter size={22} />
+                    <FiFilter size={22} onClick={() => setshowFilter(!showFilter)} />
                   </span>
 
                 </span>
