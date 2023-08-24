@@ -554,7 +554,7 @@ const Listings = () => {
                 <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-auto opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
