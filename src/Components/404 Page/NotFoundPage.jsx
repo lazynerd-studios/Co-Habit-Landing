@@ -4,7 +4,7 @@ import "./styles.css"
 
 const NotFoundPage = () => {
     return (
-        <div>
+        <div className='w-full'>
             {/* <h1 className=" text-4xl">
                 404 Page NotFound
             </h1>
