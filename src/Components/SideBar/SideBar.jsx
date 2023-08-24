@@ -9,7 +9,7 @@ import {
     AccordionBody,
 } from "@material-tailwind/react";
 import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
-import "./styles.css"
+// import "./styles.css"
 
 export function SidebarWithContentSeparator() {
     const [open, setOpen] = React.useState(0);
