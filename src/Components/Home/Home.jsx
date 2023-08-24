@@ -395,13 +395,15 @@ const Home = () => {
               find what is right for you.
             </p>
 
-            <div className="laptop:flex gap-8">
-              {/* 01 */}
-              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
-                <img src={Building11} className="laptop:w-[] w-[]" alt="building-1" />
+            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
 
-                <div className="flex pt-4">
-                  <span className="laptop:mr-[8rem] mr-[8.5rem]">
+              {/* <div className="laptop:flex gap-8"> */}
+              {/* 01 */}
+              <div className="border-2 rounded-md mt-6 laptop:mt-0 p-4 laptop:w-[] w-[]">
+                <img src={Building11} className="laptop:w-[] w-[]" alt="building-2" />
+
+                <div className="flex pt-4 justify-between">
+                  <span className="laptop:mr-[rem] mr-[rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Surulere, Lagos
                     </p>
@@ -410,18 +412,18 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
               </div>
 
               {/* 02 */}
-              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
+              <div className="border-2 rounded-md mt- p-4 laptop:w-[] w-[]">
                 <img src={Building12} className="laptop:w-[] w-[]" alt="building-2" />
 
-                <div className="flex pt-4">
-                  <span className="laptop:mr-[8rem] mr-[9.5rem]">
+                <div className="flex pt-4 justify-between">
+                  <span className="laptop:mr-[rem] mr-[rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Yaba, Lagos
                     </p>
@@ -430,18 +432,18 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
               </div>
 
               {/* 03 */}
-              <div className="border-2 rounded-md laptop:mt-0 mt-8 p-4 laptop:w-[] w-[]">
-                <img src={Building13} className="laptop:w-[] w-[]" alt="building-3" />
+              <div className="border-2 rounded-md mt- p-4 laptop:w-[] w-[]">
+                <img src={Building13} className="laptop:w-[] w-[]" alt="building-2" />
 
-                <div className="flex pt-4">
-                  <span className="laptop:mr-[8rem] mr-[9.5rem]">
+                <div className="flex pt-4 justify-between">
+                  <span className="laptop:mr-[rem] mr-[rem]">
                     <p className="text-[#010886] font-normal leading-[1.6rem]">
                       Lekki, Lagos
                     </p>
@@ -450,7 +452,7 @@ const Home = () => {
                     </p>
                   </span>
                   <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 laptop:mt-3 mt-3 ml-3 laptop:w-[] w-[]" alt="arrow-left" />
+                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
                     <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
                   </span>
                 </div>
@@ -554,7 +556,7 @@ const Home = () => {
         {/* end of 'good reviews by customers' */}
 
       </motion.div>
-    </section>
+    </section >
   );
 };
 
