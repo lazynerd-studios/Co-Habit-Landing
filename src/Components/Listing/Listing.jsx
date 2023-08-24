@@ -134,7 +134,9 @@ const Listings = () => {
         <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
           {/* sidebar */}
-          <SidebarWithContentSeparator />
+          <span className="-mr- -ml-8">
+            <SidebarWithContentSeparator />
+          </span>
           {/* end of sidebar */}
 
 
