@@ -222,6 +222,7 @@ const Listings = () => {
 
             </span>
 
+            {/* properties 1-9 */}
             <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
               {/* 01 */}
               <div className=" border-2 rounded-[1rem]">
