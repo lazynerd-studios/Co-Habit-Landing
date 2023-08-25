@@ -225,7 +225,7 @@ const Listings = () => {
             <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
               {/* 01 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -265,7 +265,7 @@ const Listings = () => {
 
               {/* 02 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-1" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -305,7 +305,7 @@ const Listings = () => {
 
               {/* 03 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -345,7 +345,7 @@ const Listings = () => {
 
               {/* 04 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -385,7 +385,7 @@ const Listings = () => {
 
               {/* 05 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -425,7 +425,7 @@ const Listings = () => {
 
               {/* 06 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -465,7 +465,7 @@ const Listings = () => {
 
               {/* 07 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -505,7 +505,7 @@ const Listings = () => {
 
               {/* 08 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -545,7 +545,7 @@ const Listings = () => {
 
               {/* 09 */}
               <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.image} className="w-full" alt="bungalow-3" />
+                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-2 mx-3 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
