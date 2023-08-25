@@ -24,7 +24,23 @@ const Footer = () => {
             with a seamless and <br className="hidden laptop:flex" />
             rewarding shared experiences.
           </p>
-          {/* <br className="hidden laptop:flex" /> */}
+
+          {/* <div className=" laptop: hidden">
+            <span className="font-medium text-[1.125rem] laptop:mb-4">Get notifications</span>
+            <p className="leading-[1.6rem] tablet:w-[80%]">
+              The latest news, articles, sent to your <br className="hidden laptop:flex" />
+              inbox weekly.
+            </p>
+            <div className="flex-col w-[18rem] tablet:mt-4">
+              <div className="relative">
+                <input type="email"
+                  placeholder="Email Address"
+                  // required
+                  className="input input-bordered text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
+                <button className="btn hover:bg-[#DF8026] tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case absolute top-0 right-0 rounded-l-none">Subscribe</button>
+              </div>
+            </div>
+          </div> */}
         </div>
         <div className="laptop:ml-[2.5rem]">
           <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
@@ -41,13 +57,14 @@ const Footer = () => {
           <a className="link link-hover font-normal leading-[1.6rem]">Updates</a>
           <a className="link link-hover font-normal">Contact Us</a>
         </div>
-        <div>
+
+        <div className=" ">
           <span className="font-medium text-[1.125rem] laptop:mb-4">Get notifications</span>
           <p className="leading-[1.6rem] tablet:w-[80%]">
             The latest news, articles, sent to your <br className="hidden laptop:flex" />
             inbox weekly.
           </p>
-          <div className="flex-col w-[18rem] tablet:w-[]">
+          <div className="flex-col w-[18rem] tablet:w-[14rem] laptop:w-[18rem]">
             <div className="relative">
               <input type="email"
                 placeholder="Email Address"
