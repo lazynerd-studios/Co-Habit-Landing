@@ -218,7 +218,7 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Recently Uploaded
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-full">
+            <p className="text-center laptop:mb-[2.5rem] tablet:mb-[2.5rem] laptop:w-full">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
@@ -228,11 +228,12 @@ const Home = () => {
             {/* end of mobile slideshow */}
 
             {/* wider screen */}
-            <div className="laptop:flex hidden gap-4">
+            {/* <div className="laptop:flex tablet:flex hidden gap-4"> */}
+            <div className="hidden laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 tablet:grid-cols-2 gap-6">
               {/* 01 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow1} className=" w-auto" alt="bungalow-1" />
-                <span className="flex mt-4 mx-3  gap-[7.8rem]">
+                <img src={Bungalow1} className=" w-full" alt="bungalow-1" />
+                <span className="flex mt-4 mx-2 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
                   </p>
@@ -241,22 +242,22 @@ const Home = () => {
                   </p>
                 </span>
 
-                <span className="flex laptop:gap-4 gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
+                <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
+                  <span className=" flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.rooms}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className=" flex">
                     <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.baths}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className="flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.measurement}
@@ -280,7 +281,7 @@ const Home = () => {
 
               {/* 02 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow2} className=" w-auto" alt="bungalow-1" />
+                <img src={Bungalow2} className=" w-full" alt="bungalow-1" />
                 <span className="flex mt-4 mx-3 gap-[7.8rem]">
                   <p className="text-[1rem]">
                     {currentSlide.house}
@@ -329,7 +330,7 @@ const Home = () => {
 
               {/* 03 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow3} className="w-auto" alt="bungalow-3" />
+                <img src={Bungalow3} className="w-full" alt="bungalow-3" />
                 <span className="flex mt-4 mx-3 gap-[7.8rem]">
                   <p className="text-[1rem]">
                     {currentSlide.house}
