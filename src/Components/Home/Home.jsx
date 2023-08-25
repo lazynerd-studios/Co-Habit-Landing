@@ -137,7 +137,8 @@ const Home = () => {
             </p>
 
             {/* text-in-shapes */}
-            <div className="laptop:flex">
+            {/* <div className="laptop:flex"> */}
+            <div className="grid grid-cols-1 gap-  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
@@ -160,10 +161,10 @@ const Home = () => {
               {/* end of styled rectangle 1 */}
 
               {/* arrow up */}
-              <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" />
+              {/* <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" /> */}
 
               {/* styled rectangle 2 */}
-              <div className="laptop:relative">
+              {/* <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
@@ -180,13 +181,13 @@ const Home = () => {
                 <img src={Users} className="absolute laptop:w-[3rem] w-[10%] ml-[3.5rem] mt-[3.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
                 <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[19.3%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
-              </div>
+              </div> */}
 
               {/* arrow up */}
-              <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" />
+              {/* <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" /> */}
 
               {/* styled rectangle 3 */}
-              <div className="laptop:relative">
+              {/* <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
                   for and professionally managed. The <br className="laptop:flex hidden" />
@@ -203,7 +204,8 @@ const Home = () => {
                 <img src={MoneyStack} className="absolute laptop:w-[3rem] w-[10%] ml-[3.5rem] mt-[3.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
                 <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[19.3%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
                 <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
-              </div>
+              </div> */}
+
             </div>
 
           </div>
@@ -268,7 +270,7 @@ const Home = () => {
                 <img src={Line} className="mt-5 mb-4" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
@@ -281,8 +283,8 @@ const Home = () => {
 
               {/* 02 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow2} className=" w-full" alt="bungalow-1" />
-                <span className="flex mt-4 mx-3 gap-[7.8rem]">
+                <img src={Bungalow2} className=" w-full" alt="bungalow-2" />
+                <span className="flex mt-4 mx-2 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
                   </p>
@@ -291,22 +293,22 @@ const Home = () => {
                   </p>
                 </span>
 
-                <span className="flex laptop:gap-4 gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
+                <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
+                  <span className=" flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.rooms}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className=" flex">
                     <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.baths}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className="flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.measurement}
@@ -317,7 +319,7 @@ const Home = () => {
                 <img src={Line} className="mt-5 mb-4" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
@@ -330,8 +332,8 @@ const Home = () => {
 
               {/* 03 */}
               <div className="slide bg-white p-0 rounded-[1rem]">
-                <img src={Bungalow3} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-4 mx-3 gap-[7.8rem]">
+                <img src={Bungalow3} className=" w-full" alt="bungalow-3" />
+                <span className="flex mt-4 mx-2 justify-between">
                   <p className="text-[1rem]">
                     {currentSlide.house}
                   </p>
@@ -340,22 +342,22 @@ const Home = () => {
                   </p>
                 </span>
 
-                <span className="flex laptop:gap-4 gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
+                <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
+                  <span className=" flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.rooms}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className=" flex">
                     <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.baths}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
+                  <span className="flex">
                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
                     <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
                       {currentSlide.measurement}
@@ -366,7 +368,7 @@ const Home = () => {
                 <img src={Line} className="mt-5 mb-4" alt="line" />
 
                 <span className="flex">
-                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] opacity-50" alt="location-pin" />
+                  <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
                   <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                     {currentSlide.area}
                   </p>
