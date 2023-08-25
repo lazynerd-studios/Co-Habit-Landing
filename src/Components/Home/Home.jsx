@@ -390,16 +390,16 @@ const Home = () => {
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
               Find By Location
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
+            <p className="text-center mb-8 laptop:w-auto">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
 
-            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
+            <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
 
               {/* <div className="laptop:flex gap-8"> */}
               {/* 01 */}
-              <div className="border-2 rounded-md mt-6 laptop:mt-0 p-4 laptop:w-[] w-[]">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
                 <img src={Building11} className="laptop:w-[] w-auto" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -419,7 +419,7 @@ const Home = () => {
               </div>
 
               {/* 02 */}
-              <div className="border-2 rounded-md mt- p-4 laptop:w-[] w-[]">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
                 <img src={Building12} className="laptop:w-[] w-[]" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -439,7 +439,7 @@ const Home = () => {
               </div>
 
               {/* 03 */}
-              <div className="border-2 rounded-md mt- p-4 laptop:w-[] w-[]">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
                 <img src={Building13} className="laptop:w-[] w-[]" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -457,10 +457,13 @@ const Home = () => {
                   </span>
                 </div>
               </div>
+
             </div>
 
+
+
             <button
-              className="btn my-6 normal-case laptop:ml-[27rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+              className="btn my-6 normal-case laptop:mx-[26rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
               Browse More locations
             </button>
 
@@ -479,7 +482,8 @@ const Home = () => {
               shaping the reputation of businesses.
             </p>
 
-            <div className="laptop:flex gap-5">
+            {/* <div className="laptop:flex gap-5"> */}
+            <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
               {/* 01 */}
               <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
                 <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
@@ -556,7 +560,7 @@ const Home = () => {
         {/* end of 'good reviews by customers' */}
 
       </motion.div>
-    </section >
+    </section>
   );
 };
 
