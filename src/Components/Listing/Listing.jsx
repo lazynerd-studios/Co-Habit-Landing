@@ -8,6 +8,7 @@ import { BsChevronDown } from "react-icons/bs";
 import Scribble from "../../assets/scribble-lines.svg"
 import DivideLine from "../../assets/line-Divider.png"
 import Bungalow1 from "../../assets/bungalow-1.png"
+import HeaderBg from "../../assets/header-BG.png"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
 import Line from "../../assets/Line 9.svg"
@@ -31,6 +32,8 @@ const Listings = () => {
   const [showFilter, setshowFilter] = useState(false)
   const currentSlide = slides[index];
 
+  const headerBackgroundImage = "../../assets/header-BG.png"
+
 
   return (
     <section className=''>
@@ -42,7 +45,9 @@ const Listings = () => {
         transition={{ duration: 3 }}
       >
         {/* bg-[#f8f8fd] */}
-        <div className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]">
+        <div
+          className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]"
+          style={{ backgroundImage: `url(${headerBackgroundImage})` }}>
 
           <div className="laptop:mt-0 laptop:mx-[2rem]">
 
