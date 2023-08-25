@@ -400,7 +400,7 @@ const Home = () => {
               {/* <div className="laptop:flex gap-8"> */}
               {/* 01 */}
               <div className="border-2 rounded-md mt-6 laptop:mt-0 p-4 laptop:w-[] w-[]">
-                <img src={Building11} className="laptop:w-[] w-[]" alt="building-2" />
+                <img src={Building11} className="laptop:w-[] w-auto" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
                   <span className="laptop:mr-[rem] mr-[rem]">
