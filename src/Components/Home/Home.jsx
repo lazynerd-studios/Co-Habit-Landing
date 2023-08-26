@@ -186,28 +186,6 @@ const Home = () => {
                 </svg>
 
               </div>
-              {/* <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
-                  The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
-                  for and professionally managed. The <br className="laptop:flex hidden" />
-                  overall maintenance of the house and the <br className="laptop:flex hidden" />
-                  surrounding landscape reflected a high <br className="laptop:flex hidden" />
-                  level of attention to detail.
-                </p>
-                <h2 className="absolute w-auto ml-[3.5rem] mt-[6.3rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
-                  Find Your Flatmate
-                </h2>
-                <svg width="72" height="91" viewBox="0 0 72 91" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H12C45.1371 0 72 26.8629 72 60V91H60C26.8629 91 0 64.1371 0 31V0Z" fill="#EEF4FD"/>
-</svg>
-
-                <p className="absolute text-[1rem] font-medium ml-[17.5rem] mt-[1.5rem] laptop:ml-[16.5rem] z-10 laptop:mt-[1.6rem]">
-                  2
-                </p>
-                <img src={Users} className="absolute laptop:w-[3rem] w-[10%] ml-[3.5rem] mt-[3.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
-                <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[19.3%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
-                <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
-              </div> */}
 
               {/* arrow up */}
               {/* <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" /> */}
