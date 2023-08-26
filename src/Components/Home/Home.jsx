@@ -150,7 +150,7 @@ const Home = () => {
                 <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                   List your property
                 </h2>
-                <img src={LocationPin} className="absolute laptop:w-[3rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={LocationPin} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[90%] laptop:w-full mx-2">
@@ -165,6 +165,27 @@ const Home = () => {
               {/* <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" /> */}
 
               {/* styled rectangle 2 */}
+              <div className="laptop:relative">
+                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                  The apartment appeared to be well-cared-
+                  for and professionally managed. The
+                  overall maintenance of the house and the
+                  surrounding landscape reflected a high
+                  level of attention to detail.
+                </p>
+                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                  Find Your Flatmate
+                </h2>
+                <img src={Users} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+
+                <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  className="w-[90%] laptop:w-full mx-2">
+                  <path d="M0.5 0.5H290C322.861 0.5 349.5 27.1391 349.5 60V349.5H60C27.1391 349.5 0.5 322.861 0.5 290V0.5Z" fill="white" stroke="#B8C9C9" />
+                  <path d="M277 1H289C322.137 1 349 27.8629 349 61V92H337C303.863 92 277 65.1371 277 32V1Z" fill="#EEF4FD" />
+                  <path d="M316.696 44.792C316.696 45.176 316.616 45.5547 316.456 45.928C316.296 46.2907 316.088 46.648 315.832 47C315.587 47.3413 315.304 47.6773 314.984 48.008C314.664 48.328 314.344 48.6427 314.024 48.952C313.853 49.112 313.661 49.304 313.448 49.528C313.235 49.752 313.032 49.976 312.84 50.2C312.648 50.424 312.483 50.6427 312.344 50.856C312.205 51.0587 312.131 51.2293 312.12 51.368H317.048V53H309.992C309.981 52.9147 309.976 52.8133 309.976 52.696C309.976 52.568 309.976 52.472 309.976 52.408C309.976 51.896 310.056 51.4267 310.216 51C310.387 50.5627 310.605 50.1573 310.872 49.784C311.139 49.4107 311.437 49.0587 311.768 48.728C312.099 48.3973 312.429 48.072 312.76 47.752C313.016 47.5067 313.261 47.2667 313.496 47.032C313.731 46.7973 313.933 46.568 314.104 46.344C314.285 46.1093 314.429 45.8747 314.536 45.64C314.643 45.3947 314.696 45.144 314.696 44.888C314.696 44.3333 314.536 43.9387 314.216 43.704C313.896 43.4693 313.507 43.352 313.048 43.352C312.749 43.352 312.472 43.3947 312.216 43.48C311.96 43.5653 311.731 43.6667 311.528 43.784C311.336 43.9013 311.165 44.024 311.016 44.152C310.867 44.2693 310.755 44.3653 310.68 44.44L309.72 43.08C310.168 42.6533 310.691 42.312 311.288 42.056C311.896 41.7893 312.547 41.656 313.24 41.656C314.424 41.656 315.293 41.9387 315.848 42.504C316.413 43.0587 316.696 43.8213 316.696 44.792Z" fill="black" />
+                </svg>
+
+              </div>
               {/* <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
