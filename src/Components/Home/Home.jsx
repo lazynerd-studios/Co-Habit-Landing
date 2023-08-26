@@ -137,7 +137,7 @@ const Home = () => {
             </p>
 
             {/* text-in-shapes */}
-            <div className="grid grid-cols-1 gap-8 tablet:gap laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
+            <div className="grid grid-cols-1 gap-8 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
