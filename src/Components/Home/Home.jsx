@@ -131,27 +131,26 @@ const Home = () => {
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             {/* heading */}
             <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
+            <p className="text-center laptop:mb-[2.5rem] tablet:mb-8 laptop:w-auto">
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
               positive reputation in the industry
             </p>
 
             {/* text-in-shapes */}
-            {/* <div className="laptop:flex"> */}
             <div className="grid grid-cols-1 gap-  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
                   surrounding landscape reflected a high
                   level of attention to detail.
                 </p>
-                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                   List your property
                 </h2>
-                <img src={LocationPin} className="absolute laptop:w-[3rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] mt-[4.5rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={LocationPin} className="absolute laptop:w-[3rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[90%] laptop:w-full mx-2">
