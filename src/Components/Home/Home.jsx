@@ -137,7 +137,7 @@ const Home = () => {
             </p>
 
             {/* text-in-shapes */}
-            <div className="grid grid-cols-1 gap-  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-">
+            <div className="grid grid-cols-1 gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
@@ -162,7 +162,7 @@ const Home = () => {
               {/* end of styled rectangle 1 */}
 
               {/* arrow up */}
-              {/* <img src={ArrowUp} className="-my-3 mx-auto" alt="arrow-up" /> */}
+              <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" />
 
               {/* styled rectangle 2 */}
               <div className="laptop:relative">
@@ -188,7 +188,7 @@ const Home = () => {
               </div>
 
               {/* arrow up */}
-              {/* <img src={ArrowDown} className="-my-3 mx-auto" alt="arrow-down" /> */}
+              <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" />
 
               {/* styled rectangle 3 */}
               <div className="laptop:relative">
@@ -200,9 +200,9 @@ const Home = () => {
                   level of attention to detail.
                 </p>
                 <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
-                  Find Your Flatmate
+                  Close The Deal
                 </h2>
-                <img src={Users} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={MoneyStack} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[95%] laptop:w-full mx-2">
@@ -210,32 +210,7 @@ const Home = () => {
                   <path d="M277.089 1H289.001C322.138 1 349.001 27.8629 349.001 61V92H337.089C303.951 92 277.089 65.1371 277.089 32V1Z" fill="#EEF4FD" />
                   <path d="M312.825 53.24C312.537 53.24 312.239 53.2187 311.929 53.176C311.631 53.144 311.343 53.096 311.065 53.032C310.799 52.9787 310.553 52.92 310.329 52.856C310.105 52.7813 309.935 52.712 309.817 52.648L310.201 51C310.425 51.1067 310.751 51.2293 311.177 51.368C311.604 51.496 312.132 51.56 312.761 51.56C313.604 51.56 314.212 51.4 314.585 51.08C314.959 50.7493 315.145 50.312 315.145 49.768C315.145 49.416 315.071 49.1227 314.921 48.888C314.783 48.6533 314.585 48.4667 314.329 48.328C314.084 48.1787 313.796 48.0773 313.465 48.024C313.145 47.96 312.804 47.928 312.441 47.928H311.785V46.36H312.585C312.831 46.36 313.076 46.3387 313.321 46.296C313.577 46.2427 313.807 46.1573 314.009 46.04C314.212 45.912 314.377 45.7467 314.505 45.544C314.633 45.3413 314.697 45.08 314.697 44.76C314.697 44.504 314.649 44.2853 314.553 44.104C314.457 43.9227 314.329 43.7733 314.169 43.656C314.02 43.5387 313.844 43.4533 313.641 43.4C313.439 43.3467 313.225 43.32 313.001 43.32C312.521 43.32 312.095 43.3947 311.721 43.544C311.348 43.6827 311.017 43.8427 310.729 44.024L310.025 42.584C310.175 42.488 310.356 42.3867 310.569 42.28C310.783 42.1733 311.017 42.072 311.273 41.976C311.54 41.88 311.823 41.8053 312.121 41.752C312.42 41.688 312.735 41.656 313.065 41.656C313.684 41.656 314.217 41.7307 314.665 41.88C315.113 42.0293 315.481 42.2427 315.769 42.52C316.068 42.7867 316.287 43.1067 316.425 43.48C316.575 43.8427 316.649 44.2427 316.649 44.68C316.649 45.192 316.505 45.6507 316.217 46.056C315.94 46.4613 315.577 46.7707 315.129 46.984C315.705 47.1867 316.18 47.5227 316.553 47.992C316.937 48.4613 317.129 49.064 317.129 49.8C317.129 50.2907 317.044 50.7493 316.873 51.176C316.703 51.592 316.441 51.9547 316.089 52.264C315.737 52.5627 315.289 52.8027 314.745 52.984C314.212 53.1547 313.572 53.24 312.825 53.24Z" fill="black" />
                 </svg>
-
               </div>
-              {/* <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] w-[68%] ml-[3.5rem] mt-[8.3rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
-                  The apartment appeared to be well-cared- <br className="laptop:flex hidden" />
-                  for and professionally managed. The <br className="laptop:flex hidden" />
-                  overall maintenance of the house and the <br className="laptop:flex hidden" />
-                  surrounding landscape reflected a high <br className="laptop:flex hidden" />
-                  level of attention to detail.
-                </p>
-                <h2 className="absolute w-auto ml-[3.5rem] mt-[6.3rem] laptop:ml-[1.1rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
-                  Close The Deal
-                </h2>
-                <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.925278 0.5H290C322.861 0.5 349.5 27.1391 349.5 60V349.5H60.4252C27.5643 349.5 0.925278 322.861 0.925278 290V0.5Z" fill="white" stroke="#B8C9C9"/>
-<path d="M277.089 1H289.001C322.138 1 349.001 27.8629 349.001 61V92H337.089C303.951 92 277.089 65.1371 277.089 32V1Z" fill="#EEF4FD"/>
-<path d="M312.825 53.24C312.537 53.24 312.239 53.2187 311.929 53.176C311.631 53.144 311.343 53.096 311.065 53.032C310.799 52.9787 310.553 52.92 310.329 52.856C310.105 52.7813 309.935 52.712 309.817 52.648L310.201 51C310.425 51.1067 310.751 51.2293 311.177 51.368C311.604 51.496 312.132 51.56 312.761 51.56C313.604 51.56 314.212 51.4 314.585 51.08C314.959 50.7493 315.145 50.312 315.145 49.768C315.145 49.416 315.071 49.1227 314.921 48.888C314.783 48.6533 314.585 48.4667 314.329 48.328C314.084 48.1787 313.796 48.0773 313.465 48.024C313.145 47.96 312.804 47.928 312.441 47.928H311.785V46.36H312.585C312.831 46.36 313.076 46.3387 313.321 46.296C313.577 46.2427 313.807 46.1573 314.009 46.04C314.212 45.912 314.377 45.7467 314.505 45.544C314.633 45.3413 314.697 45.08 314.697 44.76C314.697 44.504 314.649 44.2853 314.553 44.104C314.457 43.9227 314.329 43.7733 314.169 43.656C314.02 43.5387 313.844 43.4533 313.641 43.4C313.439 43.3467 313.225 43.32 313.001 43.32C312.521 43.32 312.095 43.3947 311.721 43.544C311.348 43.6827 311.017 43.8427 310.729 44.024L310.025 42.584C310.175 42.488 310.356 42.3867 310.569 42.28C310.783 42.1733 311.017 42.072 311.273 41.976C311.54 41.88 311.823 41.8053 312.121 41.752C312.42 41.688 312.735 41.656 313.065 41.656C313.684 41.656 314.217 41.7307 314.665 41.88C315.113 42.0293 315.481 42.2427 315.769 42.52C316.068 42.7867 316.287 43.1067 316.425 43.48C316.575 43.8427 316.649 44.2427 316.649 44.68C316.649 45.192 316.505 45.6507 316.217 46.056C315.94 46.4613 315.577 46.7707 315.129 46.984C315.705 47.1867 316.18 47.5227 316.553 47.992C316.937 48.4613 317.129 49.064 317.129 49.8C317.129 50.2907 317.044 50.7493 316.873 51.176C316.703 51.592 316.441 51.9547 316.089 52.264C315.737 52.5627 315.289 52.8027 314.745 52.984C314.212 53.1547 313.572 53.24 312.825 53.24Z" fill="black"/>
-</svg>
-
-                <p className="absolute text-[1rem] font-medium ml-[17.5rem] mt-[1.5rem] laptop:ml-[16.5rem] z-10 laptop:mt-[1.6rem]">
-                  3
-                </p>
-                <img src={MoneyStack} className="absolute laptop:w-[3rem] w-[10%] ml-[3.5rem] mt-[3.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
-                <img src={SmallStyledRectangle} className="absolute w-[14%] laptop:w-[19.3%] ml-[16rem] mt-[0.19rem] laptop:ml-[15rem] laptop:mt-[0.08rem]" alt="small-styled-rectangle" />
-                <img src={StyledRectangle} className="laptop:w-[20rem] w-[80%] mx-auto my-4 laptop:my-auto" alt="styled-rectangle" />
-              </div> */}
 
             </div>
 
