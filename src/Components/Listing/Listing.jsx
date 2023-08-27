@@ -584,7 +584,6 @@ const Listings = () => {
               </div>
               {/* end of 09 */}
 
-
             </div>
           </div>
           {/* end of all property */}
