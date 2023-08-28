@@ -21,7 +21,7 @@ const AboutUs = () => (
       transition={{ duration: 3 }}
     >
 
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen ">
         <div className="hero-content w-full mt-10 bg-[#010886] laptop:mt-auto laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
           <div className="w-full laptop:mx-[8rem] top-0 laptop:mt-[7rem]">
