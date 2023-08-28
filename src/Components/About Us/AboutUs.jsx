@@ -11,7 +11,7 @@ const animationConfiguration = {
 
 
 const AboutUs = () => (
-  <section className="bg-[#EFEFEF] select-none">
+  <section className="bg-[#EFEFEF]">
 
     <motion.div
       variants={animationConfiguration}
