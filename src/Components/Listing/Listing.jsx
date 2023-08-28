@@ -32,8 +32,6 @@ const Listings = () => {
   const [showFilter, setshowFilter] = useState(false)
   const currentSlide = slides[index];
 
-  const headerBackgroundImage = "../../assets/header-BG.png"
-
 
   return (
     <section className=''>
@@ -46,8 +44,7 @@ const Listings = () => {
       >
         {/* bg-[#f8f8fd] */}
         <div
-          className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]"
-          style={{ backgroundImage: `url(${headerBackgroundImage})` }}>
+          className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]">
 
           <div className="laptop:mt-0 laptop:mx-[2rem]">
 
@@ -687,7 +684,7 @@ const Listings = () => {
         {/* end of pagination */}
 
       </motion.div>
-    </section>
+    </section >
   )
 }
 
