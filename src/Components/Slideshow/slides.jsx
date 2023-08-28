@@ -6,7 +6,7 @@ import Bungalow3 from "../../assets/bungalow-3.png";
 
 export const slides = [
     {
-        image: Bungalow1,
+        image: Bungalow2,
         images: Bungalow01,
         house: "Bungalow",
         price: "NGN150,000",
