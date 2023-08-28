@@ -44,7 +44,9 @@ const Listings = () => {
       >
         {/* bg-[#f8f8fd] */}
         <div
-          className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-header-image bg-contain bg-[#f8f8fd]">
+          className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-center bg-contain bg-[#f8f8fd]"
+          style={{ backgroundImage: `url(${HeaderBg})` }}
+        >
 
           <div className="laptop:mt-0 laptop:mx-[2rem]">
 
