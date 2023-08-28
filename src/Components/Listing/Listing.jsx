@@ -678,7 +678,7 @@ const Listings = () => {
         {/* end of listings */}
 
         {/* pagination */}
-        <ol className="flex justify-center gap-1 mb-4 pb-8 text-xs font-medium select-none">
+        <ol className="laptop:flex tablet:flex hidden justify-center gap-1 mb-4 pb-8 text-xs font-medium select-none">
           <li>
             <a
               href="#"
