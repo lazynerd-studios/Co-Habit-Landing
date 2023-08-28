@@ -22,7 +22,7 @@ const AboutUs = () => (
     >
 
       <div className="hero min-h-screen bg-[#EFEFEF]">
-        <div className="hero-content text-left mt-10 laptop:mt-auto laptop:mx-[8rem]">
+        <div className="hero-content  mt-10 laptop:mt-auto laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
           <div className="w-auto laptop:mt-[7rem]">
             <img src={BreadCrumb} className='' alt="Breadcrumb" />
