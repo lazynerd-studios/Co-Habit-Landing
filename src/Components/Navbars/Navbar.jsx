@@ -63,20 +63,22 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <Link to="/login" className="btn bg-white hover:bg-white border-none -mr-1 normal-case text-[#010886]">
-        Login
-      </Link>
-      <img src={Line} className="ml-0 mr-2" alt="line" />
-      <Link to="/signup" className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
-        Sign Up
-      </Link> */}
-
-
       <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
+        <Link to="/login" className="btn bg-white hover:bg-white border-none mr-1 normal-case text-[#010886]">
+          Login
+        </Link>
+        <img src={Line} className="ml-0 mr-2" alt="line" />
+        <Link to="/signup" className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+          Sign Up
+        </Link>
+      </div>
+
+
+      {/* <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
         <a className="btn bg-white hover:bg-white border-none mr-[0.009rem] normal-case text-[#010886]">Login</a>
         <img src={Line} className="ml-0 mr-2" alt="line" />
         <a className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Sign Up</a>
-      </div>
+      </div> */}
 
     </div>
 
