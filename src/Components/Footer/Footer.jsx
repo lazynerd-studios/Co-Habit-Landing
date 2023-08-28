@@ -13,7 +13,7 @@ const Footer = () => {
   // end of date
 
   return (
-    <div className="bg-[#010886] text-[#D6DDEB] ">
+    <div className="bg-[#010886] text-[#D6DDEB] select-none ">
       <footer id="footer"
         className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[8rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
