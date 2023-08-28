@@ -13,10 +13,11 @@ import BedIcon from "../../assets/u_bed-double.svg"
 import Line from "../../assets/Line 9.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
-import "./styles.css"
+// import "./styles.css"
 import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 import { FiFilter } from "react-icons/fi";
 import HeaderBg from "../../assets/header-BG.png"
+import MobileLines from "../../assets/Mobile lines.png"
 
 
 
@@ -48,8 +49,12 @@ const Listings = () => {
           style={{ backgroundImage: `url(${HeaderBg})` }}
         >
 
-          <div className="laptop:mt-0 laptop:mx-[2rem]">
+          {/* mobile hero */}
 
+          {/* end of mobile hero */}
+
+
+          <div className="laptop:mt-0 hidden laptop:block tablet:block laptop:mx-[2rem]">
             <div className="text-center">
               <h1 className=" text-[2.125rem] laptop:mt-0 mt-8 tablet:mt-0 laptop:leading-[3.3rem] font-bold text-[#25324B]">
                 <span className="text-5xl">
