@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import Left from "../../assets/left.svg"
 import Right from "../../assets/right.svg"
+import MobileLines from "../../assets/Mobile lines.png"
 import HeroImage from "../../assets/hero-image.png"
 import ScrollToExplore from "../../assets/Scroll to explore.png"
 import Search from "../../assets/Search.svg"
@@ -75,6 +76,7 @@ const Home = () => {
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
                   </a>
                 </span>
+                <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
 
                 {/* full search bar */}
                 {/* search */}
@@ -130,14 +132,14 @@ const Home = () => {
         <div className="w-auto bg-white my-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             {/* heading */}
-            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">How It Works ?</h1>
-            <p className="text-center laptop:mb-[2.5rem] tablet:mb-8 laptop:w-auto">
+            <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">How It Works ?</h1>
+            <p className="laptop:mb-[2.5rem] mx-2 text-left tablet:text-center laptop:text-center tablet:mb-8 laptop:w-auto">
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish a <br className="laptop:flex hidden" />
               positive reputation in the industry
             </p>
 
             {/* text-in-shapes */}
-            <div className="grid grid-cols-1 gap-8 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
+            <div className="grid grid-cols-1 gap-2 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
                 <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
@@ -167,7 +169,7 @@ const Home = () => {
                 <path id="Vector 1" d="M54.3333 3.5C54.3333 4.97276 55.5272 6.16667 57 6.16667C58.4728 6.16667 59.6667 4.97276 59.6667 3.5C59.6667 2.02724 58.4728 0.833333 57 0.833333C55.5272 0.833333 54.3333 2.02724 54.3333 3.5ZM1.12127 63.4851C46.1722 52.2223 57.5 18.8656 57.5 3.5H56.5C56.5 18.4678 45.4278 51.3777 0.878732 62.5149L1.12127 63.4851Z" fill="#92BFEB" />
               </svg> */}
 
-              <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" />
+              {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
 
               {/* styled rectangle 2 */}
               <div className="laptop:relative">
@@ -198,7 +200,7 @@ const Home = () => {
                 <path id="Vector 2" d="M60.4277 54.0833C58.9549 54.0833 57.761 55.2772 57.761 56.75C57.761 58.2228 58.9549 59.4167 60.4277 59.4167C61.9005 59.4167 63.0944 58.2228 63.0944 56.75C63.0944 55.2772 61.9005 54.0833 60.4277 54.0833ZM0.514893 0.871129C11.7639 45.9218 45.0801 57.25 60.4277 57.25V56.25C45.4788 56.25 12.6089 45.1782 1.4851 0.628871L0.514893 0.871129Z" fill="#92BFEB" />
               </svg> */}
 
-              <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" />
+              {/* <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" /> */}
 
               {/* styled rectangle 3 */}
               <div className="laptop:relative">
