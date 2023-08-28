@@ -11,7 +11,7 @@ const animationConfiguration = {
 
 
 const AboutUs = () => (
-  <section>
+  <section className="bg-[#EFEFEF] select-none">
 
     <motion.div
       variants={animationConfiguration}
@@ -21,14 +21,29 @@ const AboutUs = () => (
       transition={{ duration: 3 }}
     >
 
-      <div className="hero min-h-screen bg-[#EFEFEF]">
-        <div className="hero-content  mt-10 laptop:mt-auto laptop:mx-[8rem]">
+      <div className="hero min-h-screen">
+        <div className="hero-content w-full mt-10 bg-[#010886] laptop:mt-auto laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
-          <div className="w-auto laptop:mt-[7rem]">
+          <div className="w-full laptop:mx-[8rem] top-0 laptop:mt-[7rem]">
             <img src={BreadCrumb} className='' alt="Breadcrumb" />
-            <h1 className=" text-[3.125rem] leading-[3.4375rem] font-bold uppercase text-[#25324B]">ABOUT US</h1>
+            <h1
+              className="text-[3rem] leading-[3.4375rem] font-bold text-[#fff] mt-12">
+              About Us
+            </h1>
 
           </div>
+        </div>
+      </div>
+
+      <div className='h-[20rem]'>
+
+      </div>
+
+      <div className='py-8 bg-[#010886] text-white'>
+        <div className='laptop:mx-[8rem]'>
+          <h2>
+            BENEFIT OF USING CO-HABIT
+          </h2>
         </div>
       </div>
 
