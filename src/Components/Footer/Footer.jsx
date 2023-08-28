@@ -25,22 +25,22 @@ const Footer = () => {
             rewarding shared experiences.
           </p>
 
-          {/* <div className=" laptop: hidden">
+          <div className="tablet:block mt-6 hidden laptop:hidden">
             <span className="font-medium text-[1.125rem] laptop:mb-4">Get notifications</span>
-            <p className="leading-[1.6rem] tablet:w-[80%]">
+            <p className="leading-[1.6rem] tablet:mt-4 tablet:w-[80%]">
               The latest news, articles, sent to your <br className="hidden laptop:flex" />
               inbox weekly.
             </p>
-            <div className="flex-col w-[18rem] tablet:mt-4">
+            <div className="flex-col w-full tablet:mt-2 laptop:w-[18rem]">
               <div className="relative">
                 <input type="email"
                   placeholder="Email Address"
                   // required
-                  className="input input-bordered text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
-                <button className="btn hover:bg-[#DF8026] tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                  className="input tablet:input laptop:input input-bordered rounded-none text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
+                <button className="btn hover:bg-[#DF8026] mt-3 laptop:mt-0 tablet:mt-0 tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case laptop:absolute tablet:absolute top-0 right-0 rounded-none laptop:rounded-lg border-none tablet:rounded-lg tablet:rounded-l-none laptop:rounded-l-none">Subscribe</button>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className=" footer flex gap-[8rem] laptop:hidden tablet:hidden">
           <div className="laptop:ml-[2.5rem]">
@@ -78,13 +78,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" ">
+        <div className="tablet:hidden laptop:block">
           <span className="font-medium text-[1.125rem] laptop:mb-4">Get notifications</span>
-          <p className="leading-[1.6rem] tablet:w-[80%]">
+          <p className="leading-[1.6rem] laptop:w-full laptop:mt-6 tablet:w-[80%]">
             The latest news, articles, sent to your <br className="hidden laptop:flex" />
             inbox weekly.
           </p>
-          <div className="flex-col w-[18rem] tablet:w-[14rem] laptop:w-[18rem]">
+          <div className="flex-col w-[18rem] laptop:mt-3 tablet:w-[14rem] laptop:w-[18rem]">
             <div className="relative">
               <input type="email"
                 placeholder="Email Address"
@@ -98,27 +98,17 @@ const Footer = () => {
 
       <img src={FooterLine} className="w-[80%] laptop:mx-[8rem]" alt="footer-line" />
 
-      <div className="laptop:flex laptop:mx-[8rem] laptop:py-6 mx-auto">
-        <div className="flex laptop:hidden mx-12 py-2">
-          <a href="#" className="mr-4">
-            <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
-          </a>
-          <a href="#" className="mr-4">
-            <InstagramIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
-          </a>
-          <a href="#" className="mr-4">
-            <LinkedInIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
-          </a>
-          <a href="#" className="mr-4">
-            <TwitterIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
-          </a>
-          <a href="#" className="">
-            <YouTubeIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
-          </a>
-        </div>
+      <div className="laptop:flex tablet:flex tablet:mx-6 tablet:justify-between laptop:mx-[8rem] laptop:py-6 mx-auto">
 
         {/* copyright */}
-        <p className="py-4 copyright laptop:mr-[31rem] text-[#ffffff74] text-center">
+        <p className="py-4 copyright laptop:mr-[31rem] hidden laptop:block tablet:block text-[#ffffff74] text-center">
+          <span>{theDate} </span>
+          @
+          Co-habit.
+          All rights reserved.
+        </p>
+
+        <p className="py-4 copyright laptop:mr-[31rem] laptop:hidden tablet:hidden text-[#ffffff74] text-left mx-6">
           <span>{theDate} </span>
           @
           Co-habit.
@@ -126,7 +116,7 @@ const Footer = () => {
         </p>
         {/* end of copyright */}
 
-        <div className="py-2 laptop:flex hidden">
+        <div className="py-2 laptop:flex mx-6 laptop:mx-0 tablet:mx-0 tablet:text-center">
           <a href="#" className="mr-4">
             <FacebookIcon sx={{ fontSize: "2.3rem" }} className="social-icon border-none rounded-full p-2 bg-[#ffffff1e]" />
           </a>
