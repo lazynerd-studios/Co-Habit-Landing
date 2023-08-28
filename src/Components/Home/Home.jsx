@@ -31,6 +31,8 @@ import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"
 import TemitopeWilliams from "../../assets/temitope williams.png"
 import Stars from "../../assets/Stars.png"
+import { BiSearch } from "react-icons/bi";
+import { GrLocation } from "react-icons/gr";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -80,10 +82,13 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[51%] rounded-md bg-white px-2 py-2 border-none">
+                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[53%] rounded-md bg-white px-2 py-2 border-none">
                   {/* laptop:w-[65%] laptop:mx-[5rem] */}
                   <span className="flex">
-                    <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" />
+                    {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
+                    <span className="my-3 mx-2">
+                      <BiSearch size={25} />
+                    </span>
                     <input type="text"
                       className="border-b-[#7C8493] laptop:w-auto w-[77%] outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
                       placeholder="Apartment/Workspace" autoComplete="true"
@@ -92,7 +97,10 @@ const Home = () => {
 
                   {/* location */}
                   <span className="flex ">
-                    <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" />
+                    {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
+                    <span className="my-3 mx-2">
+                      <GrLocation size={25} />
+                    </span>
                     <select className="laptop:w-auto laptop:mr-[] w-[78%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
                       <option className="py-4" value='Apartment/Workspace'>
@@ -115,7 +123,7 @@ const Home = () => {
 
                   {/* search button */}
                   <button
-                    className="btn laptop:ml-4 -ml-4 rounded-none w-[80%] mt-3 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    className="btn laptop:ml-4 tablet:-ml-20 -ml- rounded-none w-[80%] mt-3 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
                   </button>
                 </div>
