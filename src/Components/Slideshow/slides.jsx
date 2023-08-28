@@ -1,5 +1,5 @@
 import React from "react";
-import Bungalow1 from "../../assets/Bungalow-1.png";
+// import Bungalow1 from "../../assets/Bungalow-1.png";
 import Bungalow01 from "../../assets/Bungalow 01.png";
 import Bungalow2 from "../../assets/bungalow-2.png";
 import Bungalow3 from "../../assets/bungalow-3.png";
