@@ -89,8 +89,8 @@ const Footer = () => {
               <input type="email"
                 placeholder="Email Address"
                 // required
-                className="input input-bordered text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
-              <button className="btn hover:bg-[#DF8026] tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                className="input tablet:input laptop:input input-bordered rounded-none text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
+              <button className="btn hover:bg-[#DF8026] mt-3 laptop:mt-0 tablet:mt-0 tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case laptop:absolute tablet:absolute top-0 right-0 rounded-l-none">Subscribe</button>
             </div>
           </div>
         </div>
