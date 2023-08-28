@@ -1,6 +1,7 @@
 //<br className="hidden laptop:block" />
 import React from 'react'
 import { motion } from "framer-motion";
+import BreadCrumb from "../../assets/Breadcrumb.png"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -9,30 +10,34 @@ const animationConfiguration = {
 };
 
 
-const AboutUs = () => {
-  return (
-    <section>
+const AboutUs = () => (
+  <section>
 
-      <div className="hero min-h-screen bg-[#f8f8fd]">
-        <motion.div
-          variants={animationConfiguration}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          transition={{ duration: 3 }}
-        >
-          <div className="hero-content text-center">
-            <div className="max-w-lg">
-              <h1 className=" text-[3.125rem] leading-[3.4375rem] font-bold uppercase text-[#25324B]">ABOUT US</h1>
-              {/* <h1 className="text-5xl font-bold leading-[3.4375rem] text-[#010886]">SHARED APARTMENT</h1>
-              <button className="py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button> */}
-            </div>
+    <motion.div
+      variants={animationConfiguration}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 3 }}
+    >
+
+      <div className="hero min-h-screen bg-[#EFEFEF]">
+        <div className="hero-content text-left mt-10 laptop:mt-auto laptop:mx-[8rem]">
+          {/* <div className="max-w-lg"> */}
+          <div className="w-auto laptop:mt-[7rem]">
+            <img src={BreadCrumb} className='' alt="Breadcrumb" />
+            <h1 className=" text-[3.125rem] leading-[3.4375rem] font-bold uppercase text-[#25324B]">ABOUT US</h1>
+
           </div>
-        </motion.div>
+        </div>
       </div>
 
-    </section>
-  )
-}
+
+
+    </motion.div>
+
+
+  </section >
+)
 
 export default AboutUs
