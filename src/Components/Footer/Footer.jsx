@@ -42,6 +42,24 @@ const Footer = () => {
             </div>
           </div> */}
         </div>
+        <div className=" footer flex gap-10 laptop:hidden tablet:hidden">
+          <div className="laptop:ml-[2.5rem]">
+            <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
+            <a className="link link-hover font-normal leading-[1.6rem]">Companies</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Pricing</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Terms</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Advice</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Privacy Policy</a>
+          </div>
+          <div>
+            <span className="font-medium text-[1.125rem] laptop:mb-4">Resources</span>
+            <a className="link link-hover font-normal leading-[1.6rem]">Help Docs</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Guide</a>
+            <a className="link link-hover font-normal leading-[1.6rem]">Updates</a>
+            <a className="link link-hover font-normal">Contact Us</a>
+          </div>
+        </div>
+
         <div className="laptop:ml-[2.5rem]">
           <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
           <a className="link link-hover font-normal leading-[1.6rem]">Companies</a>
