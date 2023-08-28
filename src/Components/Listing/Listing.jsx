@@ -50,7 +50,72 @@ const Listings = () => {
         >
 
           {/* mobile hero */}
+          <div className="hero-content laptop:hidden tablet:hidden text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
+            <div className="w-auto laptop:mt-[7rem]">
+              <h1 className="laptop:text-[3.125rem] tablet:text-[2.125rem] tablet:text-center laptop:text-center leading-[3.3rem] text-[3rem] text-left laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
+                FIND YOUR PERFECT
+              </h1>
 
+              <h1 className="mx-auto laptop:text-[3rem] text-[2rem] text-left leading-[2.4rem] tablet:text-center laptop:text-center laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
+                SHARED APARTMENT
+              </h1>
+
+              <div className="laptop:flex mt-8">
+                <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
+
+                {/* full search bar */}
+                {/* search */}
+                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[51%] rounded-md bg-white px-2 py-2 border-none">
+                  {/* laptop:w-[65%] laptop:mx-[5rem] */}
+                  <span className="flex">
+                    {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
+                    <span className="my-3 mx-2">
+                      <BiSearch size={25} />
+                    </span>
+                    <input type="text"
+                      className="border-b-[#7C8493] laptop:w-auto w-[77%] outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                      placeholder="Apartment/Workspace" autoComplete="true"
+                    />
+                  </span>
+
+                  {/* location */}
+                  <span className="flex ">
+                    {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
+                    <span className="my-3 mx-2">
+                      <GrLocation size={25} />
+                    </span>
+                    <select className="laptop:w-auto laptop:mr-[] w-[78%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                      name="Location">
+                      <option className="py-4" value='Apartment/Workspace'>
+                        Lagos/Abuja
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Ogun/Oyo
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Port-Harcourt/Delta
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Ibadan/Abuja
+                      </option>
+                      <option value='Apartment/Workspace'>
+                        Edo/Minna
+                      </option>
+                    </select>
+                  </span>
+
+                  {/* search button */}
+                  <button
+                    className="btn rounded-none w-[80%] mt-3 laptop:w-auto normal-case py-2 mx-10 mb-4 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    Search
+                  </button>
+                </div>
+                {/* end of search */}
+
+              </div>
+
+            </div>
+          </div>
           {/* end of mobile hero */}
 
 
@@ -158,10 +223,27 @@ const Listings = () => {
 
           {/* all property */}
           <div className="laptop:px px-0 tablet:mx-auto  laptop:ml-10 mx-0">
-            <p className="text-[#25324B] mb-4 font-bold text-[1.5rem] leading-[1.8rem]">
-              All Property
-            </p>
-            <span className="laptop:flex laptop:justify-between w-full mb-6">
+            <span className="flex justify-between">
+              <p className="text-[#25324B] mb-4 font-bold text-[1.5rem] leading-[1.8rem]">
+                All Property
+              </p>
+              {/* filter icon */}
+              <span className="py- select-none laptop:hidden tablet:hidden" title="Filter">
+                {/* <FiFilter size={22} onClick={() => setshowFilter(!showFilter)} /> */}
+                <a className="text-[#515B6F]"
+                  onClick={() => setshowFilter(!showFilter)}>
+                  Filter
+                </a>
+              </span>
+            </span>
+
+            <span className="laptop:hidden tablet:flex py-4 text-[#515B6F] font-medium leading-[1.6rem]">
+              Take a deep dive and browse apartment for rent,
+              original neighborhood photos, resident reviews and local insights
+              to find what is right for you.
+            </span>
+
+            <span className="laptop:flex hidden tablet:block laptop:justify-between w-full mb-6">
               <p className="text-[#25324B] font-normal text-base leading-[1.6rem]">
                 Showing 73 results
               </p>
@@ -227,7 +309,7 @@ const Listings = () => {
             </span>
 
             {/* properties 1-9 */}
-            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
+            <div className="grid grid-cols-1 mt-6 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
               {/* 01 */}
               <div className=" border-2 rounded-[1rem]">
                 <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
