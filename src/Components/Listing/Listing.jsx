@@ -35,7 +35,7 @@ const Listings = () => {
 
 
   return (
-    <section className=''>
+    <section className="select-none">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
