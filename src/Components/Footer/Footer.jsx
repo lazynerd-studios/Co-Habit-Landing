@@ -31,7 +31,7 @@ const Footer = () => {
               The latest news, articles, sent to your <br className="hidden laptop:flex" />
               inbox weekly.
             </p>
-            <div className="flex-col w-full tablet:mt-2 laptop:w-[18rem]">
+            <div className="flex-col tablet:w-[20rem] tablet:mt-2 laptop:w-[18rem]">
               <div className="relative">
                 <input type="email"
                   placeholder="Email Address"
