@@ -45,7 +45,7 @@ const Home = () => {
   const currentSlide = slides[index];
 
   return (
-    <section className="">
+    <section className="select-none">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
