@@ -33,7 +33,7 @@ function Slideshow() {
     const currentSlide = slides[index];
 
     return (
-        <div className="laptop:hidden tablet:hidden block overflow-hidden w-[%] mx-auto mt-8">
+        <div className="laptop:hidden tablet:hidden hidden overflow-hidden w-[%] mx-auto mt-8">
             <div className="slideshowSlider whitespace-nowrap">
                 <div className="slide bg-white p-0 rounded-[1rem]">
 
