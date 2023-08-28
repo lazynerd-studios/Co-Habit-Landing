@@ -401,15 +401,15 @@ const Home = () => {
               </div>
               {/* end of wide screen */}
 
-              <span className="mx-[rem] laptop:hidden tablet:hidden text-[#010886]">
-                <a className="font-semibold">
-                  Show all apartment
-                </a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="black">
+              <button
+                className="btn  normal-case laptop:hidden tablet:hidden mx-[4.5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:">
+                Show all apartment
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                  className="my-1">
                   <path d="M16.75 7.72559L1.75 7.72559" stroke="#010886" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                   <path d="M10.7002 1.70124L16.7502 7.72524L10.7002 13.7502" stroke="#010886" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-              </span>
+              </button>
 
             </div>
           </div>
