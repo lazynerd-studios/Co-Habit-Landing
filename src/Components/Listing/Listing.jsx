@@ -684,7 +684,7 @@ const Listings = () => {
         {/* end of pagination */}
 
       </motion.div>
-    </section >
+    </section>
   )
 }
 
