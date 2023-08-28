@@ -55,7 +55,7 @@ const Home = () => {
           {/* hero section */}
           <div className="hero-content text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
             <div className="w-auto laptop:mt-[7rem]">
-              <h1 className="laptop:text-[3.125rem] text-[2.125rem] laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
+              <h1 className="laptop:text-[3.125rem] tablet:text-[2.125rem] tablet:text-center laptop:text-center leading-[3.3rem] text-[3rem] text-left laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
@@ -63,14 +63,14 @@ const Home = () => {
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
                 </span>
-                <h1 className="mx-auto laptop:text-[3rem] text-[2rem] laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
+                <h1 className="mx-auto laptop:text-[3rem] text-[2rem] text-left leading-[2.4rem] tablet:text-center laptop:text-center laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
               </span>
 
               <div className="laptop:flex mt-8">
                 <span className="mb-6">
-                  <img src={HeroImage} className="laptop:max-w-[75rem] laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
+                  <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
                   <a href="#reviews">
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[28.7rem]" alt="scroll-to-explore" />
                   </a>
@@ -237,7 +237,7 @@ const Home = () => {
               <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
                 Recently Uploaded
               </h1>
-              <p className="text-center laptop:mb-[2.5rem] tablet:mb-[2.5rem] laptop:w-full">
+              <p className="text-center laptop:mb-[2.5rem] tablet:mb-[2.5rem] mb-[2.5rem] laptop:w-full">
                 Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
                 find what is right for you.
               </p>
@@ -248,9 +248,9 @@ const Home = () => {
 
               {/* wider screen */}
               {/* <div className="laptop:flex tablet:flex hidden gap-4"> */}
-              <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-6 gap-10">
+              <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-6 ">
                 {/* 01 */}
-                <div className="slide bg-white p-0 rounded-[1rem]">
+                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow1} className=" w-full" alt="bungalow-1" />
                   <span className="flex mt-4 mx-2 justify-between">
                     <p className="text-[1rem]">
@@ -287,7 +287,7 @@ const Home = () => {
                   <img src={Line} className="mt-5 mb-4" alt="line" />
 
                   <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
+                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
@@ -299,7 +299,7 @@ const Home = () => {
                 {/* end of 01 */}
 
                 {/* 02 */}
-                <div className="slide bg-white p-0 rounded-[1rem]">
+                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow2} className=" w-full" alt="bungalow-2" />
                   <span className="flex mt-4 mx-2 justify-between">
                     <p className="text-[1rem]">
@@ -336,7 +336,7 @@ const Home = () => {
                   <img src={Line} className="mt-5 mb-4" alt="line" />
 
                   <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
+                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
@@ -348,7 +348,7 @@ const Home = () => {
                 {/* end of 02 */}
 
                 {/* 03 */}
-                <div className="slide bg-white p-0 rounded-[1rem]">
+                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow3} className=" w-full" alt="bungalow-3" />
                   <span className="flex mt-4 mx-2 justify-between">
                     <p className="text-[1rem]">
@@ -385,7 +385,7 @@ const Home = () => {
                   <img src={Line} className="mt-5 mb-4" alt="line" />
 
                   <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] opacity-50" alt="location-pin" />
+                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
