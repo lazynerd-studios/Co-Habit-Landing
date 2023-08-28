@@ -236,10 +236,10 @@ const Home = () => {
         <div className="bg-[#f8f8fd]">
           <div className="w-auto my-8 mx-2 pb-8">
             <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
-              <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+              <h1 className="text-[1.5rem] mx-2 text-left tablet:text-center laptop:text-center pt-6 mb-4 font-bold">
                 Recently Uploaded
               </h1>
-              <p className="text-center laptop:mb-[2.5rem] tablet:mb-[2.5rem] mb-[2.5rem] laptop:w-full">
+              <p className="mx-2 text-left tablet:text-center laptop:text-center laptop:mb-[2.5rem] tablet:mb-[2.5rem] mb-[2.5rem] laptop:w-full">
                 Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
                 find what is right for you.
               </p>
@@ -410,10 +410,10 @@ const Home = () => {
         {/* find by location */}
         <div className="w-full bg-white">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
-            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+            <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">
               Find By Location
             </h1>
-            <p className="text-center mb-8 laptop:w-auto">
+            <p className="mx-2 text-left tablet:text-center laptop:text-center mb-8 laptop:w-auto">
               Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
@@ -496,10 +496,10 @@ const Home = () => {
         {/* good reviews by customers */}
         <div id="reviews" className="w-auto bg-[#DF802633] mt-8 pb-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
-            <h1 className="text-[1.5rem] pt-6 text-center mb-4 font-bold">
+            <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">
               Good Reviews By Customers
             </h1>
-            <p className="text-center laptop:mb-[2.5rem] laptop:w-auto">
+            <p className="mx-2 text-left tablet:text-center laptop:text-center laptop:mb-[2.5rem] laptop:w-auto">
               Customer reviews play a crucial role in today's interconnected world, influencing the decisions of consumers and <br className="laptop:flex hidden" />
               shaping the reputation of businesses.
             </p>
