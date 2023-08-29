@@ -219,10 +219,11 @@ const AboutUs = () => (
             dates farther than that.
           </h1>
 
-          <img src={ThinnerSeparatingLine} className='py-8' alt='separating-line' />
+          <img src={ThinnerSeparatingLine} className='py-8' alt='thinner-separating-line' />
 
 
 
+          <img src={EvenThinnerSeparatingLine} className='py-8' alt='even-thinner-separating-line' />
 
         </div>
       </div>
