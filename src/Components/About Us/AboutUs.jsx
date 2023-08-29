@@ -215,8 +215,9 @@ const AboutUs = () => (
       {/* OUR STORY */}
       <div className='py-8 bg-[#EFEFEF] h-auto text-[#333333]'>
         <div className='laptop:mx-[8rem] mx-4 laptop:pt-4'>
+
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
-            <button className='py-2 mb-6 font-bold cursor-default text-[1rem] leading-[1.6rem]'>
+            <button className='py-2 mb-6 font-bold mt-8 cursor-default text-[1rem] leading-[1.6rem]'>
               OUR STORY
             </button>
           </span>
