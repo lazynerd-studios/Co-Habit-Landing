@@ -35,7 +35,7 @@ const AboutUs = () => (
         </div>
       </div>
 
-      <div className='bg-white p-4 absolute w-auto hidden laptop:block -mt-9 h-auto mx-[8rem]'>
+      <div className='bg-white p-4 absolute w-auto hidden laptop:flex -mt-9 h-auto mx-[8rem]'>
         <div className='grid grid-cols-2 gap-0'>
 
           <span>
