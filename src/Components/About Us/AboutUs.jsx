@@ -222,7 +222,7 @@ const AboutUs = () => (
 
           <img src={ThinnerSeparatingLine} className='py-8' alt='thinner-separating-line' />
 
-          <div className="grid grid-cols-1 gap-4 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8 laptop:-ml-">
+          <div className="grid grid-cols-1 gap-4 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8 laptop:pb-6">
 
             {/* 01 */}
             <div className='flex gap-4'>
