@@ -313,8 +313,7 @@ const AboutUs = () => (
                   TECH ENGINEERING
                 </h2>
                 <p className='font-normal text-[1rem] leading-[1.6rem]'>
-                  Very dedicated team ensuring the smooth flow of
-                  operation inline with standard practices.
+                  Our hands-on engineering team employing the best technology to solve problems everyday.
                 </p>
               </span>
 
