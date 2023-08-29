@@ -89,6 +89,8 @@ const AboutUs = () => (
 
       </div>
 
+
+      {/* BENEFIT OF USING CO-HABIT */}
       <div className='py-8 bg-[#010886] text-white'>
         <div className='laptop:mx-[8rem] mx-4 tablet:mx-2 laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
@@ -204,13 +206,15 @@ const AboutUs = () => (
             </div>
 
           </div>
-          {/* end of 'how it works' */}
 
         </div>
       </div>
+      {/* END OF BENEFIT OF USING CO-HABIT */}
 
+
+      {/* OUR STORY */}
       <div className='py-8 bg-[#EFEFEF] h-auto text-[#333333]'>
-        <div className='laptop:mx-[8rem] laptop:pt-4'>
+        <div className='laptop:mx-[8rem] mx-4 laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
             <button className='py-2 mb-6 font-bold cursor-default text-[1rem] leading-[1.6rem]'>
               OUR STORY
@@ -226,7 +230,7 @@ const AboutUs = () => (
 
           <img src={ThinnerSeparatingLine} className='py-8' alt='thinner-separating-line' />
 
-          <div className="grid grid-cols-1 gap-4 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8 laptop:pb-6">
+          <div className="grid grid-cols-1 gap-12 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8 laptop:pb-6">
 
             {/* 01 */}
             <div className='flex gap-4'>
@@ -331,6 +335,7 @@ const AboutUs = () => (
 
         </div>
       </div>
+      {/* END OF OUR STORY */}
 
 
     </motion.div>
