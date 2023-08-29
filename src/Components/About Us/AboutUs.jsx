@@ -47,17 +47,17 @@ const AboutUs = () => (
         </div>
       </div>
 
-      <div className='bg-white px-6 py-12 absolute w-auto hidden laptop:block -mt-[4.5rem] h-auto mx-[8rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+      <div className='bg-white px-6 py-12 absolute laptop:w-auto w-[92.5%] mx-3  laptop:block -mt-[4.5rem] h-auto laptop:mx-[8rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
         {/* <div className='grid grid-cols-2 gap-0'> */}
-        <div class="flex justify-between">
+        <div class="laptop:flex justify-between">
 
-          <span className='px-8 border-2 py-0 h-12 rounded-[6.25rem] text-[#999999] border-[#999999] w-[35%] max-w-[40%] mr-10'>
-            <button className='py-2 font-bold text-[1rem] leading-[1.6rem]'>
+          <span className='px-8 border-2 laptop:py-0 py-4 laptop:mr-4 h-12 rounded-[6.25rem] text-[#999999] border-[#999999] w-[35%] max-w-[40%] mr-10'>
+            <button className='py-2 font-bold text-[1rem] mb-8 cursor-default leading-[1.6rem]'>
               EXPLORE WITH CO-HABIT
             </button>
           </span>
 
-          <div className='px-4 w-full '>
+          <div className='laptop:px-4  w-full '>
             <h1 className='text-[#1A1A1A] text-[2.5rem] font-bold leading-[2.75rem] mb-4'>
               OUR STORY
             </h1>
@@ -92,7 +92,7 @@ const AboutUs = () => (
       <div className='py-8 bg-[#010886] text-white'>
         <div className='laptop:mx-[8rem] tablet:mx-2 laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
-            <button className='py-2 font-bold text-[1rem] leading-[1.6rem]'>
+            <button className='py-2 font-bold text-[1rem] cursor-default leading-[1.6rem]'>
               BENEFIT OF USING CO-HABIT
             </button>
           </span>
@@ -212,7 +212,7 @@ const AboutUs = () => (
       <div className='py-8 bg-[#EFEFEF] h-auto text-[#333333]'>
         <div className='laptop:mx-[8rem] laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
-            <button className='py-2 mb-6 font-bold text-[1rem] leading-[1.6rem]'>
+            <button className='py-2 mb-6 font-bold cursor-default text-[1rem] leading-[1.6rem]'>
               OUR STORY
             </button>
           </span>
