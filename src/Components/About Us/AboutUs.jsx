@@ -104,7 +104,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 1 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt- text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
@@ -147,7 +147,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 2 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt- text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
@@ -178,7 +178,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 3 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt- text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
