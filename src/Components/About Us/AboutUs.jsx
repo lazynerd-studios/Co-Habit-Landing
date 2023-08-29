@@ -2,7 +2,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import BreadCrumb from "../../assets/Breadcrumb.png"
-import SeparatingLines from "../../assets/Separating Line.png"
+import SeparatingLine from "../../assets/Separating Line.png"
+import ThinnerSeparatingLine from "../../assets/ThinnerSeparatingLine.png"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
@@ -91,7 +92,7 @@ const AboutUs = () => (
             </button>
           </span>
 
-          <img src={SeparatingLines} className='py-8' alt='separating-lines' />
+          <img src={SeparatingLine} className='py-8' alt='separating-line' />
 
           <h1 className='laptop:w-[39.75rem] text-[2.5rem] font-bold leading-[2.75rem]'>
             Finding Your Ideal Space: Easy Apartment Search
@@ -211,12 +212,14 @@ const AboutUs = () => (
             </button>
           </span>
 
-          <img src={SeparatingLines} className='py-8' alt='separating-lines' />
+          <img src={SeparatingLine} className='py-8' alt='separating-line' />
 
           <h1 className='laptop:w-[39.75rem] text-[2.5rem] font-bold leading-[2.75rem]'>
             Although founded in 2023, our story
             dates farther than that.
           </h1>
+
+          <img src={ThinnerSeparatingLine} className='py-8' alt='separating-line' />
 
 
 
