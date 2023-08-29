@@ -310,7 +310,7 @@ const AboutUs = () => (
 
               <span>
                 <h2 className='font-medium text-[1.5rem] mb-2 leading-[1.8rem]'>
-                  ADMINISTRATION
+                  TECH ENGINEERING
                 </h2>
                 <p className='font-normal text-[1rem] leading-[1.6rem]'>
                   Very dedicated team ensuring the smooth flow of
