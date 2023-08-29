@@ -32,7 +32,7 @@ const AboutUs = () => (
       <div className="hero place-content-start ">
         <div className="hero-content w-full mt-10 mb-12 h-[16.1875rem] bg-[#010886] laptop:mt- laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
-          <div className="w-full laptop:mx-[8rem] top-0 laptop:mt-[3rem]">
+          <div className="w-full laptop:mx-[7rem] top-0 laptop:mt-[3rem]">
             <img src={BreadCrumb} className='' alt="Breadcrumb" />
             <h1
               className="text-[3rem] leading-[3.4375rem] font-bold text-[#fff] mt-8">
