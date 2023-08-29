@@ -35,7 +35,7 @@ const AboutUs = () => (
           {/* <div className="max-w-lg"> */}
           <div className="w-full laptop:mx-[7rem] top-0 laptop:mt-[3rem]">
 
-            <Link to="/login" className="">
+            <Link to="/" className="">
               <img src={BreadCrumb} className='' alt="Breadcrumb" />
             </Link>
             <h1
