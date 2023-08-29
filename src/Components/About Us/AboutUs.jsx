@@ -84,7 +84,7 @@ const AboutUs = () => (
       </div>
 
       <div className='py-8 bg-[#010886] text-white'>
-        <div className='laptop:mx-[8rem]'>
+        <div className='laptop:mx-[8rem] laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
             <button className='py-2 font-bold text-[1rem] leading-[1.6rem]'>
               BENEFIT OF USING CO-HABIT
@@ -134,8 +134,9 @@ const AboutUs = () => (
 
             {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
 
-            <span className='hidden laptop:block w-[] absolute z-50 bg-black mx-[18rem]'>
-              <svg width="488" height="65" viewBox="0 0 488 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span className='hidden laptop:block w-[] absolute z-50 mx-[19rem] mt-32'>
+              <svg width="428" height="65" viewBox="0 0 488 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* width="488" height="65" */}
                 <path d="M54.3333 3.5C54.3333 4.97276 55.5272 6.16667 57 6.16667C58.4728 6.16667 59.6667 4.97276 59.6667 3.5C59.6667 2.02724 58.4728 0.833333 57 0.833333C55.5272 0.833333 54.3333 2.02724 54.3333 3.5ZM1.12127 63.4851C46.1722 52.2223 57.5 18.8656 57.5 3.5H56.5C56.5 18.4678 45.4278 51.3777 0.878732 62.5149L1.12127 63.4851Z" fill="#92BFEB" />
                 <path d="M484.428 59.0833C482.955 59.0833 481.761 60.2772 481.761 61.75C481.761 63.2228 482.955 64.4167 484.428 64.4167C485.9 64.4167 487.094 63.2228 487.094 61.75C487.094 60.2772 485.9 59.0833 484.428 59.0833ZM424.515 5.87113C435.764 50.9218 469.08 62.25 484.428 62.25V61.25C469.479 61.25 436.609 50.1782 425.485 5.62887L424.515 5.87113Z" fill="#92BFEB" />
               </svg>
@@ -202,14 +203,22 @@ const AboutUs = () => (
         </div>
       </div>
 
-      <div className='bg-[#EFEFEF] h-[10rem]'>
+      <div className='py-8 bg-[#EFEFEF] h-auto text-[#333333]'>
+        <div className='laptop:mx-[8rem] laptop:pt-4'>
+          <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
+            <button className='py-2 font-bold text-[1rem] leading-[1.6rem]'>
+              OUR STORY
+            </button>
+          </span>
+
+        </div>
       </div>
 
 
-    </motion.div >
+    </motion.div>
 
 
-  </section >
+  </section>
 )
 
 export default AboutUs
