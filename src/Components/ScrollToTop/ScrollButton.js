@@ -10,7 +10,7 @@ bottom: 50px;
 font-size: 3rem;
 z-index: 10;
 cursor: pointer;
-color: black;
+color: #afafaf;
 transform: scale(2);
   @media (max-width: 768px) {
 width: 35px;
