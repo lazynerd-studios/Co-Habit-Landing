@@ -175,14 +175,14 @@ const AboutUs = () => (
 
             {/* styled rectangle 3 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-2 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt- text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt- text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
                 surrounding landscape reflected a high
                 level of attention to detail.
               </p>
-              <h2 className="absolute text-[#25324B] w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+              <h2 className="absolute text-[#25324B] w-auto ml-[2rem] laptop:px-1 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                 Close The Deal
               </h2>
               <img src={MoneyStack} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
