@@ -11,7 +11,7 @@ const animationConfiguration = {
 
 
 const AboutUs = () => (
-  <section className="bg-[#EFEFEF]">
+  <section className=" bg-[#010886]">
 
     <motion.div
       variants={animationConfiguration}
@@ -20,22 +20,57 @@ const AboutUs = () => (
       exit="exit"
       transition={{ duration: 3 }}
     >
-
-      <div className="hero min-h-screen ">
-        <div className="hero-content w-full mt-10 bg-[#010886] laptop:mt-auto laptop:mx-[8rem]">
+      {/* <div className='min-h-screen'> */}
+      <div className="hero place-content-start ">
+        <div className="hero-content w-full mt-10 mb-8  bg-[#010886] laptop:mt- laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
-          <div className="w-full laptop:mx-[8rem] top-0 laptop:mt-[7rem]">
+          <div className="w-full laptop:mx-[8rem] top-0 laptop:mt-[3rem]">
             <img src={BreadCrumb} className='' alt="Breadcrumb" />
             <h1
               className="text-[3rem] leading-[3.4375rem] font-bold text-[#fff] mt-12">
               About Us
             </h1>
-
           </div>
+
         </div>
       </div>
 
-      <div className='h-[20rem]'>
+      <div className='bg-white p-4 absolute w-auto hidden laptop:block -mt-9 h-auto mx-[8rem]'>
+        <div className='grid grid-cols-2 gap-0'>
+
+          <span>
+
+          </span>
+
+          <div className='mx-0'>
+            <h1 className=''>
+              OUR STORY
+            </h1>
+
+            <p className='text-[1rem]'>
+              A ground-breaking platform that transforms the way
+              we think about living arrangements is Co-Habit.
+              In addition to simplifying the apartment search process,
+              Co-Habit additionally creates a cutting-edge method for matching
+              up compatible roommates. This is a dual-purpose technology that is
+              unique in its design. Co-Habit simplifies this process by providing a
+              user-friendly interface that
+              enables people to find their ideal living place with ease.
+              Co-Habit makes sure the flat search process is simple and effective
+              with advanced search filters, interactive maps, and real-time updates
+              This concept becomes a reality thanks to Co-Habit. The platform wants
+              to improve its members' quality of life by cultivating a peaceful living
+              environment and encouraging gratifying connections and shared experiences.
+              Welcome to Co-Habit, the place where your quest for the ideal flat and your
+              quest for the ideal flatmate collide. Discover new opportunities for cohabitation,
+              and open the doors to shared experiences, shared places, and shared aspirations.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
+
+      <div className='h-[10rem] bg-[#EFEFEF]'>
 
       </div>
 
@@ -47,6 +82,8 @@ const AboutUs = () => (
         </div>
       </div>
 
+      <div className='bg-[#EFEFEF] h-[10rem]'>
+      </div>
 
 
     </motion.div>
