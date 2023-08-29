@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import BreadCrumb from "../../assets/Breadcrumb.png"
+import SeparatingLines from "../../assets/Separating Line.png"
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -85,6 +86,11 @@ const AboutUs = () => (
             </button>
           </span>
 
+          <img src={SeparatingLines} className='py-8' alt='separating-lines' />
+
+          <h1 className='w-[39.75rem] text-[2.5rem] font-bold leading-[2.75rem]'>
+            Finding Your Ideal Space: Easy Apartment Search
+          </h1>
 
         </div>
       </div>
