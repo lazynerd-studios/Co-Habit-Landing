@@ -283,8 +283,8 @@ const AboutUs = () => (
                   MEDIA & MARKETING
                 </h2>
                 <p className='font-normal text-[1rem] leading-[1.6rem]'>
-                  Very dedicated team ensuring the smooth flow of
-                  operation inline with standard practices.
+                  Excellent content delivery without bias. We take
+                  pride in being of service to others at our best.
                 </p>
               </span>
 
