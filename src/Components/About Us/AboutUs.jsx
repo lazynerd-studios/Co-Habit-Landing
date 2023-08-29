@@ -86,7 +86,7 @@ const AboutUs = () => (
       </div>
 
       <div className='py-8 bg-[#010886] text-white'>
-        <div className='laptop:mx-[8rem] laptop:pt-4'>
+        <div className='laptop:mx-[8rem] tablet:mx-2 laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
             <button className='py-2 font-bold text-[1rem] leading-[1.6rem]'>
               BENEFIT OF USING CO-HABIT
@@ -95,7 +95,7 @@ const AboutUs = () => (
 
           <img src={SeparatingLine} className='py-8' alt='separating-line' />
 
-          <h1 className='laptop:w-[39.75rem] text-[2.5rem] font-bold leading-[2.75rem]'>
+          <h1 className='laptop:w-[39.75rem] tablet:mx- text-[2.5rem] font-bold leading-[2.75rem]'>
             Finding Your Ideal Space: Easy Apartment Search
           </h1>
 
