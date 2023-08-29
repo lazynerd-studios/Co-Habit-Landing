@@ -31,7 +31,7 @@ const AboutUs = () => (
     >
       {/* <div className='min-h-screen'> */}
       <div className="hero place-content-start ">
-        <div className="hero-content w-full mt-10 mb-12 h-[16.1875rem] bg-[#010886] laptop:mt- laptop:mx-[8rem]">
+        <div className="hero-content w-full mt-10 laptop:mb-12 tablet:mb-12 h-[16.1875rem] bg-[#010886] laptop:mt- laptop:mx-[8rem]">
           {/* <div className="max-w-lg"> */}
           <div className="w-full laptop:mx-[7rem] top-0 laptop:mt-[3rem]">
 
@@ -39,7 +39,7 @@ const AboutUs = () => (
               <img src={BreadCrumb} className='' alt="Breadcrumb" />
             </Link>
             <h1
-              className="text-[3rem] leading-[3.4375rem] font-bold text-[#fff] mt-8">
+              className="text-[3rem] leading-[3.4375rem] tablet:mb-0 laptop:mb-0 mb-8 font-bold text-[#fff] mt-8">
               About Us
             </h1>
           </div>
@@ -85,12 +85,12 @@ const AboutUs = () => (
       </div>
       {/* </div> */}
 
-      <div className='h-[30rem] bg-[#EFEFEF]'>
+      <div className='laptop:h-[30rem] tablet:h-[30rem] h-[60rem] bg-[#EFEFEF]'>
 
       </div>
 
       <div className='py-8 bg-[#010886] text-white'>
-        <div className='laptop:mx-[8rem] tablet:mx-2 laptop:pt-4'>
+        <div className='laptop:mx-[8rem] mx-4 tablet:mx-2 laptop:pt-4'>
           <span className='px-8 border-2 py-4 rounded-[6.25rem] border-[#999999] w-[35%] max-w-[40%] mr-10'>
             <button className='py-2 font-bold text-[1rem] cursor-default leading-[1.6rem]'>
               BENEFIT OF USING CO-HABIT
@@ -108,7 +108,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 1 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-auto text-[#515B6F] laptop:px-1 tablet:w-[37%] w-[75%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
@@ -151,7 +151,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 2 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-auto text-[#515B6F] laptop:px-1 tablet:w-[37%] w-[75%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
@@ -182,7 +182,7 @@ const AboutUs = () => (
 
             {/* styled rectangle 3 */}
             <div className="laptop:relative">
-              <p className="absolute laptop:w-[%] text-[#515B6F] laptop:px-1 tablet:w-[rem] w-[%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+              <p className="absolute laptop:w-auto text-[#515B6F] laptop:px-1 tablet:w-[37%] w-[75%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                 The apartment appeared to be well-cared-
                 for and professionally managed. The
                 overall maintenance of the house and the
