@@ -313,7 +313,8 @@ const AboutUs = () => (
                   TECH ENGINEERING
                 </h2>
                 <p className='font-normal text-[1rem] leading-[1.6rem]'>
-                  Our hands-on engineering team employing the best technology to solve problems everyday.
+                  Our hands-on engineering team employing the
+                  best technology to solve problems everyday.
                 </p>
               </span>
 
