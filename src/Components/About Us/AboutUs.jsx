@@ -98,7 +98,7 @@ const AboutUs = () => (
           </h1>
 
           {/* text-in-shapes */}
-          <div className="grid grid-cols-1 gap-4 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-[4rem]">
+          <div className="grid grid-cols-1 gap-4 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-[4rem] laptop:-ml-">
 
             {/* styled rectangle 1 */}
             <div className="laptop:relative">
@@ -210,6 +210,16 @@ const AboutUs = () => (
               OUR STORY
             </button>
           </span>
+
+          <img src={SeparatingLines} className='py-8' alt='separating-lines' />
+
+          <h1 className='laptop:w-[39.75rem] text-[2.5rem] font-bold leading-[2.75rem]'>
+            Although founded in 2023, our story
+            dates farther than that.
+          </h1>
+
+
+
 
         </div>
       </div>
