@@ -35,7 +35,7 @@ const AboutUs = () => (
         </div>
       </div>
 
-      <div className='bg-white p-4 absolute w-auto hidden laptop:block -mt-9 h-auto mx-[8rem]'>
+      <div className='bg-white p-4 absolute w-auto hidden laptop:block -mt-9 h-auto mx-[8rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
         {/* <div className='grid grid-cols-2 gap-0'> */}
         <div class="flex justify-between">
 
