@@ -27,7 +27,7 @@ const NotFoundPage = () => {
                                     </h3>
 
                                     <p className="">
-                                        the page you are looking for not avaible!
+                                        The page you are looking for is not available!
                                     </p>
 
                                     <Link to="/" className="btn text-white bg-[#010886] mt-2 border-none hover:bg-[#010886]/75 ">Go to Home</Link>
