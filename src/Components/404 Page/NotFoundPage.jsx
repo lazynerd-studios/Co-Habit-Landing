@@ -23,7 +23,7 @@ const NotFoundPage = () => {
 
                                 <div className="contant_box_404 tablet:mt-4">
                                     <h3 className="h2">
-                                        Look like you're lost
+                                        Look like you're lost 🧐
                                     </h3>
 
                                     <p className="">
