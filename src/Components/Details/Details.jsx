@@ -1,23 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-// import { BiSearch } from "react-icons/bi";
-// import { GrLocation } from "react-icons/gr";
+import { BiSearch } from "react-icons/bi";
+import { GrLocation } from "react-icons/gr";
 // import { IoRemoveOutline } from "react-icons/io5";
 // import { BsChevronUp } from "react-icons/bs";
 // import { BsChevronDown } from "react-icons/bs";
 // import Scribble from "../../assets/scribble-lines.svg"
 // import DivideLine from "../../assets/line-Divider.png"
-// import Bungalow1 from "../../assets/bungalow-1.png"
-// import BathIcon from "../../assets/u_bath.svg"
-// import BedIcon from "../../assets/u_bed-double.svg"
+import Bungalow01 from "../../assets/Bungalow 01.png"
+import BathIcon from "../../assets/u_bath.svg"
+import BedIcon from "../../assets/u_bed-double.svg"
 // import Line from "../../assets/Line 9.svg"
-// import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
-// import "./styles.css"
+import "./styles.css"
 // import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 // import { FiFilter } from "react-icons/fi";
-// import HeaderBg from "../../assets/header-BG.png"
+import HeaderBg from "../../assets/header-BG.png"
+import HouseBg01 from "../../assets/HouseBg01.png"
+import HouseBg02 from "../../assets/HouseBg02.png"
+import Half01 from "../../assets/Half01.png"
+import Half02 from "../../assets/Half02.png"
 // import MobileLines from "../../assets/Mobile lines.png"
 
 
@@ -45,735 +48,109 @@ const Details = () => {
                 transition={{ duration: 3 }}
             >
                 {/* bg-[#f8f8fd] */}
-                <div
-                    className="hero listing-hero laptop:min-h-[screen] min-h-screen bg-center bg-contain"
-                    style={{ backgroundImage: `url(${HeaderBg})` }}
-                >
+                {/* <div
+                    className="hero laptop:min-h-[screen] min-h-screen bg-center bg-contain"> */}
+                {/* style={{ backgroundImage: `url(${HeaderBg})` }} */}
 
-                    {/* mobile hero */}
-                    <div className="hero-content laptop:hidden tablet:hidden text-center mt-10 laptop:mt-auto laptop:mx-[8rem]">
-                        <div className="w-auto laptop:mt-[7rem]">
-                            <h1 className="laptop:text-[3.125rem] tablet:text-[2.125rem] tablet:text-center laptop:text-center leading-[3.3rem] text-[3rem] text-left laptop:leading-[3.4375rem] font-bold uppercase text-[#25324B]">
-                                FIND YOUR PERFECT
-                            </h1>
+                {/* </div> */}
 
-                            <h1 className="mx-auto laptop:text-[3rem] text-[2rem] text-left leading-[2.4rem] tablet:text-center laptop:text-center laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
-                                SHARED APARTMENT
-                            </h1>
+                <div className="laptop:flex hidden laptop:mt-">
+                    <img src={Half01} className="" alt="" />
+                    <img src={HouseBg01} className="" alt="" />
+                    <img src={HouseBg02} className="" alt="" />
+                    {/* <img src={Half02} className="" alt="" /> */}
+                </div>
 
-                            <div className="laptop:flex mt-8">
-                                <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
+                <div className="laptop:absolute w-auto mt-9 laptop:-mt-[10.5rem] laptop:flex laptop:mx-[8rem] laptop:w-[85%] rounded-md bg-white p-2 border-2">
+                    {/* laptop:w-[65%] laptop:mx-[5rem] */}
+                    <div className="flex">
+                        <span className="my-3 mx-3">
+                            <img src={Bungalow01} className="rounded-[0.5rem] w-[70%]" alt="" />
+                        </span>
 
-                                {/* full search bar */}
-                                {/* search */}
-                                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[51%] rounded-md bg-white px-2 py-2 border-none">
-                                    {/* laptop:w-[65%] laptop:mx-[5rem] */}
-                                    <span className="flex">
-                                        {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
-                                        <span className="my-3 mx-2">
-                                            <BiSearch size={25} />
-                                        </span>
-                                        <input type="text"
-                                            className="border-b-[#7C8493] laptop:w-auto w-[77%] outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
-                                            placeholder="Apartment/Workspace" autoComplete="true"
-                                        />
-                                    </span>
-
-                                    {/* location */}
-                                    <span className="flex ">
-                                        {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
-                                        <span className="my-3 mx-2">
-                                            <GrLocation size={25} />
-                                        </span>
-                                        <select className="laptop:w-auto laptop:mr-[] w-[78%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
-                                            name="Location">
-                                            <option className="py-4" value='Apartment/Workspace'>
-                                                Lagos/Abuja
-                                            </option>
-                                            <option value='Apartment/Workspace'>
-                                                Ogun/Oyo
-                                            </option>
-                                            <option value='Apartment/Workspace'>
-                                                Port-Harcourt/Delta
-                                            </option>
-                                            <option value='Apartment/Workspace'>
-                                                Ibadan/Abuja
-                                            </option>
-                                            <option value='Apartment/Workspace'>
-                                                Edo/Minna
-                                            </option>
-                                        </select>
-                                    </span>
-
-                                    {/* search button */}
-                                    <button
-                                        className="btn rounded-none w-[80%] mt-3 laptop:w-auto normal-case py-2 mx-10 mb-4 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
-                                        Search
-                                    </button>
-                                </div>
-                                {/* end of search */}
-
-                            </div>
-
-                        </div>
-                    </div>
-                    {/* end of mobile hero */}
-
-
-                    <div className="laptop:mt-0 hidden laptop:block tablet:block laptop:mx-[2rem]">
-                        <div className="text-center">
-                            <h1 className=" text-[2.125rem] laptop:mt-0 mt-8 tablet:mt-0 laptop:leading-[3.3rem] font-bold text-[#25324B]">
-                                <span className="text-5xl">
-                                    Find your &nbsp;
-                                </span>
-                                <span className="block laptop:inline ">
-                                    <span className="text-5xl text-[#010886] leading-[3.4375rem]">
-                                        Shared Apartment
-                                    </span>
-                                    <img src={Scribble}
-                                        className='absolute laptop:mx-[26rem] mx-8 laptop:w-auto w-[80%]'
-                                        alt='scribble-lines' />
-                                </span>
-                            </h1>
-
-                            <p className=' leading-[1.6rem] mt-6 mb-10'>
-                                Our mission is to help people find affordable homes with a seamless and rewarding shared experiences
+                        <span className="-ml-[3rem]">
+                            <p className=" text-[#F6513B] my-3 bg-[#FEECE5] p-2 rounded-[0.625rem] w-[80%] px-6">
+                                Avaliable for rent
                             </p>
-                            {/* <button className="py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">Search</button> */}
-                        </div>
+                            <p className="text-[#616A6A] font-bold leading-[1.6rem] different-font">
+                                Bungalow
+                            </p>
+                            <p className="flex gap-4 my-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 10.8C12.3956 10.8 12.7822 10.6827 13.1111 10.4629C13.44 10.2432 13.6964 9.93082 13.8478 9.56537C13.9991 9.19991 14.0387 8.79778 13.9616 8.40982C13.8844 8.02186 13.6939 7.66549 13.4142 7.38579C13.1345 7.10608 12.7781 6.9156 12.3902 6.83843C12.0022 6.76126 11.6001 6.80087 11.2346 6.95224C10.8692 7.10362 10.5568 7.35996 10.3371 7.68886C10.1173 8.01776 10 8.40444 10 8.8C10 9.33043 10.2107 9.83914 10.5858 10.2142C10.9609 10.5893 11.4696 10.8 12 10.8ZM11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L16.8 13.61C17.75 12.6605 18.397 11.4507 18.6593 10.1335C18.9216 8.81623 18.7873 7.45081 18.2735 6.20989C17.7597 4.96897 16.8894 3.90831 15.7727 3.16206C14.656 2.41581 13.3431 2.01749 12 2.01749C10.6569 2.01749 9.344 2.41581 8.22731 3.16206C7.11062 3.90831 6.24033 4.96897 5.72652 6.20989C5.2127 7.45081 5.07845 8.81623 5.34073 10.1335C5.60301 11.4507 6.25005 12.6605 7.2 13.61L11.29 17.71ZM7.23 8.34C7.29833 7.62702 7.52502 6.93829 7.89352 6.32411C8.26203 5.70994 8.76305 5.18581 9.36 4.79C10.1442 4.2751 11.0619 4.00076 12 4.00076C12.9381 4.00076 13.8558 4.2751 14.64 4.79C15.233 5.18445 15.7311 5.7054 16.0987 6.31538C16.4663 6.92537 16.6942 7.60923 16.7659 8.31779C16.8376 9.02634 16.7514 9.74199 16.5135 10.4133C16.2756 11.0845 15.8919 11.6947 15.39 12.2L12 15.59L8.61 12.2C8.10752 11.6996 7.72293 11.0935 7.48421 10.4258C7.24548 9.75807 7.15864 9.04552 7.23 8.34ZM19 20H5C4.73478 20 4.48043 20.1054 4.29289 20.2929C4.10536 20.4804 4 20.7348 4 21C4 21.2652 4.10536 21.5196 4.29289 21.7071C4.48043 21.8946 4.73478 22 5 22H19C19.2652 22 19.5196 21.8946 19.7071 21.7071C19.8946 21.5196 20 21.2652 20 21C20 20.7348 19.8946 20.4804 19.7071 20.2929C19.5196 20.1054 19.2652 20 19 20Z" fill="#515B6F" />
+                                </svg>
 
-                        {/* search */}
-                        <div className="mt-[] laptop: laptop:flex justify-between laptop:mx-[] rounded-md bg-white p-2 px-4 border-2 border-none">
-                            {/* laptop:w-[65%] laptop:mx-[5rem] */}
-                            <span className="flex">
+                                Lagos Mainland
+                            </p>
 
-                                <span className="my-3 mx-2">
-                                    <BiSearch size={25} />
+                            <span className="flex gap-6">
+                                <span className="flex gap-2 my-3">
+                                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+
+                                    <p className="py-1">
+                                        2 Room
+                                    </p>
                                 </span>
 
-                                <input type="text"
-                                    className="border-b-[#7C8493] w-full  mr-[2rem] laptop:px-0 px-2 py-2 border-2 border-t-white border-x-white outline-none text-[#7C8493]"
-                                    placeholder="Apartment/Workspace"
-                                    autoComplete="true"
-                                    size={40}
-                                />
-                            </span>
+                                <span className="flex gap-2 my-3">
+                                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
 
-                            {/* <span className=' rotate-90 px-2'>
-              <IoRemoveOutline size={25} />
-            </span> */}
-
-                            {/* location */}
-                            <span className="flex w-auto ">
-
-                                <span className="my-3 mx-2">
-                                    <GrLocation size={25} />
+                                    <p className="py-1">
+                                        2 Baths
+                                    </p>
                                 </span>
-
-                                {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
-                                <select
-                                    className="laptop:w-full pr-[12rem] w-[78%] tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white outline-none text-[#7C8493]"
-                                    name="Location">
-                                    <option className="py-4" value='Apartment/Workspace'>
-                                        Lagos/Abuja
-                                    </option>
-                                    <option value='Apartment/Workspace'>
-                                        Ogun/Oyo
-                                    </option>
-                                    <option value='Apartment/Workspace'>
-                                        Port-Harcourt/Delta
-                                    </option>
-                                    <option value='Apartment/Workspace'>
-                                        Ibadan/Abuja
-                                    </option>
-                                    <option value='Apartment/Workspace'>
-                                        Edo/Minna
-                                    </option>
-                                </select>
                             </span>
 
-                            <button
-                                className="btn laptop:mx-[1rem] tablet:mx-[4.5rem] mx-[2rem] rounded-none w-[80%] mt-3 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
-                                Search
-                            </button>
-                        </div>
-                        {/* end of search */}
+                        </span>
 
-                        <p className="text-[#515B6F] py-4 laptop:mx-1 mx-8 w-auto">
-                            Popular : Apartment, Bungalow, 2 Bedroom
-                        </p>
+                        <span className="ml-[32rem]">
+                            <p className="text-[#010886] font-bold leading-[1.8rem] text-[1.5rem] my-[5rem] ">
+                                NGN150,000
+                            </p>
+                        </span>
+
                     </div>
+                </div>
+
+
+                {/* <div className="hero-content mt-10 laptop:mt-auto laptop:mx-[8rem]"> */}
+                <div className="laptop:mx-[8rem]">
+                    <div className="">
+
+                        <div className="w-auto border text-[1.5rem] font-bold laptop:mt-[10rem]">
+                            <h1>
+                                Description
+                            </h1>
+                            <p>
+                                Welcome to your new home! This delightful 3-bedroom house,
+                                nestled in a peaceful and family-friendly neighborhood,
+                                offers comfort, convenience, and a warm sense of community.
+                                With its appealing curb appeal and well-maintained exterior,
+                                this property is sure to capture your heart from the moment you
+                                step inside.
+                            </p>
+                        </div>
+
+                        <div className="w-1/2">
+                            <span className="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M15.0377 11.6667C14.5454 11.6699 14.0598 11.7822 13.6161 11.9955C13.1723 12.2087 12.7812 12.5176 12.4711 12.9L8.22106 10.9417C8.42088 10.3298 8.42088 9.67021 8.22106 9.05833L12.4711 7.1C12.9724 7.70497 13.6713 8.1134 14.4445 8.2532C15.2177 8.393 16.0154 8.25519 16.6968 7.86409C17.3783 7.47298 17.8997 6.85373 18.169 6.11562C18.4383 5.37751 18.4383 4.56799 18.1688 3.82992C17.8994 3.09186 17.3778 2.4727 16.6963 2.08172C16.0148 1.69075 15.2171 1.55308 14.4439 1.69302C13.6708 1.83296 12.9719 2.24152 12.4707 2.84658C11.9694 3.45164 11.698 4.21432 11.7044 5C11.7069 5.19853 11.7264 5.39647 11.7627 5.59167L7.36272 7.61667C6.89362 7.15798 6.29959 6.84793 5.65506 6.72536C5.01053 6.60278 4.34416 6.67314 3.73943 6.92761C3.13471 7.18208 2.61852 7.60935 2.25556 8.15589C1.89259 8.70242 1.69897 9.34392 1.69897 10C1.69897 10.6561 1.89259 11.2976 2.25556 11.8441C2.61852 12.3907 3.13471 12.8179 3.73943 13.0724C4.34416 13.3269 5.01053 13.3972 5.65506 13.2746C6.29959 13.1521 6.89362 12.842 7.36272 12.3833L11.7627 14.4083C11.7264 14.6035 11.7069 14.8015 11.7044 15C11.7044 15.6593 11.8999 16.3037 12.2662 16.8519C12.6324 17.4001 13.153 17.8273 13.7621 18.0796C14.3712 18.3319 15.0414 18.3979 15.688 18.2693C16.3346 18.1407 16.9286 17.8232 17.3947 17.357C17.8609 16.8908 18.1784 16.2969 18.307 15.6503C18.4356 15.0037 18.3696 14.3335 18.1173 13.7244C17.865 13.1153 17.4378 12.5947 16.8896 12.2284C16.3415 11.8622 15.697 11.6667 15.0377 11.6667ZM15.0377 3.33333C15.3674 3.33333 15.6896 3.43108 15.9637 3.61422C16.2378 3.79735 16.4514 4.05765 16.5775 4.3622C16.7037 4.66674 16.7367 5.00185 16.6724 5.32515C16.6081 5.64845 16.4493 5.94543 16.2162 6.17851C15.9831 6.4116 15.6862 6.57033 15.3629 6.63464C15.0396 6.69895 14.7045 6.66595 14.3999 6.5398C14.0954 6.41365 13.8351 6.20003 13.6519 5.92595C13.4688 5.65187 13.3711 5.32964 13.3711 5C13.3711 4.55797 13.5467 4.13405 13.8592 3.82149C14.1718 3.50893 14.5957 3.33333 15.0377 3.33333ZM5.03772 11.6667C4.70809 11.6667 4.38585 11.5689 4.11177 11.3858C3.83769 11.2026 3.62407 10.9424 3.49792 10.6378C3.37178 10.3333 3.33877 9.99815 3.40308 9.67485C3.46739 9.35155 3.62612 9.05458 3.85921 8.82149C4.0923 8.5884 4.38927 8.42967 4.71257 8.36536C5.03587 8.30105 5.37099 8.33406 5.67553 8.4602C5.98007 8.58635 6.24037 8.79997 6.42351 9.07405C6.60664 9.34813 6.70439 9.67037 6.70439 10C6.70439 10.442 6.5288 10.866 6.21623 11.1785C5.90367 11.4911 5.47975 11.6667 5.03772 11.6667ZM15.0377 16.6667C14.7081 16.6667 14.3859 16.5689 14.1118 16.3858C13.8377 16.2026 13.6241 15.9424 13.4979 15.6378C13.3718 15.3333 13.3388 14.9982 13.4031 14.6749C13.4674 14.3515 13.6261 14.0546 13.8592 13.8215C14.0923 13.5884 14.3893 13.4297 14.7126 13.3654C15.0359 13.3011 15.371 13.3341 15.6755 13.4602C15.9801 13.5863 16.2404 13.8 16.4235 14.074C16.6066 14.3481 16.7044 14.6704 16.7044 15C16.7044 15.442 16.5288 15.866 16.2162 16.1785C15.9037 16.4911 15.4798 16.6667 15.0377 16.6667Z" fill="#010886" />
+                                </svg>
+                                <p className="">
+                                    Share
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="h-[10rem]">
 
                 </div>
 
-                {/* listings */}
-                <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
 
-                    {/* sidebar */}
-                    <span className="-mr- laptop:-ml-8 hidden laptop:flex tablet:hidden">
-                        <SidebarWithContentSeparator />
-                    </span>
 
-                    <span className="-mr- mt-[7rem] laptop:hidden absolute">
-                        {showFilter && <SidebarWithContentSeparator />
-                        }
-
-                    </span>
-                    {/* end of sidebar */}
-
-
-                    {/* all property */}
-                    <div className="laptop:px px-0 tablet:mx-auto  laptop:ml-10 mx-0">
-                        <span className="flex justify-between">
-                            <p className="text-[#25324B] mb-4 font-bold text-[1.5rem] leading-[1.8rem]">
-                                All Property
-                            </p>
-                            {/* filter icon */}
-                            <span className="py- select-none laptop:hidden tablet:hidden" title="Filter">
-                                {/* <FiFilter size={22} onClick={() => setshowFilter(!showFilter)} /> */}
-                                <a className="text-[#515B6F]"
-                                    onClick={() => setshowFilter(!showFilter)}>
-                                    Filter
-                                </a>
-                            </span>
-                        </span>
-
-                        <span className="laptop:hidden tablet:flex py-4 text-[#515B6F] font-medium leading-[1.6rem]">
-                            Take a deep dive and browse apartment for rent,
-                            original neighborhood photos, resident reviews and local insights
-                            to find what is right for you.
-                        </span>
-
-                        <span className="laptop:flex hidden tablet:block laptop:justify-between w-full mb-6">
-                            <p className="text-[#25324B] font-normal text-base leading-[1.6rem]">
-                                Showing 73 results
-                            </p>
-                            <span className="flex mb-4 mt-2 laptop:mb-0">
-                                <label htmlFor="search-filter" className="text-[#7C8493] laptop:ml-4 font-normal text-base leading-[1.6rem]">
-                                    Sort by:
-                                </label>
-                                <select id="search-filter" className="pr-4 px-1 outline-none select-none font-medium text-[#25324B]"
-                                    name="search-filter">
-                                    <option className="" value='Most relevant'>
-                                        Most relevant
-                                    </option>
-                                    <option className="" value='Least relevant'>
-                                        Least relevant
-                                    </option>
-                                    <option className="" value='most relevant'>
-                                        Budget
-                                    </option>
-                                    <option className="" value='most relevant'>
-                                        Location
-                                    </option>
-                                </select>
-                                <span className="flex laptop:ml-12">
-                                    <span className="mx-2" title='Grid view'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <g clipPath="url(#clip0_1014_972)">
-                                                <path d="M9 4.49998H5C4.44772 4.49998 4 4.9477 4 5.49998V9.49998C4 10.0523 4.44772 10.5 5 10.5H9C9.55228 10.5 10 10.0523 10 9.49998V5.49998C10 4.9477 9.55228 4.49998 9 4.49998Z" fill="#010886" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M19 4.49998H15C14.4477 4.49998 14 4.9477 14 5.49998V9.49998C14 10.0523 14.4477 10.5 15 10.5H19C19.5523 10.5 20 10.0523 20 9.49998V5.49998C20 4.9477 19.5523 4.49998 19 4.49998Z" fill="#010886" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M9 14.5H5C4.44772 14.5 4 14.9477 4 15.5V19.5C4 20.0523 4.44772 20.5 5 20.5H9C9.55228 20.5 10 20.0523 10 19.5V15.5C10 14.9477 9.55228 14.5 9 14.5Z" fill="#010886" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M19 14.5H15C14.4477 14.5 14 14.9477 14 15.5V19.5C14 20.0523 14.4477 20.5 15 20.5H19C19.5523 20.5 20 20.0523 20 19.5V15.5C20 14.9477 19.5523 14.5 19 14.5Z" fill="#010886" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1014_972">
-                                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                    <span className="mx-2" title='List view'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                            <g opacity="0.5" clipPath="url(#clip0_1014_854)">
-                                                <path d="M18 4.49998H6C4.89543 4.49998 4 5.39542 4 6.49998V8.49998C4 9.60455 4.89543 10.5 6 10.5H18C19.1046 10.5 20 9.60455 20 8.49998V6.49998C20 5.39542 19.1046 4.49998 18 4.49998Z" stroke="#515B6F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M18 14.5H6C4.89543 14.5 4 15.3954 4 16.5V18.5C4 19.6046 4.89543 20.5 6 20.5H18C19.1046 20.5 20 19.6046 20 18.5V16.5C20 15.3954 19.1046 14.5 18 14.5Z" stroke="#515B6F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1014_854">
-                                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-
-                                    {/* filter icon */}
-                                    <span className="px-2 laptop:hidden" title="Filter">
-                                        <FiFilter size={22} onClick={() => setshowFilter(!showFilter)} />
-                                    </span>
-
-                                </span>
-                            </span>
-
-                            {/* <img src={DivideLine} className="" alt='' /> */}
-
-                        </span>
-
-                        {/* properties 1-9 */}
-                        <div className="grid grid-cols-1 mt-6 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
-                            {/* 01 */}
-                            <Link to="/details">
-                                <div className=" border-2 rounded-[1rem]">
-                                    <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
-                                    <span className="flex mt-2 mx-3 justify-between">
-                                        <p className="text-[1rem]">
-                                            {currentSlide.house}
-                                        </p>
-                                        <p className="text-[1rem] text-[#010886] font-bold">
-                                            {currentSlide.price}
-                                        </p>
-                                    </span>
-
-                                    <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                        <span className="mx-1 flex">
-                                            <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                            <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                                {currentSlide.rooms}
-                                            </p>
-                                        </span>
-
-                                        <span className="mx-1 flex">
-                                            <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                            <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                                {currentSlide.baths}
-                                            </p>
-                                        </span>
-
-                                    </span>
-
-                                    <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                    <span className="flex">
-                                        <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                        <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                            {currentSlide.area}
-                                        </p>
-                                    </span>
-                                </div>
-                            </Link>
-                            {/* end of 01 */}
-
-                            {/* 02 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 02 */}
-
-                            {/* 03 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 03 */}
-
-                            {/* 04 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 04 */}
-
-                            {/* 05 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 05 */}
-
-                            {/* 06 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 06 */}
-
-                            {/* 07 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 07 */}
-
-                            {/* 08 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 08 */}
-
-                            {/* 09 */}
-                            <div className=" border-2 rounded-[1rem]">
-                                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                                <span className="flex mt-2 mx-3 justify-between">
-                                    <p className="text-[1rem]">
-                                        {currentSlide.house}
-                                    </p>
-                                    <p className="text-[1rem] text-[#010886] font-bold">
-                                        {currentSlide.price}
-                                    </p>
-                                </span>
-
-                                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                                    <span className="mx-1 flex">
-                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.rooms}
-                                        </p>
-                                    </span>
-
-                                    <span className="mx-1 flex">
-                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                                        <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                                            {currentSlide.baths}
-                                        </p>
-                                    </span>
-
-                                </span>
-
-                                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                                <span className="flex">
-                                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[10%] opacity-50" alt="location-pin" />
-                                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                                        {currentSlide.area}
-                                    </p>
-                                </span>
-                            </div>
-                            {/* end of 09 */}
-
-                        </div>
-                    </div>
-                    {/* end of all property */}
-
-                </div>
-                {/* end of listings */}
-
-                {/* pagination */}
-                <ol className="laptop:flex tablet:flex hidden justify-center gap-1 mb-4 pb-8 text-xs font-medium select-none">
-                    <li>
-                        <a
-                            href="#"
-                            className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
-                        >
-                            <span className="sr-only">Prev Page</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                                <g clipPath="url(#clip0_1030_276)">
-                                    <path d="M15.5 6L9.5 12L15.5 18" stroke="#25324B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1030_276">
-                                        <rect width="24" height="24" fill="white" transform="translate(0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-blue-600 bg-[#010886] text-center leading-8 text-white"
-                        >
-                            1
-                        </a>
-                    </li>
-
-                    <li
-                        className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                    >
-                        2
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                        >
-                            3
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                        >
-                            4
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                        >
-                            5
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                        >
-                            ...
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-                        >
-                            33
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
-                        >
-                            <span className="sr-only">Next Page</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                                <g clipPath="url(#clip0_1030_294)">
-                                    <path d="M9.875 6L16.125 12L9.875 18" stroke="#25324B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1030_294">
-                                        <rect width="25" height="24" fill="white" transform="translate(0.5)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </li>
-                </ol>
-                {/* end of pagination */}
 
             </motion.div>
         </section>
