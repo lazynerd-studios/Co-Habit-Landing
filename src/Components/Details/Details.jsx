@@ -22,6 +22,7 @@ import HouseBg01 from "../../assets/HouseBg01.png"
 import HouseBg02 from "../../assets/HouseBg02.png"
 import Half01 from "../../assets/Half01.png"
 import Half02 from "../../assets/Half02.png"
+import BasicRating from "./Rating";
 // import MobileLines from "../../assets/Mobile lines.png"
 
 
@@ -115,8 +116,8 @@ const Details = () => {
 
 
                 {/* DESCRIPTION */}
-                <div className="flex laptop:mt laptop:mx-[8rem] gap-12">
-                    <div className="laptop:mx-[rem] gap-">
+                <div className="flex laptop:mt laptop:mx-[8rem] mb-8 gap-12">
+                    <div className="laptop:mx-[rem] gap- laptop:w-auto">
 
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[10rem]">
 
@@ -202,7 +203,7 @@ const Details = () => {
                             <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
                                 Location
                             </h1>
-                            <img src={Map} className="" alt="" />
+                            <img src={Map} className="select-none" alt="" />
                         </div>
 
                         {/* Rating */}
@@ -251,11 +252,21 @@ const Details = () => {
                             <textarea id="reviews">
 
                             </textarea>
+
+                            <span>
+                                <p className="leading-[1.6rem] font-medium mb-2">
+                                    Rating
+                                </p>
+
+                                <BasicRating />
+                            </span>
+
                         </div>
 
                     </div>
 
-                    <div className="w-auto p-4 text-[1.5rem] border font-bold laptop:mt-[10rem]">
+                    {/* right column */}
+                    <div className="w-[50%] p-4 text-[1.5rem] border font-bold laptop:mt-[10rem]">
                         <div className="">
                             {/* share */}
                             <span className="flex">
