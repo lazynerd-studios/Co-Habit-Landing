@@ -179,20 +179,20 @@ const Details = () => {
                             <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
                                 Availability and Rental Terms
                             </h1>
-                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
                                 1. Monthly Rent: NGN 70,000.
                             </p>
 
-                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
                                 2. Security Deposit: One month's rent
                             </p>
 
-                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
-                                1. Monthly Rent: NGN 70,000.
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                3. Lease Duration: 12 months (flexible options available)
                             </p>
 
-                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
-                                1. Monthly Rent: NGN 70,000.
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                4. You can share apartment or co-working space with someone
                             </p>
                         </div>
 
