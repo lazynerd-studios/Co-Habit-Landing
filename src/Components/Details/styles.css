@@ -3,3 +3,10 @@
 .different-font {
     font-family: Epilogue;
 }
+
+img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+    /* Disable right-clicking */
+    /* user-drag: none; */
+}
