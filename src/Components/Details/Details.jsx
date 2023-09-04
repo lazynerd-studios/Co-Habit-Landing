@@ -113,16 +113,16 @@ const Details = () => {
                 </div>
 
 
-
-                <div className="flex laptop:mt laptop:mx-[8rem] gap-8">
-                    <div className="laptop:mx-[rem] gap-8">
+                {/* DESCRIPTION */}
+                <div className="flex laptop:mt laptop:mx-[8rem] gap-12">
+                    <div className="laptop:mx-[rem] gap-">
 
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[10rem]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
                                 Description
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
+                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
                                 Welcome to your new home! This delightful 3-bedroom house,
                                 nestled in a peaceful and family-friendly neighborhood,
                                 offers comfort, convenience, and a warm sense of community.
@@ -132,40 +132,62 @@ const Details = () => {
                             </p>
                         </div>
 
+                        {/* Key Features */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[rem]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Key Features
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                1. Spacious Living Areas: The interior boasts a generous
+                                open-concept layout, creating an inviting and airy atmosphere.
+                                The living room is bathed in natural light, creating a perfect
+                                space for relaxation and entertainment.
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                2. Modern Kitchen: The well-appointed kitchen is equipped with
+                                modern appliances, ample storage, and a breakfast bar, making meal
+                                preparation a breeze. Whether you're an experienced cook or just enjoy
+                                the occasional culinary adventure, this kitchen has everything you need.
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                3. Cozy Bedrooms: The three bedrooms are thoughtfully designed to
+                                provide a peaceful retreat after a long day. Each room features
+                                comfortable space, built-in closets, and large windows that bring
+                                in plenty of natural light.
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal mb-4 text-[#515B6F]">
+                                4. Updated Bathrooms: The house boasts recently renovated bathrooms,
+                                featuring elegant fixtures and tasteful finishes that exude a spa-like
+                                ambiance.
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal mb-6 text-[#515B6F]">
+                                5. Pet-Friendly: Your four-legged friends are welcome here! The property's
+                                pet-friendly policy allows for furry companions to share in the comfort of
+                                your new home.
                             </p>
                         </div>
 
+                        {/* Availability and Rental Terms */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[rem]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Availability and Rental Terms
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
+                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                                1. Monthly Rent: NGN 70,000.
                             </p>
                         </div>
 
+                        {/* Location */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Location
                             </h1>
                             <p className="leading-[1.6rem] font-normal">
                                 Welcome to your new home! This delightful 3-bedroom house,
@@ -177,10 +199,11 @@ const Details = () => {
                             </p>
                         </div>
 
+                        {/* Rating */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Rating
                             </h1>
                             <p className="leading-[1.6rem] font-normal">
                                 Welcome to your new home! This delightful 3-bedroom house,
@@ -192,10 +215,11 @@ const Details = () => {
                             </p>
                         </div>
 
+                        {/* Review */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Review
                             </h1>
                             <p className="leading-[1.6rem] font-normal">
                                 Welcome to your new home! This delightful 3-bedroom house,
@@ -207,23 +231,25 @@ const Details = () => {
                             </p>
                         </div>
 
+                        {/* Write a Review */}
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[]">
 
-                            <h1 className="font-bold leading-[1.8rem] text-[1.5rem]">
-                                Description
+                            <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
+                                Write a review
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
-                            </p>
+                            <label htmlFor="reviews"
+                                className="leading-[1.6rem] font-normal">
+                                Leave review
+                            </label>
+
+                            <textarea id="reviews">
+
+                            </textarea>
                         </div>
+
                     </div>
 
-                    <div className="w-auto p-4 text-[1.5rem] font-bold laptop:mt-[10rem]">
+                    <div className="w-auto p-4 text-[1.5rem] border font-bold laptop:mt-[10rem]">
                         <div className="">
                             {/* share */}
                             <span className="flex">
