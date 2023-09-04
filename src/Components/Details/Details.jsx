@@ -11,6 +11,7 @@ import { GrLocation } from "react-icons/gr";
 import Bungalow01 from "../../assets/Bungalow 01.png"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
+import Map from "../../assets/Map.png"
 // import Line from "../../assets/Line 9.svg"
 import { slides } from "../Slideshow/slides";
 import "./styles.css"
@@ -189,14 +190,7 @@ const Details = () => {
                             <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
                                 Location
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
-                            </p>
+                            <img src={Map} className="" alt="" />
                         </div>
 
                         {/* Rating */}
