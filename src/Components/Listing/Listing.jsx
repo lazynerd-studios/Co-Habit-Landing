@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BiSearch } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
@@ -311,43 +312,45 @@ const Listings = () => {
             {/* properties 1-9 */}
             <div className="grid grid-cols-1 mt-6 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
               {/* 01 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
+              <Link to="/details">
+                <div className=" border-2 rounded-[1rem]">
+                  <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
+                  <span className="flex mt-2 mx-3 justify-between">
+                    <p className="text-[1rem]">
+                      {currentSlide.house}
+                    </p>
+                    <p className="text-[1rem] text-[#010886] font-bold">
+                      {currentSlide.price}
                     </p>
                   </span>
 
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
+                  <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
+                    <span className="mx-1 flex">
+                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                        {currentSlide.rooms}
+                      </p>
+                    </span>
+
+                    <span className="mx-1 flex">
+                      <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                        {currentSlide.baths}
+                      </p>
+                    </span>
+
                   </span>
 
-                </span>
+                  <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
 
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
+                  <span className="flex">
+                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
+                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                      {currentSlide.area}
+                    </p>
+                  </span>
+                </div>
+              </Link>
               {/* end of 01 */}
 
               {/* 02 */}
