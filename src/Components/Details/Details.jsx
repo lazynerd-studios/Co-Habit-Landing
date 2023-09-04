@@ -182,6 +182,18 @@ const Details = () => {
                             <p className="leading-[1.6rem] font-normal text-[#515B6F]">
                                 1. Monthly Rent: NGN 70,000.
                             </p>
+
+                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                                2. Security Deposit: One month's rent
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                                1. Monthly Rent: NGN 70,000.
+                            </p>
+
+                            <p className="leading-[1.6rem] font-normal text-[#515B6F]">
+                                1. Monthly Rent: NGN 70,000.
+                            </p>
                         </div>
 
                         {/* Location */}
