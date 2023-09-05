@@ -17,6 +17,7 @@ import Half01 from "../../assets/Half01.png"
 import Half02 from "../../assets/Half02.png"
 import TonyJames from "../../assets/Tony James.png"
 import BasicRating from "./Rating";
+import RichTextArea from "./RichTextArea";
 // import MobileLines from "../../assets/Mobile lines.png"
 
 
@@ -364,7 +365,9 @@ const Details = () => {
                                 className="leading-[1.6rem] font-normal">
                                 Leave review
                             </label>
-
+                            <span className="">
+                                <RichTextArea />
+                            </span>
                             {/* <textarea
                                 id="reviews"
                                 rows="4"
