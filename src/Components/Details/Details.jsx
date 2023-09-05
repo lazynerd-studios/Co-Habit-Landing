@@ -261,12 +261,10 @@ const Details = () => {
                                 Review
                             </h1>
                             <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
+                                The house is conveniently situated in a peaceful neighborhood
+                                with easy access to local amenities such as schools, parks,
+                                shopping centers, and public transportation. The quiet surroundings
+                                and friendly neighbors make it an excellent place to call home
                             </p>
                         </div>
 
@@ -281,21 +279,38 @@ const Details = () => {
                                 Leave review
                             </label>
 
-                            <textarea
+                            {/* <textarea
                                 id="reviews"
                                 rows="4"
                                 cols="50"
                                 name=""
                                 placeholder="Message"
                                 className="text-[1rem] p-2 font-normal" >
-                            </textarea>
+                            </textarea> */}
 
-                            <span>
-                                <p className="leading-[1.6rem] font-medium mb-2">
-                                    Rating
+                            <span className="flex justify-between pb-8 text-[#515B6F] font-normal">
+                                <p className="">
+                                    Maximum 500 characters
                                 </p>
+                                <p>
+                                    0 / 500
+                                </p>
+                            </span>
 
-                                <BasicRating />
+                            <span className="flex justify-between">
+                                <span>
+                                    <p className="leading-[1.6rem] font-semibold mb-2">
+                                        Rating
+                                    </p>
+
+                                    <BasicRating />
+                                </span>
+
+                                <span>
+                                    <button className="btn normal-case px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
+                                        Submit
+                                    </button>
+                                </span>
                             </span>
 
                         </div>
