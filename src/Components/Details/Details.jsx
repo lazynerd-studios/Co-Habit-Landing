@@ -385,34 +385,105 @@ const Details = () => {
                                 Featured Property
                             </p>
 
+                            {/* 01 */}
                             <span className="">
                                 <img src={Bungalow01small} className="" alt="Bungalow01" />
                             </span>
-                            <span className="flex gap justify-between py-2">
-                                <p className="text-[#616A6A] font-medium leading-[1.6rem]">
-                                    Bungalow
-                                </p>
-                                <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
-                                    NGN150,000
-                                </p>
-                            </span>
-                            <span className="flex justify-between">
-                                <span className="flex gap-1">
-                                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
 
-                                    <p className="py-1 text-[#515B6F] font-normal">
-                                        2 Rooms
+                            <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
+                                <span className="flex gap justify-between py-2">
+                                    <p className="text-[#616A6A] font-medium leading-[1.6rem]">
+                                        Bungalow
+                                    </p>
+                                    <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
+                                        NGN150,000
                                     </p>
                                 </span>
+                                <span className="flex justify-between">
+                                    <span className="flex gap-1">
+                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
 
-                                <span className="flex gap-1">
-                                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Rooms
+                                        </p>
+                                    </span>
 
-                                    <p className="py-1 text-[#515B6F] font-normal">
-                                        2 Baths
+                                    <span className="flex gap-1">
+                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Baths
+                                        </p>
+                                    </span>
+                                </span>
+                            </div>
+
+
+                            {/* 02 */}
+                            <span className="">
+                                <img src={Bungalow01small} className="" alt="Bungalow01" />
+                            </span>
+
+                            <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
+                                <span className="flex gap justify-between py-2">
+                                    <p className="text-[#616A6A] font-medium leading-[1.6rem]">
+                                        Bungalow
+                                    </p>
+                                    <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
+                                        NGN150,000
                                     </p>
                                 </span>
+                                <span className="flex justify-between">
+                                    <span className="flex gap-1">
+                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Rooms
+                                        </p>
+                                    </span>
+
+                                    <span className="flex gap-1">
+                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Baths
+                                        </p>
+                                    </span>
+                                </span>
+                            </div>
+
+                            {/* 03 */}
+                            <span className="">
+                                <img src={Bungalow01small} className="" alt="Bungalow01" />
                             </span>
+
+                            <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
+                                <span className="flex gap justify-between py-2">
+                                    <p className="text-[#616A6A] font-medium leading-[1.6rem]">
+                                        Bungalow
+                                    </p>
+                                    <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
+                                        NGN150,000
+                                    </p>
+                                </span>
+                                <span className="flex justify-between">
+                                    <span className="flex gap-1">
+                                        <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Rooms
+                                        </p>
+                                    </span>
+
+                                    <span className="flex gap-1">
+                                        <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+
+                                        <p className="py-1 text-[#515B6F] font-normal">
+                                            2 Baths
+                                        </p>
+                                    </span>
+                                </span>
+                            </div>
 
                         </div>
 
