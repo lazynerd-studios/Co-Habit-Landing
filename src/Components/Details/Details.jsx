@@ -368,14 +368,6 @@ const Details = () => {
                             <span className="">
                                 <RichTextArea />
                             </span>
-                            {/* <textarea
-                                id="reviews"
-                                rows="4"
-                                cols="50"
-                                name=""
-                                placeholder="Message"
-                                className="text-[1rem] p-2 font-normal" >
-                            </textarea> */}
 
                             <span className="flex justify-between pb-8 text-[#515B6F] font-normal">
                                 <p className="">
@@ -457,10 +449,12 @@ const Details = () => {
                         </span>
 
                         <span className="">
-                            <p className="leading-[1.4rem] my-2 font-normal">
+                            <label htmlFor="message-to-host" className="leading-[1.4rem] my-2 font-normal">
                                 Send message to host
-                            </p>
-                            <textarea rows="4"
+                            </label>
+                            <textarea
+                                id="message-to-host"
+                                rows="4"
                                 className="different-font border-2 border-[#898E9A] rounded rounded-t-lg rounded-b-none font-normal p-2 w-full"
                                 placeholder="Description">
                             </textarea>
