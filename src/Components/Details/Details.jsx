@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Bungalow01 from "../../assets/Bungalow 01.png"
 import Bungalow01small from "../../assets/Bungalow01small.png"
+import MobileBungalowsmall from "../../assets/MobileBungalowsmall.png"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
 import Map from "../../assets/Map.png"
@@ -451,7 +452,7 @@ const Details = () => {
                             </span>
                         </span>
 
-                        <div className="border mt-4 p-1 h-[]">
+                        <div className="border mt-4 p-1 h-[] mb-[4rem]">
                             <p className="font-medium mb-2 text-[1.125rem] text-center">
                                 Featured Property
                             </p>
@@ -459,7 +460,8 @@ const Details = () => {
                             {/* 01 */}
                             <div className="my-4">
                                 <span className="">
-                                    <img src={Bungalow01small} className="" alt="Bungalow01" />
+                                    <img src={Bungalow01small} className="hidden laptop:block tablet:block" alt="Bungalow01" />
+                                    <img src={MobileBungalowsmall} className="laptop:hidden tablet:hidden" alt="Bungalow01" />
                                 </span>
 
                                 <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
@@ -495,7 +497,8 @@ const Details = () => {
                             {/* 02 */}
                             <div className="my-4">
                                 <span className="">
-                                    <img src={Bungalow01small} className="" alt="Bungalow01" />
+                                    <img src={Bungalow01small} className="hidden laptop:block tablet:block" alt="Bungalow01" />
+                                    <img src={MobileBungalowsmall} className="laptop:hidden tablet:hidden" alt="Bungalow01" />
                                 </span>
 
                                 <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
@@ -530,7 +533,8 @@ const Details = () => {
                             {/* 03 */}
                             <div className="my-4">
                                 <span className="">
-                                    <img src={Bungalow01small} className="" alt="Bungalow01" />
+                                    <img src={Bungalow01small} className="hidden laptop:block tablet:block" alt="Bungalow01" />
+                                    <img src={MobileBungalowsmall} className="laptop:hidden tablet:hidden" alt="Bungalow01" />
                                 </span>
 
                                 <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
