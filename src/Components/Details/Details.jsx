@@ -203,8 +203,8 @@ const Details = () => {
                             </h1>
 
                             <div className="flex">
-                                <span>
-                                    <h1 className="font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
+                                <span className="">
+                                    <h1 className=" text-center font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
                                         4.5
                                     </h1>
                                     <img src={FourStars} className="" alt="4 stars" />
@@ -218,12 +218,16 @@ const Details = () => {
                                 </span>
                                 {/* end of line */}
 
-                                <span className="bg-[#D6DDEB]">
-                                    <p className="">
+
+                                <span className="bg-[#F8F8FD] p-4 h-1/2">
+                                    <p className="pb-2">
                                         Property
                                     </p>
-                                    <img src="" className="" alt="4 stars" />
+                                    <img src={ProgressBar} className="" alt="Progress Bar" />
                                 </span>
+
+
+
 
                             </div>
                         </div>
