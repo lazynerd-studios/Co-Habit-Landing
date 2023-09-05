@@ -305,7 +305,7 @@ const Details = () => {
                                 </span>
 
                                 <span>
-                                    <button className="btn normal-case px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
+                                    <button className="btn normal-case rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
                                         Submit
                                     </button>
                                 </span>
@@ -371,8 +371,12 @@ const Details = () => {
                             </p>
                             <textarea className="different-font border-2 border-[#898E9A] rounded rounded-t-lg rounded-b-none font-normal p-2 w-full"
                                 placeholder="Description">
-
                             </textarea>
+                            <span>
+                                <button className="btn normal-case rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] hover:bg-[#515B6F] text-white">
+                                    Submit
+                                </button>
+                            </span>
                         </span>
                     </div>
 
