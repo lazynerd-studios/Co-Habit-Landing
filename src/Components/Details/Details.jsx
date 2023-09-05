@@ -376,8 +376,8 @@ const Details = () => {
                                     <BasicRating />
                                 </span>
 
-                                <span className="laptop:mt-0 tablet:mt-0">
-                                    <button className="btn normal-case mt-6 rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
+                                <span className="">
+                                    <button className="btn normal-case laptop:mt-0 tablet:mt-6 mt-6 rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
                                         Submit
                                     </button>
                                 </span>
