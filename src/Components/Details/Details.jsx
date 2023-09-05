@@ -273,7 +273,7 @@ const Details = () => {
                             </h1>
 
                             <div className="laptop:flex tablet:flex gap-2">
-                                <span className="flex laptop:hidden tablet:hidden block">
+                                <span className="flex laptop:hidden tablet:hidden">
                                     <span className="">
                                         <h1 className=" laptop:text-center tablet:text-center mx-12 tablet:mx-0 font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
                                             4.5
