@@ -44,10 +44,10 @@ const Details = () => {
 
                 {/* </div> */}
 
-                <div className="laptop:flex hidden laptop:mt-">
-                    <img src={Half01} className="" alt="" />
+                <div className="laptop:flex laptop:mt-">
+                    <img src={Half01} className="hidden laptop:block" alt="" />
                     <img src={HouseBg01} className="" alt="" />
-                    <img src={HouseBg02} className="" alt="" />
+                    <img src={HouseBg02} className="hidden laptop:block" alt="" />
                     {/* <img src={Half02} className="" alt="" /> */}
                 </div>
 
@@ -317,8 +317,8 @@ const Details = () => {
                     </div>
 
                     {/* right column */}
-                    <div className="w-[50%] text-[1.5rem] border p-2 font-bold laptop:mt-[10rem]">
-                        {/* remove =>    border p-2    from above */}
+                    <div className="w-[50%] text-[1.5rem] font-bold laptop:mt-[10rem]">
+
                         <div className="p-2 border">
                             <span className="flex justify-between gap-4">
                                 {/* share */}
@@ -354,7 +354,7 @@ const Details = () => {
                             </span>
                         </div>
 
-                        <span className="bg-[#010886] flex p-4 gap-4">
+                        <span className="bg-[#010886] flex p-4 my-4 gap-4">
                             <img src={TonyJames} className="" alt="" />
                             <span>
                                 <p className="text-white leading-[1.4rem] font-normal">
@@ -380,7 +380,7 @@ const Details = () => {
                             </span>
                         </span>
 
-                        <div className="border mt-4 p-2 h-[]">
+                        <div className="border mt-4 p-1 h-[]">
                             <p className="font-medium mb-2 text-[1.125rem] text-center">
                                 Featured Property
                             </p>
