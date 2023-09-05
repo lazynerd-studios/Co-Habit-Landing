@@ -272,16 +272,16 @@ const Details = () => {
                                 Rating
                             </h1>
 
-                            <div className="flex  gap-2">
+                            <div className="laptop:flex tablet:flex gap-2">
                                 <span className="">
-                                    <h1 className=" text-center font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
+                                    <h1 className=" laptop:text-center tablet:text-center font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
                                         4.5
                                     </h1>
                                     <img src={FourStars} className="" alt="4 stars" />
                                 </span>
 
                                 {/* line */}
-                                <span className="px-2">
+                                <span className="px-2 hidden laptop:block tablet:block">
                                     <svg width="2" height="122" viewBox="0 0 2 122" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <line x1="0.561523" x2="0.561523" y2="122" stroke="#515B6F" />
                                     </svg>
@@ -289,7 +289,7 @@ const Details = () => {
                                 {/* end of line */}
 
                                 {/* Progress Bars */}
-                                <div className="-mt-4 grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 tablet:gap-4 laptop:gap-4">
+                                <div className="laptop:-mt-4 tablet:-mt-4 mt-8 grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 tablet:gap-4 laptop:gap-4">
                                     <span className="bg-[#F8F8FD] p-4">
                                         <p className="pb-2">
                                             Property
