@@ -212,14 +212,21 @@ const Details = () => {
                             <h1 className="font-bold leading-[1.8rem] pb-4 text-[1.5rem]">
                                 Rating
                             </h1>
-                            <p className="leading-[1.6rem] font-normal">
-                                Welcome to your new home! This delightful 3-bedroom house,
-                                nestled in a peaceful and family-friendly neighborhood,
-                                offers comfort, convenience, and a warm sense of community.
-                                With its appealing curb appeal and well-maintained exterior,
-                                this property is sure to capture your heart from the moment you
-                                step inside.
-                            </p>
+
+                            <span className="flex">
+                                <span>
+                                    <h1 className="font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
+                                        4.5
+                                    </h1>
+
+                                </span>
+
+                                <span className="bg-[#D6DDEB]">
+                                    <p className="">
+                                        Property
+                                    </p>
+                                </span>
+                            </span>
                         </div>
 
                         {/* Review */}
@@ -249,8 +256,13 @@ const Details = () => {
                                 Leave review
                             </label>
 
-                            <textarea id="reviews">
-
+                            <textarea
+                                id="reviews"
+                                rows="4"
+                                cols="50"
+                                name=""
+                                placeholder="Message"
+                                className="text-[1rem] p-2 font-normal" >
                             </textarea>
 
                             <span>
