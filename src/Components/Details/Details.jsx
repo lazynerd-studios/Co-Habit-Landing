@@ -202,7 +202,7 @@ const Details = () => {
                                 Rating
                             </h1>
 
-                            <div className="flex">
+                            <div className="flex  gap-2">
                                 <span className="">
                                     <h1 className=" text-center font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
                                         4.5
@@ -218,15 +218,37 @@ const Details = () => {
                                 </span>
                                 {/* end of line */}
 
+                                {/* Progress Bars */}
+                                <div className="grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 laptop:gap-4">
+                                    <span className="bg-[#F8F8FD] p-4">
+                                        <p className="pb-2">
+                                            Property
+                                        </p>
+                                        <img src={ProgressBar} className="" alt="Progress Bar" />
+                                    </span>
 
-                                <span className="bg-[#F8F8FD] p-4 h-1/2">
-                                    <p className="pb-2">
-                                        Property
-                                    </p>
-                                    <img src={ProgressBar} className="" alt="Progress Bar" />
-                                </span>
+                                    <span className="bg-[#F8F8FD] p-4">
+                                        <p className="pb-2">
+                                            Very Neat
+                                        </p>
+                                        <img src={ProgressBar} className="" alt="Progress Bar" />
+                                    </span>
 
+                                    <span className="bg-[#F8F8FD] p-4">
+                                        <p className="pb-2">
+                                            Location
+                                        </p>
+                                        <img src={ProgressBar} className="" alt="Progress Bar" />
+                                    </span>
 
+                                    <span className="bg-[#F8F8FD] p-4">
+                                        <p className="pb-2">
+                                            Good Service
+                                        </p>
+                                        <img src={ProgressBar} className="" alt="Progress Bar" />
+                                    </span>
+                                </div>
+                                {/* End of Progress Bars */}
 
 
                             </div>
