@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Bungalow01 from "../../assets/Bungalow 01.png"
+import Bungalow01small from "../../assets/Bungalow01small.png"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
 import Map from "../../assets/Map.png"
@@ -77,7 +78,7 @@ const Details = () => {
                                     <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
 
                                     <p className="py-1">
-                                        2 Room
+                                        2 Rooms
                                     </p>
                                 </span>
 
@@ -378,20 +379,55 @@ const Details = () => {
                                 </button>
                             </span>
                         </span>
+
+                        <div className="border mt-4 p-2 h-[]">
+                            <p className="font-medium mb-2 text-[1.125rem] text-center">
+                                Featured Property
+                            </p>
+
+                            <span className="">
+                                <img src={Bungalow01small} className="" alt="Bungalow01" />
+                            </span>
+                            <span className="flex gap justify-between py-2">
+                                <p className="text-[#616A6A] font-medium leading-[1.6rem]">
+                                    Bungalow
+                                </p>
+                                <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
+                                    NGN150,000
+                                </p>
+                            </span>
+                            <span className="flex justify-between">
+                                <span className="flex gap-1">
+                                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+
+                                    <p className="py-1 text-[#515B6F] font-normal">
+                                        2 Rooms
+                                    </p>
+                                </span>
+
+                                <span className="flex gap-1">
+                                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+
+                                    <p className="py-1 text-[#515B6F] font-normal">
+                                        2 Baths
+                                    </p>
+                                </span>
+                            </span>
+
+                        </div>
+
                     </div>
 
                 </div>
 
 
-                <div className="h-[]">
 
-                </div>
 
 
 
 
             </motion.div>
-        </section>
+        </section >
     )
 }
 
