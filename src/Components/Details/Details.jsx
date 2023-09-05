@@ -366,8 +366,8 @@ const Details = () => {
                                 </p>
                             </span>
 
-                            <span className="flex justify-between">
-                                <span>
+                            <span className="laptop:flex justify-between">
+                                <span className="">
                                     <p className="leading-[1.6rem] font-semibold mb-2">
                                         Rating
                                     </p>
@@ -375,8 +375,8 @@ const Details = () => {
                                     <BasicRating />
                                 </span>
 
-                                <span>
-                                    <button className="btn normal-case rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
+                                <span className="laptop:mt-0 tablet:mt-0">
+                                    <button className="btn normal-case mt-6 rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
                                         Submit
                                     </button>
                                 </span>
@@ -387,9 +387,9 @@ const Details = () => {
                     </div>
 
                     {/* right column */}
-                    <div className="w-[50%] text-[1.5rem] font-bold laptop:mt-[10rem]">
+                    <div className="text-[1.5rem] mt-8 tablet:mt-0 font-bold laptop:mt-[10rem]">
 
-                        <div className="p-2 border">
+                        <div className="p-2 border laptop:block tablet:block hidden">
                             <span className="flex justify-between gap-4">
                                 {/* share */}
                                 <span className="flex items-center gap-2 bg-[#E5F6F3] px-[1.25rem] py-[0.62rem] border border-[#010886]">
