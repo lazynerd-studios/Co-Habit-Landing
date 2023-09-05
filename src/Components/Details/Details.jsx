@@ -44,10 +44,10 @@ const Details = () => {
 
                 {/* </div> */}
 
-                <div className="laptop:flex laptop:mt-">
-                    <img src={Half01} className="hidden laptop:block" alt="" />
+                <div className="laptop:flex hidden laptop:mt-">
+                    <img src={Half01} className="" alt="" />
                     <img src={HouseBg01} className="" alt="" />
-                    <img src={HouseBg02} className="hidden laptop:block" alt="" />
+                    <img src={HouseBg02} className="" alt="" />
                     {/* <img src={Half02} className="" alt="" /> */}
                 </div>
 
