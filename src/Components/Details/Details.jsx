@@ -208,41 +208,6 @@ const Details = () => {
                                         4.5
                                     </h1>
                                     <img src={FourStars} className="" alt="4 stars" />
-                                    <svg width="161" height="24" viewBox="0 0 161 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_228_29663)">
-                                            <path d="M12.0614 18.26L5.00844 22.208L6.58344 14.28L0.648438 8.792L8.67544 7.84L12.0614 0.5L15.4474 7.84L23.4744 8.792L17.5394 14.28L19.1144 22.208L12.0614 18.26Z" fill="#50E5B4" />
-                                        </g>
-                                        <g clip-path="url(#clip1_228_29663)">
-                                            <path d="M46.0614 18.26L39.0084 22.208L40.5834 14.28L34.6484 8.792L42.6754 7.84L46.0614 0.5L49.4474 7.84L57.4744 8.792L51.5394 14.28L53.1144 22.208L46.0614 18.26Z" fill="#50E5B4" />
-                                        </g>
-                                        <g clip-path="url(#clip2_228_29663)">
-                                            <path d="M80.0614 18.26L73.0084 22.208L74.5834 14.28L68.6484 8.792L76.6754 7.84L80.0614 0.5L83.4474 7.84L91.4744 8.792L85.5394 14.28L87.1144 22.208L80.0614 18.26Z" fill="#50E5B4" />
-                                        </g>
-                                        <g clip-path="url(#clip3_228_29663)">
-                                            <path d="M114.061 18.26L107.008 22.208L108.583 14.28L102.648 8.792L110.675 7.84L114.061 0.5L117.447 7.84L125.474 8.792L119.539 14.28L121.114 22.208L114.061 18.26Z" fill="#50E5B4" />
-                                        </g>
-                                        <g clip-path="url(#clip4_228_29663)">
-                                            <path d="M148.061 18.26L141.008 22.208L142.583 14.28L136.648 8.792L144.675 7.84L148.061 0.5L151.447 7.84L159.474 8.792L153.539 14.28L155.114 22.208L148.061 18.26Z" fill="#CDCDCD" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_228_29663">
-                                                <rect width="24" height="24" fill="white" transform="translate(0.0615234)" />
-                                            </clipPath>
-                                            <clipPath id="clip1_228_29663">
-                                                <rect width="24" height="24" fill="white" transform="translate(34.0615)" />
-                                            </clipPath>
-                                            <clipPath id="clip2_228_29663">
-                                                <rect width="24" height="24" fill="white" transform="translate(68.0615)" />
-                                            </clipPath>
-                                            <clipPath id="clip3_228_29663">
-                                                <rect width="24" height="24" fill="white" transform="translate(102.062)" />
-                                            </clipPath>
-                                            <clipPath id="clip4_228_29663">
-                                                <rect width="24" height="24" fill="white" transform="translate(136.062)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-
                                 </span>
 
                                 {/* line */}
