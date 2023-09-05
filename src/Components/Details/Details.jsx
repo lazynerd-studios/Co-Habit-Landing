@@ -219,7 +219,7 @@ const Details = () => {
                                 {/* end of line */}
 
                                 {/* Progress Bars */}
-                                <div className="grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 laptop:gap-4">
+                                <div className="-mt-4 grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 tablet:gap-4 laptop:gap-4">
                                     <span className="bg-[#F8F8FD] p-4">
                                         <p className="pb-2">
                                             Property
