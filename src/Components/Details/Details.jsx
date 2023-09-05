@@ -53,9 +53,19 @@ const Details = () => {
 
                 <div className="laptop:absolute w-auto mt-[5rem] laptop:-mt-[10.5rem] laptop:flex laptop:mx-[8rem] laptop:w-[85%] rounded-md bg-white p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                     {/* laptop:w-[65%] laptop:mx-[5rem] */}
-                    <div className="laptop:flex">
+
+                    <div className="laptop:hidden">
                         <span className="my-3 mx-3">
-                            <img src={Bungalow01} className="rounded-[0.5rem] w-[70%]" alt="" />
+                            <img src={Bungalow01} className="rounded-[0.5rem] w-1/2 laptop:w-[70%]" alt="" />
+                        </span>
+                    </div>
+
+
+
+
+                    <div className="laptop:flex hidden">
+                        <span className="my-3 mx-3">
+                            <img src={Bungalow01} className="rounded-[0.5rem] laptop:w-[70%]" alt="" />
                         </span>
 
                         <span className="-ml-[3rem]">
@@ -104,7 +114,7 @@ const Details = () => {
 
 
                 {/* DESCRIPTION */}
-                <div className="flex laptop:mt laptop:mx-[8rem] mb-8 gap-[1.3rem]">
+                <div className="laptop:flex tablet:flex laptop:mt tablet:mx-6 tablet:mt-8 laptop:mt-auto laptop:mx-[8rem] mb-8 gap-[1.3rem]">
                     <div className="laptop:mx-[rem] gap- laptop:w-auto">
 
                         <div className="w-auto p-4 border text-[1.5rem] font-bold laptop:mt-[10rem]">
