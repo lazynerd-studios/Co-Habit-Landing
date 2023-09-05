@@ -37,8 +37,9 @@ const RichTextArea = () => {
             <textarea
                 value={text}
                 onChange={(e) => setText(e.target.value)}
-                rows={4}
-                cols={50}
+                rows={10}
+                cols={90}
+                className="p-4 font-normal"
             />
         </div>
     );
