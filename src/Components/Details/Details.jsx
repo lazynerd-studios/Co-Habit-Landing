@@ -372,8 +372,8 @@ const Details = () => {
                             <textarea className="different-font border-2 border-[#898E9A] rounded rounded-t-lg rounded-b-none font-normal p-2 w-full"
                                 placeholder="Description">
                             </textarea>
-                            <span>
-                                <button className="btn normal-case rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] hover:bg-[#515B6F] text-white">
+                            <span className="">
+                                <button className="btn normal-case rounded-none px-[3.5rem] mx-8 font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] hover:bg-[#515B6F] text-white">
                                     Submit
                                 </button>
                             </span>
