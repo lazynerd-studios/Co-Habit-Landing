@@ -142,7 +142,7 @@ const AboutUs = () => (
 
             {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
 
-            <span className='hidden laptop:block w-[] absolute z-50 mx-[19rem] mt-32'>
+            <span className='hidden laptop:block w-[] absolute z-50 mx-[21.5rem] mt-32'>
               <svg width="428" height="65" viewBox="0 0 488 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                 {/* width="488" height="65" */}
                 <path d="M54.3333 3.5C54.3333 4.97276 55.5272 6.16667 57 6.16667C58.4728 6.16667 59.6667 4.97276 59.6667 3.5C59.6667 2.02724 58.4728 0.833333 57 0.833333C55.5272 0.833333 54.3333 2.02724 54.3333 3.5ZM1.12127 63.4851C46.1722 52.2223 57.5 18.8656 57.5 3.5H56.5C56.5 18.4678 45.4278 51.3777 0.878732 62.5149L1.12127 63.4851Z" fill="#92BFEB" />
