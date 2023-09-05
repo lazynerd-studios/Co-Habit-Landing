@@ -53,7 +53,7 @@ const Details = () => {
 
                 <div className="laptop:absolute w-auto mt-[5rem] laptop:-mt-[10.5rem] laptop:flex laptop:mx-[8rem] laptop:w-[85%] rounded-md bg-white p-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                     {/* laptop:w-[65%] laptop:mx-[5rem] */}
-                    <div className="flex">
+                    <div className="laptop:flex">
                         <span className="my-3 mx-3">
                             <img src={Bungalow01} className="rounded-[0.5rem] w-[70%]" alt="" />
                         </span>
