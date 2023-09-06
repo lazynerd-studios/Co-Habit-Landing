@@ -9,9 +9,9 @@ const RichTextArea = () => {
         let selectedText = window.getSelection().toString();
 
         if (format === 'bold') {
-            updatedText = updatedText.replace(selectedText, `**${selectedText}**`);
+            updatedText = updatedText.replace(selectedText, `<b>${selectedText}</b>`);
         } else if (format === 'italic') {
-            updatedText = updatedText.replace(selectedText, `_${selectedText}_`);
+            updatedText = updatedText.replace(selectedText, `<i>${selectedText}</i>`);
         } else if (format === 'paragraph') {
             updatedText += '\n\n';
         } else if (format === 'bulletPoints') {
@@ -20,6 +20,7 @@ const RichTextArea = () => {
 
         setText(updatedText);
     };
+
     const handleAttachmentClick = () => {
         // Implement attachment logic here (e.g., opening a file picker)
     };
