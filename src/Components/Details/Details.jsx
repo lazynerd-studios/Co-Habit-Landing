@@ -369,7 +369,7 @@ const Details = () => {
                                 <RichTextArea />
                             </span>
 
-                            <span className="flex justify-between pb-8 text-[#515B6F] font-normal">
+                            <span className="flex justify-between mt-2 pb-8 text-[#515B6F] font-normal">
                                 <p className="">
                                     Maximum 500 characters
                                 </p>
