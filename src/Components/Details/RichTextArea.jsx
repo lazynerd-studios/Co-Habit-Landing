@@ -4,25 +4,26 @@ const RichTextArea = () => {
     const [text, setText] = useState('');
     const [showEmojiPanel, setShowEmojiPanel] = useState(false);
 
-    const handleBoldClick = () => {
-        setText((prevText) => `<b>${prevText}</b>`);
-    };
+    const handleFormat = (format) => {
+        let updatedText = text;
+        let selectedText = window.getSelection().toString();
 
-    const handleItalicClick = () => {
-        setText((prevText) => `<i>${prevText}</i>`);
-    };
+        if (format === 'bold') {
+            updatedText = updatedText.replace(selectedText, `**${selectedText}**`);
+        } else if (format === 'italic') {
+            updatedText = updatedText.replace(selectedText, `_${selectedText}_`);
+        } else if (format === 'paragraph') {
+            updatedText += '\n\n';
+        } else if (format === 'bulletPoints') {
+            updatedText += '\n• ';
+        }
 
-    const handleParagraphClick = () => {
-        setText((prevText) => `${prevText}\n\n`);
+        setText(updatedText);
     };
-
-    const handleBulletPointsClick = () => {
-        setText((prevText) => `${prevText}\n• `);
-    };
-
     const handleAttachmentClick = () => {
         // Implement attachment logic here (e.g., opening a file picker)
     };
+
 
     return (
         <div>
@@ -33,12 +34,12 @@ const RichTextArea = () => {
                 rows={5}
                 // cols={90}
                 maxlength="500"
-                className="p-4 font-normal rounded-t-lg border w-full"
+                className="p-4 min-h-[10rem] max-h-[15rem] font-normal rounded-t-lg border w-full"
             />
 
             <div className='border -mt-2 rounded-b-lg py-4 px-4 laptop:gap-4 tablet:gap-4 gap-3 flex'>
 
-                <button onClick={handleBoldClick}>
+                <button onClick={() => handleFormat('bold')}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1401_605)">
                             <path d="M7.06152 5H13.0615C13.9898 5 14.88 5.36875 15.5364 6.02513C16.1928 6.6815 16.5615 7.57174 16.5615 8.5C16.5615 9.42826 16.1928 10.3185 15.5364 10.9749C14.88 11.6313 13.9898 12 13.0615 12H7.06152V5Z" stroke="#7C8493" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -52,7 +53,7 @@ const RichTextArea = () => {
                     </svg>
 
                 </button>
-                <button onClick={handleItalicClick}>
+                <button onClick={() => handleFormat('italic')}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1401_609)">
                             <path d="M11.0615 5H17.0615" stroke="#7C8493" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -67,7 +68,7 @@ const RichTextArea = () => {
                     </svg>
 
                 </button>
-                <button onClick={handleParagraphClick}>
+                <button onClick={() => handleFormat('paragraph')}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1401_614)">
                             <path d="M11.0615 6H20.0615" stroke="#7C8493" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -84,7 +85,7 @@ const RichTextArea = () => {
                     </svg>
 
                 </button>
-                <button onClick={handleBulletPointsClick}>
+                <button onClick={() => handleFormat('bulletPoints')}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1401_621)">
                             <path d="M9.06152 6H20.0615" stroke="#7C8493" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
