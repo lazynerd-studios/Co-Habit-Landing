@@ -33,10 +33,10 @@ const RichTextArea = () => {
                 rows={5}
                 // cols={90}
                 maxlength="500"
-                className="p-4 font-normal border w-full"
+                className="p-4 font-normal rounded-t-lg border w-full"
             />
 
-            <div className='border py-4 px-4 gap-8 flex'>
+            <div className='border -mt-2 rounded-b-lg py-4 px-4 laptop:gap-6 tablet:gap-6 gap-3 flex'>
 
                 <button onClick={handleBoldClick}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
