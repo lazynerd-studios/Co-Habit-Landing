@@ -36,7 +36,7 @@ const RichTextArea = () => {
                 className="p-4 font-normal rounded-t-lg border w-full"
             />
 
-            <div className='border -mt-2 rounded-b-lg py-4 px-4 laptop:gap-6 tablet:gap-6 gap-3 flex'>
+            <div className='border -mt-2 rounded-b-lg py-4 px-4 laptop:gap-4 tablet:gap-4 gap-3 flex'>
 
                 <button onClick={handleBoldClick}>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
