@@ -77,7 +77,7 @@ const Home = () => {
 
                   <a href="#reviews" className="">
                     {/* come back here to make the icon center on wider devices */}
-                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[31.3rem]" alt="scroll-to-explore" />
+                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex wider:mx-[32.4rem] laptop:mx-[31.3rem]" alt="scroll-to-explore" />
                   </a>
                 </span>
                 <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
