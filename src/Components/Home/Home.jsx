@@ -140,7 +140,9 @@ const Home = () => {
         <div className="w-auto bg-white my-8">
           <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
             {/* heading */}
-            <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">How It Works ?</h1>
+            <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">
+              How It Works ?
+            </h1>
             <p className="laptop:mb-[2.5rem] mx-2 text-left tablet:text-center laptop:text-center tablet:mb-8 laptop:w-auto">
               We build and maintain transparency, professionalism, and integrity throughout these processes to build trust with our clients and establish <br className="laptop:flex hidden" />
               a positive reputation in the industry
