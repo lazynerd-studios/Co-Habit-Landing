@@ -25,7 +25,7 @@ export default {
 
       'laptop': '1024px',
       // => @media (min-width: 1024px) { ... }
-      'wider': '1180px',
+      'wider': '1124px',
 
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
