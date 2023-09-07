@@ -74,6 +74,7 @@ const Home = () => {
               <div className="laptop:flex mt-8">
                 <span className="mb-6">
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
+
                   <a href="#reviews" className="">
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[31.3rem]" alt="scroll-to-explore" />
                   </a>
