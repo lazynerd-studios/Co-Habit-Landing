@@ -62,7 +62,7 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                <span className="laptop:flex gap-[30.7rem] mt-2 ml-[4rem] absolute hidden">
+                <span className="laptop:flex gap-[31.7rem] mt-2 ml-[6.5rem] absolute hidden">
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
                 </span>
