@@ -76,6 +76,7 @@ const Home = () => {
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
                   <a href="#reviews" className="">
+                    {/* come back here to make the icon center on wider devices */}
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex mx-[31.3rem]" alt="scroll-to-explore" />
                   </a>
                 </span>
@@ -153,17 +154,17 @@ const Home = () => {
             <div className="grid grid-cols-1 gap-2 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
               <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] laptop:px-6 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
                   surrounding landscape reflected a high
                   level of attention to detail.
                 </p>
-                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                <h2 className="absolute w-auto ml-[2rem] laptop:px-6 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                   List your property
                 </h2>
-                <img src={LocationPin} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[1rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={LocationPin} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[2rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[95%] laptop:w-full mx-2">
@@ -184,17 +185,17 @@ const Home = () => {
 
               {/* styled rectangle 2 */}
               <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] laptop:px-6 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
                   surrounding landscape reflected a high
                   level of attention to detail.
                 </p>
-                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                <h2 className="absolute w-auto ml-[2rem] laptop:px-6 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                   Find Your Flatmate
                 </h2>
-                <img src={Users} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={Users} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[2.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[95%] laptop:w-full mx-2">
@@ -215,17 +216,17 @@ const Home = () => {
 
               {/* styled rectangle 3 */}
               <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-2 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+                <p className="absolute laptop:w-[90%] laptop:px-6 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
                   surrounding landscape reflected a high
                   level of attention to detail.
                 </p>
-                <h2 className="absolute w-auto ml-[2rem] laptop:px-2 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
+                <h2 className="absolute w-auto ml-[2rem] laptop:px-6 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
                   Close The Deal
                 </h2>
-                <img src={MoneyStack} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[1.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
+                <img src={MoneyStack} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[2rem] tablet:ml-[2.5rem] mt-[4.5rem] laptop:ml-[2.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
 
                 <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
                   className="w-[95%] laptop:w-full mx-2">
