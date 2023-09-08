@@ -508,7 +508,7 @@ const Home = () => {
 
 
             <button
-              className="btn my-6 normal-case laptop:mx-[26rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+              className="btn my-6 normal-case laptop:mx-[28.5rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
               Browse More locations
             </button>
 
