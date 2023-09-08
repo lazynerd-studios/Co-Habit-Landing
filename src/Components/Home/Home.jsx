@@ -75,10 +75,11 @@ const Home = () => {
                 <span className="mb-6 relative">
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
-                  <a href="#reviews" className="absolute">
+                  <Link to="#reviews" className="absolut">
                     {/* come back here to make the icon center on wider devices */}
-                    <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex wider:mx-[32.4rem] laptop:mx-[31.3rem]" alt="scroll-to-explore" />
-                  </a>
+                    {/* wider:mx-[32.4rem] laptop:mx-[31.3rem] */}
+                    <img src={ScrollToExplore} className="laptop:max-w-[3.9rem] mx-auto -mt-[6rem] z-10 hidden laptop:flex" alt="scroll-to-explore" />
+                  </Link>
                 </span>
                 <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
 
