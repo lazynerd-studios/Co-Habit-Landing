@@ -75,7 +75,7 @@ const Home = () => {
                 <span className="mb-6">
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
-                  <a href="#reviews" className="">
+                  <a href="#reviews" className="absolute">
                     {/* come back here to make the icon center on wider devices */}
                     <img src={ScrollToExplore} className="laptop:max-w-[4rem] -mt-[6rem] z-10 hidden laptop:flex wider:mx-[32.4rem] laptop:mx-[31.3rem]" alt="scroll-to-explore" />
                   </a>
@@ -305,7 +305,7 @@ const Home = () => {
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                       View
                     </a>
                   </span>
@@ -354,7 +354,7 @@ const Home = () => {
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                       View
                     </a>
                   </span>
@@ -403,7 +403,7 @@ const Home = () => {
                     <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                       {currentSlide.area}
                     </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[13.8rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                       View
                     </a>
                   </span>
