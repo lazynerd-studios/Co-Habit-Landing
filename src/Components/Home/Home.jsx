@@ -441,7 +441,7 @@ const Home = () => {
               find what is right for you.
             </p>
 
-            <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
+            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
 
               {/* <div className="laptop:flex gap-8"> */}
               {/* 01 */}
@@ -506,14 +506,21 @@ const Home = () => {
 
             </div>
 
-
             <button
-              className="btn my-6 normal-case laptop:mx-[28.5rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+              className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[5rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
               Browse More locations
             </button>
 
+            {/* <button
+              className="btn my-6 normal-case laptop:mx-[28.5rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+              Browse More locations
+            </button> */}
+
+
+
           </div>
         </div>
+
         {/* end of 'find by location' */}
 
         {/* good reviews by customers */}
