@@ -101,7 +101,7 @@ const AboutUs = () => (
 
           <img src={SeparatingLine} className='py-8' alt='separating-line' />
 
-          <h1 className='laptop:w-[39.75rem] tablet:mx- text-[2.5rem] font-bold leading-[2.75rem]'>
+          <h1 className='laptop:w-[39.75rem] laptop:mb-8 mb-4 tablet:mb-8 laptop:mx-2 tablet:mx-4 text-[2.5rem] font-bold leading-[2.75rem]'>
             Finding Your Ideal Space: Easy Apartment Search
           </h1>
 
