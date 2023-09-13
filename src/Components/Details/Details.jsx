@@ -41,11 +41,6 @@ const Details = () => {
                 transition={{ duration: 3 }}
             >
                 {/* bg-[#f8f8fd] */}
-                {/* <div
-                    className="hero laptop:min-h-[screen] min-h-screen bg-center bg-contain"> */}
-                {/* style={{ backgroundImage: `url(${HeaderBg})` }} */}
-
-                {/* </div> */}
 
                 <div className="laptop:flex hidden laptop:mt-">
                     <img src={Half01} className="" alt="" />
