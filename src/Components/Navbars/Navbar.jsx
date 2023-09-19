@@ -11,12 +11,12 @@ const Navbar = () => {
     <div className="navbar bg-white border-none fixed top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[6.5rem]">
         <a>
-          <img className="logo" src={CoHabit} alt="web Logo" />
+          <img className="logo w-ful" src={CoHabit} alt="web Logo" />
         </a>
       </div>
 
       {/* displays on wide screen */}
-      <div className="navbar-center hidden laptop:flex laptop:mr-[20rem]">
+      <div className="navbar-center hidden laptop:flex tablet:mr-[2rem] laptop:mr-[0rem]">
         <ul className="menu-horizontal px-1">
           {NavbarData.map((item, index) => {
             return (
