@@ -230,7 +230,7 @@ const AboutUs = () => (
             dates farther than that.
           </h1>
 
-          <img src={ThinnerSeparatingLine} className='py-8' alt='thinner-separating-line' />
+          <img src={ThinnerSeparatingLine} className='py-8 w-full' alt='thinner-separating-line' />
 
           <div className="grid grid-cols-1 gap-12 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8 laptop:pb-6">
 
