@@ -83,7 +83,8 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:relativ laptop:w-[%] rounded-md bg-white px-2 py-2 border-none">
+                {/* mx-[10rem] */}
+                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:relativ laptop:w-[%] rounded-md bg-white px-2 py-2 border-none">
                   {/* laptop:w-[65%] laptop:mx-[5rem] */}
                   <span className="flex">
                     {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
@@ -150,9 +151,9 @@ const Home = () => {
             </p>
 
             {/* text-in-shapes */}
-            <div className="grid grid-cols-1 gap-2 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
+            <div className="grid grid-cols-1 gap-2 tablet:gap-8 w-max laptop:grid-cols-3 mx-auto mt-8 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
-              <div className="h-[21.875rem] w-[21.875rem] relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[21.875rem] laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     1
@@ -183,7 +184,7 @@ const Home = () => {
               {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
 
               {/* styled rectangle 2 */}
-              <div className="h-[21.875rem] w-[21.875rem] relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[21.875rem] laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     2
@@ -213,7 +214,7 @@ const Home = () => {
               {/* <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" /> */}
 
               {/* styled rectangle 3 */}
-              <div className="h-[21.875rem] w-[21.875rem] relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[21.875rem] laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     3
@@ -516,10 +517,13 @@ const Home = () => {
 
             </div>
 
-            <button
-              className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[8rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
-              Browse More locations
-            </button>
+            {/* className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[8rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border"> */}
+            <div className="w-full mt-8 border">
+              <p
+                className="btn my-6 normal-case mx-auto  relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+                Browse More locations
+              </p>
+            </div>
 
             {/* old */}
             {/* <button
