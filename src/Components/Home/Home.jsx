@@ -74,7 +74,7 @@ const Home = () => {
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
                   <a href="#reviews" className="">
-                    {/* come back here to make the icon center on wider devices */}
+                    {/* come back here to make the icon centered on wider devices */}
                     {/* wider:mx-[32.4rem] laptop:mx-[31.3rem] */}
                     <img src={ScrollToExplore} className="laptop:max-w-[3.9rem] mx-auto -mt-[6rem] z-10 hidden laptop:flex" alt="scroll-to-explore" />
                   </a>
