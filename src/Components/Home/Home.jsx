@@ -216,8 +216,9 @@ const Home = () => {
               {/* <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" /> */}
 
               {/* styled rectangle 3 */}
-              <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-8 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
+              <div className="laptop:relative relative">
+                {/* <p className="absolute laptop:w-[90%] laptop:px-8 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium"> */}
+                <p className="absolute laptop:w-[90%] laptop:px-8 tablet:w-[88%] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
@@ -237,8 +238,70 @@ const Home = () => {
                 </svg>
               </div>
 
-            </div>
+              <div className="relative">
+                <div className=" h-[5.6875rem] w-[4.5rem] absolute justify-end z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <p className="p-8 font-semibold">
+                    1
+                  </p>
+                </div>
+                <div className="h-[21.875rem] w-[21.875rem] border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <img src={LocationPin} className="mt-14 mb-10 mx-3 w-[2.5rem]" alt="location-pin" />
+                  <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
+                    List your property
+                  </h2>
+                  <p className="px-4 text-[0.875rem] font-medium">
+                    The apartment appeared to be well-cared-
+                    for and professionally managed. The
+                    overall maintenance of the house and the
+                    surrounding landscape reflected a high
+                    level of attention to detail.
+                  </p>
+                </div>
+              </div>
 
+              <div className="relative">
+                <div className=" h-[5.6875rem] w-[4.5rem] absolute justify-end z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <p className="p-8 font-semibold">
+                    2
+                  </p>
+                </div>
+                <div className="h-[21.875rem] w-[21.875rem] border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <img src={Users} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="location-pin" />
+                  <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
+                    Find Your Flatmate
+                  </h2>
+                  <p className="px-4 text-[0.875rem] font-medium">
+                    The apartment appeared to be well-cared-
+                    for and professionally managed. The
+                    overall maintenance of the house and the
+                    surrounding landscape reflected a high
+                    level of attention to detail.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className=" h-[5.6875rem] w-[4.5rem] absolute justify-end z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <p className="p-8 font-semibold">
+                    3
+                  </p>
+                </div>
+                <div className="h-[21.875rem] w-[21.875rem] border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <img src={MoneyStack} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="location-pin" />
+                  <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
+                    Close The Deal
+                  </h2>
+                  <p className="px-4 text-[0.875rem] font-medium">
+                    The apartment appeared to be well-cared-
+                    for and professionally managed. The
+                    overall maintenance of the house and the
+                    surrounding landscape reflected a high
+                    level of attention to detail.
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
