@@ -263,7 +263,9 @@ const Home = () => {
 
               {/* wider screen */}
               {/* <div className="laptop:flex tablet:flex hidden gap-4"> */}
-              <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-6 ">
+              {/* {slides.map((item, index) => ( */}
+              <div key={index}
+                className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-6 ">
                 {/* 01 */}
                 <div className="slide bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow1} className=" w-full" alt="bungalow-1" />
@@ -299,16 +301,20 @@ const Home = () => {
                     </span>
                   </span>
 
-                  <img src={Line} className="mt-5 mb-4" alt="line" />
+                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
 
-                  <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
-                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                      {currentSlide.area}
-                    </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                      View
-                    </a>
+                  <span className="flex justify-between mr-2">
+                    <span className="flex">
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                        {currentSlide.area}
+                      </p>
+                    </span>
+                    <span>
+                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                        View
+                      </a>
+                    </span>
                   </span>
                 </div>
                 {/* end of 01 */}
@@ -348,16 +354,20 @@ const Home = () => {
                     </span>
                   </span>
 
-                  <img src={Line} className="mt-5 mb-4" alt="line" />
+                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
 
-                  <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
-                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                      {currentSlide.area}
-                    </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                      View
-                    </a>
+                  <span className="flex justify-between mr-2">
+                    <span className="flex">
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                        {currentSlide.area}
+                      </p>
+                    </span>
+                    <span>
+                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                        View
+                      </a>
+                    </span>
                   </span>
                 </div>
                 {/* end of 02 */}
@@ -399,7 +409,7 @@ const Home = () => {
 
                   <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
 
-                  <span className="flex justify-between">
+                  <span className="flex justify-between mr-2">
                     <span className="flex">
                       <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
                       <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
@@ -407,7 +417,7 @@ const Home = () => {
                       </p>
                     </span>
                     <span>
-                      <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
                         View
                       </a>
                     </span>
@@ -416,13 +426,14 @@ const Home = () => {
                 {/* end of 03 */}
 
               </div>
+              {/* ))} */}
               {/* end of wide screen */}
 
               <button
-                className="btn  normal-case laptop:hidden tablet:hidden mx-[4.5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:">
+                className="btn  normal-case laptop:hidden tablet:hidden mx-[4.5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
                 Show all apartment
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none"
-                  className="my-1">
+                  className="my-1" >
                   <path d="M16.75 7.72559L1.75 7.72559" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M10.7002 1.70124L16.7502 7.72524L10.7002 13.7502" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -616,8 +627,8 @@ const Home = () => {
         </div>
         {/* end of 'good reviews by customers' */}
 
-      </motion.div>
-    </section>
+      </motion.div >
+    </section >
   );
 };
 
