@@ -265,7 +265,7 @@ const Home = () => {
               {/* <div className="laptop:flex tablet:flex hidden gap-4"> */}
               {/* {slides.map((item, index) => ( */}
               <div key={index}
-                className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-6 ">
+                className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8 ">
                 {/* 01 */}
                 <div className="slide bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow1} className=" w-full" alt="bungalow-1" />
@@ -305,7 +305,7 @@ const Home = () => {
 
                   <span className="flex justify-between mr-2">
                     <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
                       <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                         {currentSlide.area}
                       </p>
@@ -358,7 +358,7 @@ const Home = () => {
 
                   <span className="flex justify-between mr-2">
                     <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
                       <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                         {currentSlide.area}
                       </p>
@@ -411,7 +411,7 @@ const Home = () => {
 
                   <span className="flex justify-between mr-2">
                     <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
                       <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
                         {currentSlide.area}
                       </p>
@@ -430,7 +430,7 @@ const Home = () => {
               {/* end of wide screen */}
 
               <button
-                className="btn  normal-case laptop:hidden tablet:hidden mx-[4.5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
+                className="btn  normal-case laptop:hidden tablet:hidden mx-auto w-full text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
                 Show all apartment
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none"
                   className="my-1" >
@@ -456,11 +456,11 @@ const Home = () => {
               find what is right for you.
             </p>
 
-            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 tablet:mx-3 laptop:mx-0 laptop:gap-4">
+            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 tablet:mx-3 laptop:mx-0 laptop:gap-8">
 
               {/* <div className="laptop:flex gap-8"> */}
               {/* 01 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
                 <img src={Building11} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -480,7 +480,7 @@ const Home = () => {
               </div>
 
               {/* 02 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
                 <img src={Building12} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -500,7 +500,7 @@ const Home = () => {
               </div>
 
               {/* 03 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
                 <img src={Building13} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
@@ -522,7 +522,7 @@ const Home = () => {
             </div>
 
             <button
-              className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[5rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+              className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[8rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
               Browse More locations
             </button>
 
@@ -551,7 +551,7 @@ const Home = () => {
             </p>
 
             {/* <div className="laptop:flex gap-5"> */}
-            <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
+            <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* 01 */}
               <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
                 <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
