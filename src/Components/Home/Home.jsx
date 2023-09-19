@@ -154,25 +154,25 @@ const Home = () => {
             {/* text-in-shapes */}
             <div className="grid grid-cols-1 gap-2 tablet:gap-8 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
-              <div className="laptop:relative">
-                <p className="absolute laptop:w-[90%] laptop:px-8 tablet:w-[18rem] w-[68%] ml-[2rem] mt-[10.5rem] tablet:mt-[12rem] tablet:ml-[2.5rem] laptop:ml-[1.1rem] laptop:mt-[10.5rem] text-[0.875rem] font-medium">
-                  The apartment appeared to be well-cared-
-                  for and professionally managed. The
-                  overall maintenance of the house and the
-                  surrounding landscape reflected a high
-                  level of attention to detail.
-                </p>
-                <h2 className="absolute w-auto ml-[2rem] laptop:px-8 mt-[8.3rem] laptop:ml-[1.1rem] tablet:mt-[9.5rem] tablet:ml-[2.5rem] laptop:mt-[8rem] text-[1.125rem] font-medium">
-                  List your property
-                </h2>
-                <img src={LocationPin} className="absolute laptop:w-[2.5rem] tablet:w-[2rem] tablet:mt-[5.5rem] w-[10%] ml-[1.5rem] tablet:ml-[2rem] mt-[4.5rem] laptop:ml-[2.5rem] laptop:mt-[3.5rem]" alt="location-pin" />
-
-                <svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  className="w-[95%] laptop:w-full mx-2">
-                  <path d="M0.5 0.5H290C322.861 0.5 349.5 27.1391 349.5 60V349.5H60C27.1391 349.5 0.5 322.861 0.5 290V0.5Z" fill="white" stroke="#B8C9C9" />
-                  <path d="M277 1H289C322.137 1 349 27.8629 349 61V92H337C303.863 92 277 65.1371 277 32V1Z" fill="#EEF4FD" />
-                  <path d="M310.44 44.216C311.059 43.9707 311.677 43.656 312.296 43.272C312.925 42.888 313.48 42.4347 313.96 41.912H315.32V53H313.384V44.504C313.096 44.728 312.733 44.9467 312.296 45.16C311.859 45.3733 311.437 45.5493 311.032 45.688L310.44 44.216Z" fill="black" />
-                </svg>
+              <div className="relative">
+                <div className=" h-[5.6875rem] w-[4.5rem] absolute justify-end z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <p className="p-8 font-semibold">
+                    1
+                  </p>
+                </div>
+                <div className="h-[21.875rem] w-[21.875rem] border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                  <img src={LocationPin} className="mt-14 mb-10 mx-3 w-[2.5rem]" alt="location-pin" />
+                  <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
+                    List your property
+                  </h2>
+                  <p className="px-4 text-[0.875rem] font-medium">
+                    The apartment appeared to be well-cared-
+                    for and professionally managed. The
+                    overall maintenance of the house and the
+                    surrounding landscape reflected a high
+                    level of attention to detail.
+                  </p>
+                </div>
               </div>
               {/* end of styled rectangle 1 */}
 
@@ -225,27 +225,6 @@ const Home = () => {
                   <img src={MoneyStack} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="location-pin" />
                   <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                     Close The Deal
-                  </h2>
-                  <p className="px-4 text-[0.875rem] font-medium">
-                    The apartment appeared to be well-cared-
-                    for and professionally managed. The
-                    overall maintenance of the house and the
-                    surrounding landscape reflected a high
-                    level of attention to detail.
-                  </p>
-                </div>
-              </div>
-
-              <div className="relative">
-                <div className=" h-[5.6875rem] w-[4.5rem] absolute justify-end z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
-                  <p className="p-8 font-semibold">
-                    1
-                  </p>
-                </div>
-                <div className="h-[21.875rem] w-[21.875rem] border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
-                  <img src={LocationPin} className="mt-14 mb-10 mx-3 w-[2.5rem]" alt="location-pin" />
-                  <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
-                    List your property
                   </h2>
                   <p className="px-4 text-[0.875rem] font-medium">
                     The apartment appeared to be well-cared-
