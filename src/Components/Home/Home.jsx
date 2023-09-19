@@ -363,7 +363,7 @@ const Home = () => {
                 {/* end of 02 */}
 
                 {/* 03 */}
-                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
+                <div className="slide w-auto bg-white p-0 rounded-[1rem] mb-4">
                   <img src={Bungalow3} className=" w-full" alt="bungalow-3" />
                   <span className="flex mt-4 mx-2 justify-between">
                     <p className="text-[1rem]">
@@ -397,16 +397,20 @@ const Home = () => {
                     </span>
                   </span>
 
-                  <img src={Line} className="mt-5 mb-4" alt="line" />
+                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
 
-                  <span className="flex">
-                    <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[6%] opacity-50" alt="location-pin" />
-                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                      {currentSlide.area}
-                    </p>
-                    <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[14.8rem] laptop:ml-[16rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                      View
-                    </a>
+                  <span className="flex justify-between">
+                    <span className="flex">
+                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[8%] tablet:w-[6%] w-[12%] opacity-50" alt="location-pin" />
+                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                        {currentSlide.area}
+                      </p>
+                    </span>
+                    <span>
+                      <a className="inline-block absolute cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                        View
+                      </a>
+                    </span>
                   </span>
                 </div>
                 {/* end of 03 */}
@@ -441,12 +445,12 @@ const Home = () => {
               find what is right for you.
             </p>
 
-            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
+            <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 tablet:mx-3 laptop:mx-0 laptop:gap-4">
 
               {/* <div className="laptop:flex gap-8"> */}
               {/* 01 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
-                <img src={Building11} className="laptop:w-[] w-auto" alt="building-2" />
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+                <img src={Building11} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
                   <span className="laptop:mr-[rem] mr-[rem]">
@@ -465,8 +469,8 @@ const Home = () => {
               </div>
 
               {/* 02 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
-                <img src={Building12} className="laptop:w-[] w-[]" alt="building-2" />
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+                <img src={Building12} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
                   <span className="laptop:mr-[rem] mr-[rem]">
@@ -485,8 +489,8 @@ const Home = () => {
               </div>
 
               {/* 03 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-[80%] w-[90%] mx-auto">
-                <img src={Building13} className="laptop:w-[] w-[]" alt="building-2" />
+              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto">
+                <img src={Building13} className="laptop:w-[] w-full" alt="building-2" />
 
                 <div className="flex pt-4 justify-between">
                   <span className="laptop:mr-[rem] mr-[rem]">
