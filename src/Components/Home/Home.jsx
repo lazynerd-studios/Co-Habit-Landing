@@ -9,8 +9,6 @@ import HeroImage from "../../assets/hero-image.png"
 import ScrollToExplore from "../../assets/Scroll to explore.png"
 import Search from "../../assets/Search.svg"
 import Location from "../../assets/Location.svg"
-import StyledRectangle from "../../assets/curved-edge rectangle.svg"
-import SmallStyledRectangle from "../../assets/small-styled-rectangle.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
@@ -192,7 +190,7 @@ const Home = () => {
                   </p>
                 </div>
 
-                <img src={Users} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="location-pin" />
+                <img src={Users} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="users" />
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Find Your Flatmate
                 </h2>
@@ -222,7 +220,7 @@ const Home = () => {
                   </p>
                 </div>
 
-                <img src={MoneyStack} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="location-pin" />
+                <img src={MoneyStack} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="money-stack" />
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Close The Deal
                 </h2>
