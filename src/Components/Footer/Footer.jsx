@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" footer flex gap-[8rem] laptop:hidden tablet:hidden">
+        <div className=" footer flex gap-[8rem] laptop:hidden tablet:">
           <div className="laptop:ml-[2.5rem]">
             <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
             <a className="link link-hover font-normal leading-[1.6rem]">Companies</a>
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className=" hidden laptop:footer tablet:footer">
+        <div className=" hidden laptop:footer tablet:">
           <div className="laptop:ml-[2.5rem]">
             <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
             <a className="link link-hover font-normal leading-[1.6rem]">Companies</a>
