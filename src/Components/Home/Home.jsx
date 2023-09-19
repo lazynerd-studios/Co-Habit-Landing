@@ -60,10 +60,10 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                <span className="laptop:flex gap-[31.7rem] mt-2 ml-[6.5rem] absolute hidden">
+                {/* <span className="laptop:flex gap-[31.7rem] mt-2 ml-[6.5rem] absolute hidden">
                   <img src={Left} className=" w-[25%]" alt="left" />
                   <img src={Right} className="w-[25%]" alt="right" />
-                </span>
+                </span> */}
                 <h1 className="mx-auto laptop:text-[3rem] text-[2rem] text-left leading-[2.4rem] tablet:text-center laptop:text-center laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
@@ -83,7 +83,7 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[53%] rounded-md bg-white px-2 py-2 border-none">
+                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:relativ laptop:w-[%] rounded-md bg-white px-2 py-2 border-none">
                   {/* laptop:w-[65%] laptop:mx-[5rem] */}
                   <span className="flex">
                     {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
