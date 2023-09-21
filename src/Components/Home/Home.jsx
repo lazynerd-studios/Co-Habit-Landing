@@ -236,6 +236,7 @@ const Home = () => {
               </div>
 
             </div>
+            {/* end of text-in-shapes */}
           </div>
 
         </div>
@@ -519,9 +520,9 @@ const Home = () => {
             </div>
 
             {/* className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[8rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border"> */}
-            <div className="w-full mt-8 border">
+            <div className="w-full mt-8 text-center relative">
               <p
-                className="btn my-6 normal-case mx-auto  relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
+                className="btn my-6 normal-case text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
                 Browse More locations
               </p>
             </div>
