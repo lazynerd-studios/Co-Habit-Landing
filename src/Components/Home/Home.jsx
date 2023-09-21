@@ -151,9 +151,9 @@ const Home = () => {
             </p>
 
             {/* text-in-shapes */}
-            <div className="grid grid-cols-1 gap-2 tablet:gap-8 w-max laptop:grid-cols-3 mx-auto mt-8 tablet:grid-cols-2 laptop:gap-8">
+            <div className="grid grid-cols-1 gap-2 tablet:gap-8 laptop:grid-cols-3 mt-8 tablet:grid-cols-2 laptop:gap-8">
               {/* styled rectangle 1 */}
-              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[20.475rem] mx-2 laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className=" mb-6 mx-2 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     1
@@ -164,7 +164,7 @@ const Home = () => {
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   List your property
                 </h2>
-                <p className="px-4 text-[0.875rem] font-medium">
+                <p className="px-4 text-[0.875rem] mb-20 font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
@@ -184,7 +184,7 @@ const Home = () => {
               {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
 
               {/* styled rectangle 2 */}
-              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[20.475rem] mx-2 laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className=" mb-6 mx-2 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     2
@@ -195,7 +195,7 @@ const Home = () => {
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Find Your Flatmate
                 </h2>
-                <p className="px-4 text-[0.875rem] font-medium">
+                <p className="px-4 text-[0.875rem] mb-20 font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
@@ -214,7 +214,8 @@ const Home = () => {
               {/* <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" /> */}
 
               {/* styled rectangle 3 */}
-              <div className="h-[21.875rem] tablet:w-[18.875rem] w-[20.475rem] mx-2 laptop:w-[21.875rem] mb-6 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+              <div className=" mb-6 mx-2 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
+                {/* h-[21.875rem] tablet:w-[18.875rem] w-[20.475rem] mx-2 laptop:w-[20.875rem] */}
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                   <p className="p-8 font-semibold">
                     3
@@ -225,7 +226,7 @@ const Home = () => {
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Close The Deal
                 </h2>
-                <p className="px-4 text-[0.875rem] font-medium">
+                <p className="px-4 text-[0.875rem] mb-20 font-medium">
                   The apartment appeared to be well-cared-
                   for and professionally managed. The
                   overall maintenance of the house and the
