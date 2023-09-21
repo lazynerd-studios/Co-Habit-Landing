@@ -10,7 +10,7 @@ export const slides = [
         images: Bungalow1,
         house: "Bungalow",
         price: "NGN150,000",
-        measurement: "1200sqft",
+        measurement: "1200 sqft",
         rooms: "2 Rooms",
         baths: "2 Baths",
         area: "Surulere, Mainland"
@@ -19,7 +19,7 @@ export const slides = [
         image: Bungalow2,
         house: "Bungalow",
         price: "NGN150,000",
-        measurement: "1300sqft",
+        measurement: "1300 sqft",
         rooms: "3 Rooms",
         baths: "3 Baths",
         area: "Ikorodu, Lagos"
@@ -28,7 +28,7 @@ export const slides = [
         image: Bungalow3,
         house: "Bungalow",
         price: "NGN150,000",
-        measurement: "1300sqft",
+        measurement: "1300 sqft",
         rooms: "2 Rooms",
         baths: "2 Baths",
         area: "Ikoyi, Lagos"
@@ -37,7 +37,7 @@ export const slides = [
     //     image: Bungalow1,
     //     house: "Bungalow",
     //     price: "NGN150,000",
-    //     measurement: "1400sqft",
+    //     measurement: "1400 sqft",
     //     rooms: "3 Rooms",
     //     baths: "3 Baths",
     //     area: "Ikeja, Lagos"
@@ -46,7 +46,7 @@ export const slides = [
     //     image: Bungalow2,
     //     house: "Bungalow",
     //     price: "NGN150,000",
-    //     measurement: "1200sqft",
+    //     measurement: "1200 sqft",
     //     rooms: "2 Rooms",
     //     baths: "2 Baths",
     //     area: "Epe, Lagos"
@@ -55,7 +55,7 @@ export const slides = [
     //     image: Bungalow3,
     //     house: "Bungalow",
     //     price: "NGN150,000",
-    //     measurement: "1500sqft",
+    //     measurement: "1500 sqft",
     //     rooms: "3 Rooms",
     //     baths: "3 Baths",
     //     area: "Apapa, Lagos"
