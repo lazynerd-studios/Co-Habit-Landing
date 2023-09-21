@@ -83,27 +83,27 @@ const Home = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                {/* mx-[10rem] */}
-                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:relativ laptop:w-[%] rounded-md bg-white px-2 py-2 border-none">
+                <div className="laptop:absolute place-content-center items-center w-full laptop:w-[65rem] laptop:mx-4 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-1">
                   {/* laptop:w-[65%] laptop:mx-[5rem] */}
                   <span className="flex">
                     {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
-                    <span className="my-3 mx-2">
+                    <span className="my-3 mr-2">
                       <BiSearch size={25} />
                     </span>
                     <input type="text"
-                      className="border-b-[#7C8493] laptop:w-auto w-[77%] outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
-                      placeholder="Apartment/Workspace" autoComplete="true"
+                      className="border-b-[#7C8493] laptop:w-auto w-full outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
+                      placeholder="Apartment/Workspace"
+                      autoComplete="true"
                     />
                   </span>
 
                   {/* location */}
-                  <span className="flex ">
+                  <span className="flex my-2">
                     {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
-                    <span className="my-3 mx-2">
+                    <span className="my-3 mr-2">
                       <GrLocation size={25} />
                     </span>
-                    <select className="laptop:w-auto laptop:mr-[] w-[78%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                    <select className="laptop:w-auto laptop:mr-[] w-[100%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
                       <option className="py-4" value='Apartment/Workspace'>
                         Lagos/Abuja
@@ -125,7 +125,7 @@ const Home = () => {
 
                   {/* search button */}
                   <button
-                    className="btn laptop:ml-4 tablet:-ml-20 -ml- rounded-none w-[80%] mt-3 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    className="btn laptop:ml-4 rounded-none w-full mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
                   </button>
                 </div>
