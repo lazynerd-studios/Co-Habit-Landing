@@ -18,7 +18,7 @@ const Footer = () => {
         className="footer laptop:p-10 p-6 max-w-[90%] laptop:mx-[8rem] mx-0">
         <div className="laptop:-mr-[9rem] laptop:-ml-10">
           <img src={CoHabit} className="-ml-5" alt="web-logo" />
-          <p className="w-[21rem] text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
+          <p className="laptop:w-auto tablet:w-[21rem] laptop:mr-36 text-[1rem] font-normal leading-[1.6rem] laptop:mt-5">
             Our mission is to help people find <br className="hidden laptop:flex" />
             affordable homes
             with a seamless and <br className="hidden laptop:flex" />
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className=" footer flex gap-[8rem] laptop:hidden tablet:">
+        <div className=" footer flex justify-between laptop:hidden tablet:">
           <div className="laptop:ml-[2.5rem]">
             <span className="font-medium text-[1.125rem] laptop:mb-4">About</span>
             <a className="link link-hover font-normal leading-[1.6rem]">Companies</a>
@@ -84,12 +84,12 @@ const Footer = () => {
             The latest news, articles, sent to your <br className="hidden laptop:flex" />
             inbox weekly.
           </p>
-          <div className="flex-col w-[18rem] laptop:mt-3 tablet:w-[14rem] laptop:w-[18rem]">
+          <div className="flex-col w-[18rem] laptop:mt-3 tablet:w-[14rem] laptop:w-[23rem]">
             <div className="relative">
               <input type="email"
                 placeholder="Email Address"
                 // required
-                className="input tablet:input laptop:input input-bordered rounded-none text-[#A8ADB7] w-full bg-white pr-16 mr-6" />
+                className="input tablet:input laptop:input input-bordered rounded-none text-[#A8ADB7] laptop:w-full bg-white pr-16 mr-6" />
               <button className="btn hover:bg-[#DF8026] mt-3 laptop:mt-0 tablet:mt-0 tablet:w-[] bg-[#df7f26f2] text-black font-bold text-[1.125rem] normal-case laptop:absolute tablet:absolute top-0 right-0 rounded-none laptop:rounded-lg border-none tablet:rounded-lg tablet:rounded-l-none laptop:rounded-l-none">Subscribe</button>
             </div>
           </div>
