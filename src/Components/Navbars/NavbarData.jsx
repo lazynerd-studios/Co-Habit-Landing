@@ -19,14 +19,14 @@ export const NavbarData = [
     className: "",
   },
 
-  {
-    title: "Login",
-    path: "/login",
-    className: "laptop:hidden flex",
-  },
-  {
-    title: "Sign Up",
-    path: "/signup",
-    className: "laptop:hidden flex",
-  }
+  // {
+  //   title: "Login",
+  //   path: "/login",
+  //   className: "laptop:hidden flex",
+  // },
+  // {
+  //   title: "Sign Up",
+  //   path: "/signup",
+  //   className: "laptop:hidden flex",
+  // }
 ];

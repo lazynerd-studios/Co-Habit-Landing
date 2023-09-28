@@ -64,7 +64,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
+      {/* Unused 'Signup' and 'Login' buttons */}
+      {/* <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
         <Link to="/login" className="btn bg-white hover:bg-white border-none mr-1 normal-case text-[#010886]">
           Login
         </Link>
@@ -72,7 +73,7 @@ const Navbar = () => {
         <Link to="/signup" className="btn py-2 px-6 normal-case font-bold bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
           Sign Up
         </Link>
-      </div>
+      </div> */}
 
 
       {/* <div className="navbar-end laptop:mr-[7.5rem] hidden laptop:flex">
