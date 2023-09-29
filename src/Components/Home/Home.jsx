@@ -43,7 +43,7 @@ const Home = () => {
   const currentSlide = slides[index];
 
   return (
-    <section className="">
+    <section className=" top-0">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
