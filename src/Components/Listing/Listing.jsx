@@ -14,6 +14,7 @@ import BedIcon from "../../assets/u_bed-double.svg"
 import Line from "../../assets/Line 9.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import { slides } from "../Slideshow/slides";
+import { PropertyData } from "./PropertyData";
 // import "./styles.css"
 import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 import { FiFilter } from "react-icons/fi";
@@ -32,11 +33,11 @@ const animationConfiguration = {
 const Listings = () => {
   const [index, setIndex] = useState(0);
   const [showFilter, setshowFilter] = useState(false)
-  const currentSlide = slides[index];
+  const item = slides[index];
 
 
   return (
-    <section className="">
+    <section className=" top-0">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
@@ -309,372 +310,58 @@ const Listings = () => {
 
             </span>
 
-            {/* properties 1-9 */}
+            {/* properties */}
             <div className="grid grid-cols-1 mt-6 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
-              {/* 01 */}
-              <Link to="/details">
-                <div className=" border-2 rounded-[1rem]">
-                  <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
-                  <span className="flex mt-2 mx-3 justify-between">
-                    <p className="text-[1rem]">
-                      {currentSlide.house}
-                    </p>
-                    <p className="text-[1rem] text-[#010886] font-bold">
-                      {currentSlide.price}
-                    </p>
-                  </span>
+              {PropertyData.map((item, index) => {
+                return (
 
-                  <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                    <span className="mx-1 flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.rooms}
-                      </p>
-                    </span>
+                  <Link to="/details" key={index}>
+                    <div className=" border-2 rounded-[1rem]">
+                      <img src={item.image} className="w-full" alt="bungalow-1" />
+                      <span className="flex mt-2 mx-3 justify-between">
+                        <p className="text-[1rem]">
+                          {item.house}
+                        </p>
+                        <p className="text-[1rem] text-[#010886] font-bold">
+                          {item.price}
+                        </p>
+                      </span>
 
-                    <span className="mx-1 flex">
-                      <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.baths}
-                      </p>
-                    </span>
+                      <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
+                        <span className="mx-1 flex">
+                          <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                          <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                            {item.rooms}
+                          </p>
+                        </span>
 
-                  </span>
+                        <span className="mx-1 flex">
+                          <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                          <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                            {item.baths}
+                          </p>
+                        </span>
 
-                  <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
+                      </span>
 
-                  <span className="flex">
-                    <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                    <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                      {currentSlide.area}
-                    </p>
-                  </span>
-                </div>
-              </Link>
-              {/* end of 01 */}
+                      <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
 
-              {/* 02 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-1" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
+                      <span className="flex">
+                        <img src={LocationPin} className="pb-5 ml-3 w-5 opacity-50" alt="location-pin" />
+                        <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                          {item.area}
+                        </p>
+                      </span>
+                    </div>
 
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
+                  </Link>
 
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 02 */}
-
-              {/* 03 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 03 */}
-
-              {/* 04 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 04 */}
-
-              {/* 05 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 05 */}
-
-              {/* 06 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 06 */}
-
-              {/* 07 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 07 */}
-
-              {/* 08 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[6%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 08 */}
-
-              {/* 09 */}
-              <div className=" border-2 rounded-[1rem]">
-                <img src={currentSlide.images} className="w-full" alt="bungalow-3" />
-                <span className="flex mt-2 mx-3 justify-between">
-                  <p className="text-[1rem]">
-                    {currentSlide.house}
-                  </p>
-                  <p className="text-[1rem] text-[#010886] font-bold">
-                    {currentSlide.price}
-                  </p>
-                </span>
-
-                <span className="flex laptop:gap-8 justify-between gap-[0.125rem] mt-4 mx-2">
-                  <span className="mx-1 flex">
-                    <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.rooms}
-                    </p>
-                  </span>
-
-                  <span className="mx-1 flex">
-                    <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                    <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                      {currentSlide.baths}
-                    </p>
-                  </span>
-
-                </span>
-
-                <img src={Line} className="mt-3 mb-3 w-full" alt="line" />
-
-                <span className="flex">
-                  <img src={LocationPin} className="pb-5 ml-3 w-5 laptop:w-[10%] opacity-50" alt="location-pin" />
-                  <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                    {currentSlide.area}
-                  </p>
-                </span>
-              </div>
-              {/* end of 09 */}
-
+                )
+              })}
             </div>
+            {/* end of properties */}
           </div>
+
           {/* end of all property */}
 
         </div>
@@ -682,96 +369,7 @@ const Listings = () => {
 
         {/* pagination */}
         <ol className="laptop:flex tablet:flex hidden justify-center gap-1 mb-4 pb-8 text-xs font-medium select-none">
-          <li>
-            <a
-              href="#"
-              className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
-            >
-              <span className="sr-only">Prev Page</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                <g clipPath="url(#clip0_1030_276)">
-                  <path d="M15.5 6L9.5 12L15.5 18" stroke="#25324B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1030_276">
-                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </li>
 
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-blue-600 bg-[#010886] text-center leading-8 text-white"
-            >
-              1
-            </a>
-          </li>
-
-          <li
-            className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-          >
-            2
-          </li>
-
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-            >
-              3
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-            >
-              4
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-            >
-              5
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-            >
-              ...
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="block h-8 w-8 rounded border-none bg-white text-center leading-8 text-gray-900"
-            >
-              33
-            </a>
-          </li>
-
-          <li>
-            <a
-              className="inline-flex h-8 w-8 items-center justify-center rounded border-none bg-white text-gray-900 rtl:rotate-180"
-            >
-              <span className="sr-only">Next Page</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                <g clipPath="url(#clip0_1030_294)">
-                  <path d="M9.875 6L16.125 12L9.875 18" stroke="#25324B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1030_294">
-                    <rect width="25" height="24" fill="white" transform="translate(0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </li>
         </ol>
         {/* end of pagination */}
 
