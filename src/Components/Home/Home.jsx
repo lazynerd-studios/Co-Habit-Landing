@@ -14,20 +14,13 @@ import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
 import ArrowUp from "../../assets/Arrow up.svg"
 import ArrowDown from "../../assets/Arrow down.svg"
-import Bungalow1 from "../../assets/bungalow-1.png"
-import Bungalow2 from "../../assets/bungalow-2.png"
-import Bungalow3 from "../../assets/bungalow-3.png"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
 import Slideshow from "../Slideshow/Slideshow";
-import { slides } from "../Slideshow/slides";
+import { LocationDetails, ReviewDetails, slides } from "../Slideshow/slides";
 import Line from "../../assets/Line 9.svg"
-import Building11 from "../../assets/building11.png"
-import Building12 from "../../assets/building12.png"
-import Building13 from "../../assets/building13.png"
 import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"
-import TemitopeWilliams from "../../assets/temitope williams.png"
 import Stars from "../../assets/Stars.png"
 import { BiSearch } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
@@ -40,7 +33,6 @@ const animationConfiguration = {
 
 const Home = () => {
   const [index, setIndex] = useState(0);
-  const currentSlide = slides[index];
 
   return (
     <section className=" top-0">
@@ -260,175 +252,69 @@ const Home = () => {
               {/* end of mobile slideshow */}
 
               {/* wider screen */}
-              {/* <div className="laptop:flex tablet:flex hidden gap-4"> */}
-              {/* {slides.map((item, index) => ( */}
-              <div key={index}
-                className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8 ">
-                {/* 01 */}
-                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
-                  <img src={Bungalow1} className=" w-full" alt="bungalow-1" />
-                  <span className="flex mt-4 mx-2 justify-between">
-                    <p className="text-[1rem]">
-                      {currentSlide.house}
-                    </p>
-                    <p className="text-[1rem] text-[#010886] font-bold">
-                      {currentSlide.price}
-                    </p>
-                  </span>
+              <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8">
+                {slides.map((item, index) => {
+                  return (
 
-                  <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
-                    <span className=" flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.rooms}
-                      </p>
-                    </span>
+                    <div key={index}
+                      className="slide bg-white p-0 rounded-[1rem] mb-4">
+                      <img src={item.image} className=" w-full" alt="bungalow-1" />
+                      <span className="flex mt-4 mx-2 justify-between">
+                        <p className="text-[1rem]">
+                          {item.house}
+                        </p>
+                        <p className="text-[1rem] text-[#010886] font-bold">
+                          {item.price}
+                        </p>
+                      </span>
 
-                    <span className=" flex">
-                      <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.baths}
-                      </p>
-                    </span>
+                      <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
+                        <span className=" flex">
+                          <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                          <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                            {item.rooms}
+                          </p>
+                        </span>
 
-                    <span className="flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.measurement}
-                      </p>
-                    </span>
-                  </span>
+                        <span className=" flex">
+                          <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
+                          <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                            {item.baths}
+                          </p>
+                        </span>
 
-                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
+                        <span className="flex">
+                          <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
+                          <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
+                            {item.measurement}
+                          </p>
+                        </span>
+                      </span>
 
-                  <span className="flex justify-between mr-2">
-                    <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
-                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                        {currentSlide.area}
-                      </p>
-                    </span>
-                    <span>
-                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                        View
-                      </a>
-                    </span>
-                  </span>
-                </div>
-                {/* end of 01 */}
+                      <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
 
-                {/* 02 */}
-                <div className="slide bg-white p-0 rounded-[1rem] mb-4">
-                  <img src={Bungalow2} className=" w-full" alt="bungalow-2" />
-                  <span className="flex mt-4 mx-2 justify-between">
-                    <p className="text-[1rem]">
-                      {currentSlide.house}
-                    </p>
-                    <p className="text-[1rem] text-[#010886] font-bold">
-                      {currentSlide.price}
-                    </p>
-                  </span>
+                      <span className="flex justify-between mr-2">
+                        <span className="flex">
+                          <img src={LocationPin} className="pb-6 ml-3 w-5 opacity-50" alt="location-pin" />
+                          <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
+                            {item.area}
+                          </p>
+                        </span>
+                        <span>
+                          <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
+                            View
+                          </a>
+                        </span>
+                      </span>
+                    </div>
 
-                  <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
-                    <span className=" flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.rooms}
-                      </p>
-                    </span>
-
-                    <span className=" flex">
-                      <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.baths}
-                      </p>
-                    </span>
-
-                    <span className="flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.measurement}
-                      </p>
-                    </span>
-                  </span>
-
-                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
-
-                  <span className="flex justify-between mr-2">
-                    <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
-                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                        {currentSlide.area}
-                      </p>
-                    </span>
-                    <span>
-                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                        View
-                      </a>
-                    </span>
-                  </span>
-                </div>
-                {/* end of 02 */}
-
-                {/* 03 */}
-                <div className="slide w-auto bg-white p-0 rounded-[1rem] mb-4">
-                  <img src={Bungalow3} className=" w-full" alt="bungalow-3" />
-                  <span className="flex mt-4 mx-2 justify-between">
-                    <p className="text-[1rem]">
-                      {currentSlide.house}
-                    </p>
-                    <p className="text-[1rem] text-[#010886] font-bold">
-                      {currentSlide.price}
-                    </p>
-                  </span>
-
-                  <span className="flex laptop:gap- gap-[0.125rem] mt-4 px-2 justify-between">
-                    <span className=" flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.rooms}
-                      </p>
-                    </span>
-
-                    <span className=" flex">
-                      <img src={BathIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bath-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.baths}
-                      </p>
-                    </span>
-
-                    <span className="flex">
-                      <img src={BedIcon} className="p-2 bg-[#EDF1F9] mr-1 rounded-full" alt="bed-icon" />
-                      <p className="text-[#515B6F] text-[0.875rem] font-normal my-auto">
-                        {currentSlide.measurement}
-                      </p>
-                    </span>
-                  </span>
-
-                  <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
-
-                  <span className="flex justify-between mr-2">
-                    <span className="flex">
-                      <img src={LocationPin} className="pb-6 ml-3 laptop:w-[12%] tablet:w-[12%] w-[12%] opacity-50" alt="location-pin" />
-                      <p className="text-[#515B6F] ml-4 text-[0.875rem] font-normal">
-                        {currentSlide.area}
-                      </p>
-                    </span>
-                    <span>
-                      <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                        View
-                      </a>
-                    </span>
-                  </span>
-                </div>
-                {/* end of 03 */}
-
+                  )
+                })}
               </div>
-              {/* ))} */}
               {/* end of wide screen */}
 
               <button
-                className="btn  normal-case laptop:hidden tablet:hidden mx-auto w-full text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
+                className="btn normal-case laptop:hidden tablet:hidden mx-auto w-full text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
                 Show all apartment
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none"
                   className="my-1" >
@@ -456,67 +342,30 @@ const Home = () => {
 
             <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 tablet:mx-3 laptop:mx-0 laptop:gap-8">
 
-              {/* <div className="laptop:flex gap-8"> */}
-              {/* 01 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
-                <img src={Building11} className="laptop:w-[] w-full" alt="building-2" />
+              {LocationDetails.map((item, index) => {
+                return (
+                  <div key={index}
+                    className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
+                    <img src={item.image} className="laptop:w-[] w-full" alt="building-2" />
 
-                <div className="flex pt-4 justify-between">
-                  <span className="laptop:mr-[rem] mr-[rem]">
-                    <p className="text-[#010886] font-normal leading-[1.6rem]">
-                      Surulere, Lagos
-                    </p>
-                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
-                      823 Properties
-                    </p>
-                  </span>
-                  <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
-                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
-                  </span>
-                </div>
-              </div>
+                    <div className="flex pt-4 justify-between">
+                      <span className="laptop:mr-[rem] mr-[rem]">
+                        <p className="text-[#010886] font-normal leading-[1.6rem]">
+                          {item.area}
+                        </p>
+                        <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
+                          823 Properties
+                        </p>
+                      </span>
+                      <span className="laptop:ml-[]">
+                        <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
+                        <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
+                      </span>
+                    </div>
+                  </div>
 
-              {/* 02 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
-                <img src={Building12} className="laptop:w-[] w-full" alt="building-2" />
-
-                <div className="flex pt-4 justify-between">
-                  <span className="laptop:mr-[rem] mr-[rem]">
-                    <p className="text-[#010886] font-normal leading-[1.6rem]">
-                      Yaba, Lagos
-                    </p>
-                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
-                      823 Properties
-                    </p>
-                  </span>
-                  <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
-                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
-                  </span>
-                </div>
-              </div>
-
-              {/* 03 */}
-              <div className="border-2 rounded-md laptop:mt-0 p-4 laptop:w-auto tablet:w-full w-[97%] mx-auto laptop:mx-0 tablet:mx-0">
-                <img src={Building13} className="laptop:w-[] w-full" alt="building-2" />
-
-                <div className="flex pt-4 justify-between">
-                  <span className="laptop:mr-[rem] mr-[rem]">
-                    <p className="text-[#010886] font-normal leading-[1.6rem]">
-                      Lekki, Lagos
-                    </p>
-                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.875rem]">
-                      823 Properties
-                    </p>
-                  </span>
-                  <span className="laptop:ml-[]">
-                    <img src={ArrowLeft} className="absolute laptop:ml-3 my-3 mx-3 laptop:w-[] w-[]" alt="arrow-left" />
-                    <img src={BlueCircle} className="laptop:w-[] w-[]" alt="blue-circle" />
-                  </span>
-                </div>
-              </div>
-
+                )
+              })}
             </div>
 
             {/* className="btn my-6 w-auto normal-case laptop:left-1/2 tablet:left-1/2 mx-[8rem] laptop:mx-[0rem] tablet:mx-[0rem] relative text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border"> */}
@@ -526,14 +375,6 @@ const Home = () => {
                 Browse More locations
               </p>
             </div>
-
-            {/* old */}
-            {/* <button
-              className="btn my-6 normal-case laptop:mx-[28.5rem] tablet:mx-[19rem] mx-[5rem] text-[#010886] font-bold leading-[1.8rem] rounded-none border border-[#B8C9C9] bg-[#e7faf4e5] hover:bg-[#E7FAF4] hover:border">
-              Browse More locations
-            </button> */}
-
-
 
           </div>
         </div>
@@ -553,74 +394,31 @@ const Home = () => {
 
             {/* <div className="laptop:flex gap-5"> */}
             <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
-              {/* 01 */}
-              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
-                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
-                <div className="pt-4">
+              {ReviewDetails.map((item, index) => {
+                return (
 
-                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
-                    Temitope Williams
-                  </p>
-                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
-                    CEO Of Property-pro
-                  </p>
-                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
-                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I must
-                    say it was an exceptional experience from start to finish.
-                    I wanted to take a moment to share my thoughts and
-                    express my gratitude for the fantastic service and
-                    unforgettable moments.
-                  </p>
-                </div>
-              </div>
+                  <div key={index}
+                    className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
+                    <img src={item.image} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
 
-              {/* 02 */}
-              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
-                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
+                    <div className="pt-4">
 
-                <div className="pt-4">
+                      <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
+                        {item.fullname}
+                      </p>
+                      <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
+                        {item.position}
+                      </p>
+                      <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
+                      <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
+                        {item.review}
+                      </p>
+                    </div>
+                  </div>
 
-                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
-                    Temitope Williams
-                  </p>
-                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
-                    CEO Of Property-pro
-                  </p>
-                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
-                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I must
-                    say it was an exceptional experience from start to finish.
-                    I wanted to take a moment to share my thoughts and
-                    express my gratitude for the fantastic service and
-                    unforgettable moments.
-                  </p>
-                </div>
-              </div>
-
-              {/* 03 */}
-              <div className="bg-white border-none mx-2 laptop:mx-0 rounded-md laptop:mt-0 mt-8 p-4 laptop:w- w-[]">
-                <img src={TemitopeWilliams} className="laptop:w-[] w-[] mx-auto" alt="building-3" />
-
-                <div className="pt-4">
-
-                  <p className="text-[#010886] text-center font-medium leading-[1.6rem]">
-                    Temitope Williams
-                  </p>
-                  <p className="text-[#16DD97] font-normal text-center leading-[1.4rem] text-[0.875rem]">
-                    CEO Of Property-pro
-                  </p>
-                  <img src={Stars} className="laptop:w-[] my-3 w-[] mx-auto" alt="stars" />
-                  <p className="text-[#616A6A] text-center font-normal leading-[1.2rem] text-[0.75rem]">
-                    I recently had the pleasure of using Co-habit, and I must
-                    say it was an exceptional experience from start to finish.
-                    I wanted to take a moment to share my thoughts and
-                    express my gratitude for the fantastic service and
-                    unforgettable moments.
-                  </p>
-                </div>
-              </div>
+                )
+              })}
 
             </div>
 
@@ -628,8 +426,8 @@ const Home = () => {
         </div>
         {/* end of 'good reviews by customers' */}
 
-      </motion.div >
-    </section >
+      </motion.div>
+    </section>
   );
 };
 
