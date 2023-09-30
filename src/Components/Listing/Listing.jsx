@@ -4,24 +4,17 @@ import { motion } from "framer-motion";
 import { BiSearch } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
 import { IoRemoveOutline } from "react-icons/io5";
-import { BsChevronUp } from "react-icons/bs";
-import { BsChevronDown } from "react-icons/bs";
-import Scribble from "../../assets/scribble-lines.svg"
-import DivideLine from "../../assets/line-Divider.png"
-import Bungalow1 from "../../assets/bungalow-1.png"
-import BathIcon from "../../assets/u_bath.svg"
-import BedIcon from "../../assets/u_bed-double.svg"
-import Line from "../../assets/Line 9.svg"
-import LocationPin from "../../assets/u_location-pin-alt.svg"
+import Scribble from "../../assets/scribble-lines.svg";
+import BathIcon from "../../assets/u_bath.svg";
+import BedIcon from "../../assets/u_bed-double.svg";
+import Line from "../../assets/Line 9.svg";
+import LocationPin from "../../assets/u_location-pin-alt.svg";
 import { slides } from "../Slideshow/slides";
 import { PropertyData } from "./PropertyData";
-// import "./styles.css"
 import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 import { FiFilter } from "react-icons/fi";
-import HeaderBg from "../../assets/header-BG.png"
-import MobileLines from "../../assets/Mobile lines.png"
-
-
+import HeaderBg from "../../assets/header-BG.png";
+import MobileLines from "../../assets/Mobile lines.png";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -29,15 +22,37 @@ const animationConfiguration = {
   exit: { opacity: 0 },
 };
 
-
 const Listings = () => {
   const [index, setIndex] = useState(0);
-  const [showFilter, setshowFilter] = useState(false)
-  const item = slides[index];
+  const [showFilter, setshowFilter] = useState(false);
 
+  const [currentPage, setCurrentPage] = useState(1); // Current page number
+  const itemsPerPage = 6; // Number of items to display per page
+
+  // Function to slice data for the current page
+  const paginate = (data, page, perPage) => {
+    const startIndex = (page - 1) * perPage;
+    const endIndex = startIndex + perPage;
+    return data.slice(startIndex, endIndex);
+  };
+
+  const totalItems = PropertyData.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const currentProperties = paginate(PropertyData, currentPage, itemsPerPage);
+
+  const getPageNumbers = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(i);
+    }
+    return pageNumbers;
+  };
+
+  const pageNumbers = getPageNumbers();
 
   return (
-    <section className=" top-0">
+    <section className="top-0">
       <motion.div
         variants={animationConfiguration}
         initial="initial"
@@ -161,8 +176,8 @@ const Listings = () => {
               </span>
 
               {/* <span className=' rotate-90 px-2'>
-              <IoRemoveOutline size={25} />
-            </span> */}
+                <IoRemoveOutline size={25} />
+              </span> */}
 
               {/* location */}
               <span className="flex w-auto ">
@@ -312,7 +327,7 @@ const Listings = () => {
 
             {/* properties */}
             <div className="grid grid-cols-1 mt-6 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-4">
-              {PropertyData.map((item, index) => {
+              {currentProperties.map((item, index) => {
                 return (
 
                   <Link to="/details" key={index}>
@@ -367,11 +382,35 @@ const Listings = () => {
         </div>
         {/* end of listings */}
 
-        {/* pagination */}
-        <ol className="laptop:flex tablet:flex hidden justify-center gap-1 mb-4 pb-8 text-xs font-medium select-none">
+        {/* Pagination controls */}
+        <div className="flex justify-center space-x-2 my-6">
+          <button
+            onClick={() => setCurrentPage(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="bg-[#010886] text-white px-3 py-2 rounded-l-md"
+          >
+            Prev
+          </button>
+          {pageNumbers.map((number) => (
+            <button
+              key={number}
+              onClick={() => setCurrentPage(number)}
+              className={`${currentPage === number ? "bg-blue-200 text-black/80" : "bg-transparent"
+                } text-black rounded-md transition duration-200 ease-linear px-3 py-2`}
+            >
+              {number}
+            </button>
+          ))}
 
-        </ol>
-        {/* end of pagination */}
+          <button
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="bg-[#010886] text-white px-3 py-2 rounded-r-md"
+          >
+            Next
+          </button>
+        </div>
+        {/* End of pagination controls */}
 
       </motion.div>
     </section>

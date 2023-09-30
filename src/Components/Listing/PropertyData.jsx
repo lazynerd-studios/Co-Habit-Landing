@@ -52,7 +52,7 @@ export const PropertyData = [
         area: "Apapa, Lagos"
     },
     {
-        image: Bungalow1,
+        image: Bungalow2,
         house: "Bungalow",
         price: "NGN150,000",
         rooms: "3 Rooms",
@@ -60,7 +60,7 @@ export const PropertyData = [
         area: "Ikeja, Lagos"
     },
     {
-        image: Bungalow2,
+        image: Bungalow3,
         house: "Bungalow",
         price: "NGN150,000",
         rooms: "2 Rooms",
@@ -68,12 +68,36 @@ export const PropertyData = [
         area: "Epe, Lagos"
     },
     {
-        image: Bungalow3,
+        image: Bungalow1,
         house: "Bungalow",
         price: "NGN150,000",
         rooms: "3 Rooms",
         baths: "3 Baths",
         area: "Apapa, Lagos"
+    },
+    {
+        image: Bungalow3,
+        house: "Bungalow",
+        price: "NGN150,000",
+        rooms: "2 Rooms",
+        baths: "2 Baths",
+        area: "Surulere, Lagos"
+    },
+    {
+        image: Bungalow2,
+        house: "Bungalow",
+        price: "NGN150,000",
+        rooms: "3 Rooms",
+        baths: "3 Baths",
+        area: "Apapa, Lagos"
+    },
+    {
+        image: Bungalow1,
+        house: "Bungalow",
+        price: "NGN150,000",
+        rooms: "2 Rooms",
+        baths: "2 Baths",
+        area: "Epe, Lagos"
     },
 ];
 
