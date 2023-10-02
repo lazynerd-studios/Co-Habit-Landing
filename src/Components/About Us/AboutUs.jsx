@@ -1,4 +1,3 @@
-//<br className="hidden laptop:block" />
 import React from 'react'
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -20,7 +19,7 @@ const animationConfiguration = {
 
 
 const AboutUs = () => (
-  <section className=" bg-[#010886]">
+  <section className=" bg-[#010886] top-0">
 
     <motion.div
       variants={animationConfiguration}
