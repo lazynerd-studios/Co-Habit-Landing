@@ -3,12 +3,12 @@ import {
     Card,
     Typography,
     List,
-    li,
+    ListItem,
     Accordion,
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-import { ChevronRightIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export function SidebarWithContentSeparator() {
     const [open, setOpen] = React.useState(1);
@@ -19,13 +19,6 @@ export function SidebarWithContentSeparator() {
 
     return (
         <Card className="laptop:h-[calc(100vh-2rem)] tablet:h-[calc(100vh-2rem)] h-auto z-50 select-none laptop:mt-0 tablet:mt-[6rem] mt-[3.7rem] tablet:flex laptop:flex w-auto max-w-[20rem] p-4">
-            {/* shadow-xl shadow-blue-gray-900/5 */}
-
-            {/* <div className="mb-2 p-4">
-                <Typography variant="h5" color="blue-gray ">
-                    Sidebar
-                </Typography>
-            </div> */}
 
             <ul className="list-none w-[12rem]">
 
@@ -45,7 +38,7 @@ export function SidebarWithContentSeparator() {
                             </Typography>
                         </AccordionHeader>
                     </li>
-                    <AccordionBody className="py-1 mb-4">
+                    <AccordionBody className={`py-1 mb-4 transition duration-500 ease-linear ${open !== 1 ? "hidden" : ""}`}>
                         <ul className="px-2 space-y-6">
                             <li>
                                 <input type="checkbox"
@@ -136,7 +129,7 @@ export function SidebarWithContentSeparator() {
                         </AccordionHeader>
                     </li>
 
-                    <AccordionBody className="py-1 mb-4">
+                    <AccordionBody className={`py-1 mb-4 transition duration-500 ease-linear ${open !== 2 ? "hidden" : ""}`}>
                         <ul className="px-3 space-y-6">
                             <li>
                                 <input type="checkbox"
@@ -188,7 +181,7 @@ export function SidebarWithContentSeparator() {
                         </AccordionHeader>
                     </li>
 
-                    <AccordionBody className="py-1 mb-4">
+                    <AccordionBody className={`py-1 mb-4 transition duration-500 ease-linear ${open !== 3 ? "hidden" : ""}`}>
                         <ul className="px-3 space-y-6">
                             <li>
                                 <input type="checkbox"
@@ -280,7 +273,7 @@ export function SidebarWithContentSeparator() {
                         </AccordionHeader>
                     </li>
 
-                    <AccordionBody className="py-1 mb-4">
+                    <AccordionBody className={`py-1 mb-4 transition duration-500 ease-linear ${open !== 4 ? "hidden" : ""}`}>
                         <ul className="px-3 space-y-6">
                             <li>
                                 <input type="checkbox"
@@ -291,7 +284,7 @@ export function SidebarWithContentSeparator() {
                                     className="w-4 h-4" />
                                 <label htmlFor="100-500k"
                                     className="text-[#515B6F] px-4">
-                                    100k -500k (4)
+                                    100k - 500k (4)
                                 </label>
                             </li>
 
@@ -340,14 +333,6 @@ export function SidebarWithContentSeparator() {
                     </AccordionBody>
                 </Accordion>
 
-                {/* <hr className="my-2 border-blue-gray-50" />
-
-                <li>
-                    <liPrefix>
-                        <Cog6ToothIcon className="h-5 w-5" />
-                    </liPrefix>
-                    Settings
-                </li> */}
             </ul>
         </Card>
     );
