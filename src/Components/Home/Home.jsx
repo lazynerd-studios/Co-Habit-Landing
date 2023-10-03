@@ -52,21 +52,18 @@ const Home = () => {
                 </h1>
               </span>
 
-              <div className="laptop:flex mt-8">
+              <div className="laptop:flex mt-8 justify-center">
                 <span className="mb-6 relative">
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
                   <a href="#reviews" className="">
-                    {/* come back here to make the icon centered on wider devices */}
-                    {/* wider:mx-[32.4rem] laptop:mx-[31.3rem] */}
                     <img src={ScrollToExplore} className="laptop:max-w-[3.9rem] mx-auto -mt-[6rem] z-10 hidden laptop:flex" alt="scroll-to-explore" />
                   </a>
                 </span>
                 <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
 
                 {/* full search bar */}
-                {/* search */}
-                <div className="laptop:absolute place-content-center items-center w-full laptop:w-[65rem] laptop:mx-4 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-1">
+                <div className="laptop:absolute place-content-center w-full laptop:w-auto laptop:mx-0 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-2">
                   <span className="flex">
                     <span className="my-3 mr-2">
                       <BiSearch size={25} />
@@ -79,13 +76,14 @@ const Home = () => {
                   </span>
 
                   {/* location */}
-                  <span className="flex my-2">
+                  <span className="flex">
                     <span className="my-3 mr-2">
                       <GrLocation size={25} />
                     </span>
-                    <select className="laptop:w-auto laptop:mr-[] w-[100%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                    <select
+                      className="laptop:w-auto laptop:mr-[] w-[100%] px-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
-                      <option className="py-4" value='Apartment/Workspace'>
+                      <option value='Apartment/Workspace'>
                         Lagos/Abuja
                       </option>
                       <option value='Apartment/Workspace'>
@@ -105,18 +103,19 @@ const Home = () => {
 
                   {/* search button */}
                   <button
-                    className="btn laptop:ml-4 rounded-none w-full mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    className="btn laptop:ml-4 rounded-none w-full laptop:mt-0 mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
                   </button>
                 </div>
                 {/* end of search */}
-
               </div>
 
+
             </div>
+
           </div>
-          {/* end of hero section */}
         </div>
+        {/* end of hero section */}
 
         {/* how it works */}
         <div className="w-auto bg-white my-8">
