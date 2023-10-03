@@ -16,7 +16,7 @@ import ArrowUp from "../../assets/Arrow up.svg"
 import ArrowDown from "../../assets/Arrow down.svg"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
-import { LocationDetails, ReviewDetails, slides } from "./slides";
+import { LocationDetails, ReviewDetails, slides } from "./content";
 import Line from "../../assets/Line 9.svg"
 import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"

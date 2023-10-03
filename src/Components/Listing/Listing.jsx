@@ -9,7 +9,7 @@ import BathIcon from "../../assets/u_bath.svg";
 import BedIcon from "../../assets/u_bed-double.svg";
 import Line from "../../assets/Line 9.svg";
 import LocationPin from "../../assets/u_location-pin-alt.svg";
-import { slides } from "../Home/slides";
+import { slides } from "../Home/content";
 import { PropertyData } from "./PropertyData";
 import { SidebarWithContentSeparator } from "../SideBar/SideBar";
 import { FiFilter } from "react-icons/fi";
