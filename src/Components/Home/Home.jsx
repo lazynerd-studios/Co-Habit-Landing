@@ -16,8 +16,7 @@ import ArrowUp from "../../assets/Arrow up.svg"
 import ArrowDown from "../../assets/Arrow down.svg"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
-import Slideshow from "../Slideshow/Slideshow";
-import { LocationDetails, ReviewDetails, slides } from "../Slideshow/slides";
+import { LocationDetails, ReviewDetails, slides } from "./slides";
 import Line from "../../assets/Line 9.svg"
 import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"
@@ -246,10 +245,6 @@ const Home = () => {
                 Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
                 find what is right for you.
               </p>
-
-              {/* mobile slideshow */}
-              <Slideshow />
-              {/* end of mobile slideshow */}
 
               {/* wider screen */}
               <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8">
