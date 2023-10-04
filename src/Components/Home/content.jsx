@@ -1,4 +1,3 @@
-import React from "react";
 import Bungalow1 from "../../assets/bungalow-1.png";
 import Bungalow01 from "../../assets/Bungalow 01.png";
 import Bungalow2 from "../../assets/bungalow-2.png";
@@ -8,7 +7,7 @@ import Building12 from "../../assets/building12.png"
 import Building13 from "../../assets/building13.png"
 import TemitopeWilliams from "../../assets/temitope williams.png"
 
-export const slides = [
+export const content = [
     {
         image: Bungalow1,
         images: Bungalow1,

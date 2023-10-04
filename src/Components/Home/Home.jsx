@@ -2,27 +2,22 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import Left from "../../assets/left.svg"
-import Right from "../../assets/right.svg"
 import MobileLines from "../../assets/Mobile lines.png"
 import HeroImage from "../../assets/hero-image.png"
 import ScrollToExplore from "../../assets/Scroll to explore.png"
-import Search from "../../assets/Search.svg"
-import Location from "../../assets/Location.svg"
 import LocationPin from "../../assets/u_location-pin-alt.svg"
 import MoneyStack from "../../assets/u_money-stack.svg"
 import Users from "../../assets/u_users-alt.svg"
-import ArrowUp from "../../assets/Arrow up.svg"
-import ArrowDown from "../../assets/Arrow down.svg"
 import BathIcon from "../../assets/u_bath.svg"
 import BedIcon from "../../assets/u_bed-double.svg"
-import { LocationDetails, ReviewDetails, slides } from "./content";
+import { LocationDetails, ReviewDetails, content } from "./content";
 import Line from "../../assets/Line 9.svg"
 import BlueCircle from "../../assets/blue-circle.svg"
 import ArrowLeft from "../../assets/u_angle-left-b.png"
 import Stars from "../../assets/Stars.png"
 import { BiSearch } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
+import { BsArrowRight } from "react-icons/bs";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -51,33 +46,25 @@ const Home = () => {
                 FIND YOUR PERFECT
               </h1>
               <span className="laptop:flex">
-                {/* <span className="laptop:flex gap-[31.7rem] mt-2 ml-[6.5rem] absolute hidden">
-                  <img src={Left} className=" w-[25%]" alt="left" />
-                  <img src={Right} className="w-[25%]" alt="right" />
-                </span> */}
+
                 <h1 className="mx-auto laptop:text-[3rem] text-[2rem] text-left leading-[2.4rem] tablet:text-center laptop:text-center laptop:mb-6 font-bold laptop:leading-[3.4375rem] text-[#010886]">
                   SHARED APARTMENT
                 </h1>
               </span>
 
-              <div className="laptop:flex mt-8">
+              <div className="laptop:flex mt-8 justify-center">
                 <span className="mb-6 relative">
                   <img src={HeroImage} className="laptop:max-w-[75rem] hidden tablet:flex laptop:flex laptop:mb-8 z-10 w-full mx-auto" alt="Hero Image" />
 
                   <a href="#reviews" className="">
-                    {/* come back here to make the icon centered on wider devices */}
-                    {/* wider:mx-[32.4rem] laptop:mx-[31.3rem] */}
                     <img src={ScrollToExplore} className="laptop:max-w-[3.9rem] mx-auto -mt-[6rem] z-10 hidden laptop:flex" alt="scroll-to-explore" />
                   </a>
                 </span>
                 <img src={MobileLines} className="laptop:hidden tablet:hidden" alt="Mobile lines" />
 
                 {/* full search bar */}
-                {/* search */}
-                <div className="laptop:absolute place-content-center items-center w-full laptop:w-[65rem] laptop:mx-4 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-1">
-                  {/* laptop:w-[65%] laptop:mx-[5rem] */}
+                <div className="laptop:absolute place-content-center w-full laptop:w-auto laptop:mx-0 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-2">
                   <span className="flex">
-                    {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
                     <span className="my-3 mr-2">
                       <BiSearch size={25} />
                     </span>
@@ -89,14 +76,14 @@ const Home = () => {
                   </span>
 
                   {/* location */}
-                  <span className="flex my-2">
-                    {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
+                  <span className="flex">
                     <span className="my-3 mr-2">
                       <GrLocation size={25} />
                     </span>
-                    <select className="laptop:w-auto laptop:mr-[] w-[100%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
+                    <select
+                      className="laptop:w-auto laptop:mr-[] w-[100%] px-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
                       name="Location">
-                      <option className="py-4" value='Apartment/Workspace'>
+                      <option value='Apartment/Workspace'>
                         Lagos/Abuja
                       </option>
                       <option value='Apartment/Workspace'>
@@ -116,18 +103,19 @@ const Home = () => {
 
                   {/* search button */}
                   <button
-                    className="btn laptop:ml-4 rounded-none w-full mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                    className="btn laptop:ml-4 rounded-none w-full laptop:mt-0 mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
                   </button>
                 </div>
                 {/* end of search */}
-
               </div>
 
+
             </div>
+
           </div>
-          {/* end of hero section */}
         </div>
+        {/* end of hero section */}
 
         {/* how it works */}
         <div className="w-auto bg-white my-8">
@@ -150,7 +138,6 @@ const Home = () => {
                     1
                   </p>
                 </div>
-
                 <img src={LocationPin} className="mt-14 mb-10 mx-3 w-[2.5rem]" alt="location-pin" />
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   List your property
@@ -166,14 +153,6 @@ const Home = () => {
 
               {/* end of styled rectangle 1 */}
 
-              {/* arrow up */}
-              {/* <svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg"
-                className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up">
-                <path id="Vector 1" d="M54.3333 3.5C54.3333 4.97276 55.5272 6.16667 57 6.16667C58.4728 6.16667 59.6667 4.97276 59.6667 3.5C59.6667 2.02724 58.4728 0.833333 57 0.833333C55.5272 0.833333 54.3333 2.02724 54.3333 3.5ZM1.12127 63.4851C46.1722 52.2223 57.5 18.8656 57.5 3.5H56.5C56.5 18.4678 45.4278 51.3777 0.878732 62.5149L1.12127 63.4851Z" fill="#92BFEB" />
-              </svg> */}
-
-              {/* <img src={ArrowUp} className="-my-10 -py- mx-auto tablet:mx-0 tablet:hidden laptop:hidden" alt="arrow-up" /> */}
-
               {/* styled rectangle 2 */}
               <div className=" mb-6 mx-2 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 <div className=" h-[5.6875rem] w-[4.5rem] absolute right-0 top-0 z-50 bg-[#EEF4FD] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
@@ -181,7 +160,6 @@ const Home = () => {
                     2
                   </p>
                 </div>
-
                 <img src={Users} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="users" />
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Find Your Flatmate
@@ -195,15 +173,6 @@ const Home = () => {
                 </p>
               </div>
 
-
-              {/* arrow up */}
-              {/* <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-                className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down">
-                <path id="Vector 2" d="M60.4277 54.0833C58.9549 54.0833 57.761 55.2772 57.761 56.75C57.761 58.2228 58.9549 59.4167 60.4277 59.4167C61.9005 59.4167 63.0944 58.2228 63.0944 56.75C63.0944 55.2772 61.9005 54.0833 60.4277 54.0833ZM0.514893 0.871129C11.7639 45.9218 45.0801 57.25 60.4277 57.25V56.25C45.4788 56.25 12.6089 45.1782 1.4851 0.628871L0.514893 0.871129Z" fill="#92BFEB" />
-              </svg> */}
-
-              {/* <img src={ArrowDown} className="-my-10 laptop:hidden tablet:hidden tablet:mx-0 mx-auto" alt="arrow-down" /> */}
-
               {/* styled rectangle 3 */}
               <div className=" mb-6 mx-2 relative bg-white border border-[#B8C9C9] rounded-tr-[3.75rem] rounded-bl-[3.75rem]">
                 {/* h-[21.875rem] tablet:w-[18.875rem] w-[20.475rem] mx-2 laptop:w-[20.875rem] */}
@@ -212,7 +181,6 @@ const Home = () => {
                     3
                   </p>
                 </div>
-
                 <img src={MoneyStack} className="mt-14 mb-10 mx-4 w-[2.5rem]" alt="money-stack" />
                 <h2 className=" px-4 mb-4 text-[1.125rem] font-medium">
                   Close The Deal
@@ -225,14 +193,11 @@ const Home = () => {
                   level of attention to detail.
                 </p>
               </div>
-
             </div>
             {/* end of text-in-shapes */}
           </div>
-
         </div>
         {/* end of 'how it works' */}
-
 
         {/* 'recently uploaded' */}
         <div className="bg-[#f8f8fd]">
@@ -245,12 +210,10 @@ const Home = () => {
                 Take a deep dive and browse apartment for rent, original neighborhood photos, resident reviews and local insights to <br className="laptop:flex hidden" />
                 find what is right for you.
               </p>
-
               {/* wider screen */}
               <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8">
-                {slides.map((item, index) => {
+                {content.map((item, index) => {
                   return (
-
                     <div key={index}
                       className="slide bg-white p-0 rounded-[1rem] mb-4">
                       <img src={item.image} className=" w-full" alt="bungalow-1" />
@@ -285,9 +248,7 @@ const Home = () => {
                           </p>
                         </span>
                       </span>
-
                       <img src={Line} className="mt-5 mb-4 w-full" alt="line" />
-
                       <span className="flex justify-between mr-2">
                         <span className="flex">
                           <img src={LocationPin} className="pb-6 ml-3 w-5 opacity-50" alt="location-pin" />
@@ -302,7 +263,6 @@ const Home = () => {
                         </span>
                       </span>
                     </div>
-
                   )
                 })}
               </div>
@@ -311,13 +271,11 @@ const Home = () => {
               <button
                 className="btn normal-case laptop:hidden tablet:hidden mx-auto w-full text-[#010886] font-bold leading-[1.8rem] rounded-none border-none bg-transparent hover:bg-transparent hover:" >
                 Show all apartment
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none"
+                <span
                   className="my-1" >
-                  <path d="M16.75 7.72559L1.75 7.72559" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M10.7002 1.70124L16.7502 7.72524L10.7002 13.7502" stroke="#010886" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                  <BsArrowRight size={20} />
+                </span>
               </button>
-
             </div>
           </div>
         </div>
@@ -358,7 +316,6 @@ const Home = () => {
                       </span>
                     </div>
                   </div>
-
                 )
               })}
             </div>
@@ -373,7 +330,6 @@ const Home = () => {
 
           </div>
         </div>
-
         {/* end of 'find by location' */}
 
         {/* good reviews by customers */}
@@ -387,7 +343,6 @@ const Home = () => {
               shaping the reputation of businesses.
             </p>
 
-            {/* <div className="laptop:flex gap-5"> */}
             <div className="grid grid-cols-1 gap-6  laptop:grid-cols-3 tablet:grid-cols-2 laptop:gap-8">
 
               {ReviewDetails.map((item, index) => {
