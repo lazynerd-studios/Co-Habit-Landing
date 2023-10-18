@@ -1,14 +1,11 @@
-import React from 'react'
-import Home from "../Components/Home/Home"
-import NotFoundPage from '../Components/404 Page/NotFoundPage'
+import Home from "../Components/Home/Home";
 
 const HomePage = () => {
   return (
     <div>
       <Home />
-      {/* <NotFoundPage /> */}
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
