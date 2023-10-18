@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { BiSearch } from "react-icons/bi";
-import { GrLocation } from "react-icons/gr";
+// import { BiSearch } from "react-icons/bi";
+// import { GrLocation } from "react-icons/gr";
 import { FiFilter } from "react-icons/fi";
 
 import Scribble from "../../assets/scribble-lines.svg";
@@ -13,7 +13,7 @@ import LocationPin from "../../assets/u_location-pin-alt.svg";
 
 import {
   SidebarWithContentSeparator,
-  locationOptions,
+  // locationOptions,
 } from "../SideBar/SideBar";
 
 import HeaderBg from "../../assets/header-BG.png";
@@ -21,6 +21,7 @@ import MobileLines from "../../assets/Mobile lines.png";
 import { useGetListingsQuery } from "../../api/listingApi";
 
 import { Pagination } from "@mui/material";
+import SearchComponent from "../SearchComponent";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -33,13 +34,13 @@ const Listings = () => {
   const [showFilter, setshowFilter] = useState(false);
 
   const [searchValue, setSearchValue] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [searchQuery, setSearchQuery] = useState("");
 
   const [propertyType, setPropertyType] = useState([]);
   const [budgets, setBudgets] = useState([]);
 
   const [locations, setLocations] = useState([]);
-  const [stateValue, setStateValue] = useState();
+  // const [stateValue, setStateValue] = useState();
   const [stateQuery, setStateQuery] = useState();
 
   const [areas, setAreas] = useState([]);
@@ -102,7 +103,6 @@ const Listings = () => {
       }
     }
     const updatedPath = `listings?${queryParams.join("&")}`;
-    console.log(updatedPath);
     return updatedPath;
   };
 
@@ -117,23 +117,6 @@ const Listings = () => {
     setPath(updatedPath);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue, page, budgets, propertyType, locations, areas]);
-
-  const handleStateSelect = (event) => {
-    setStateQuery(event.target.value);
-    const selectedIndex = event.target.selectedIndex;
-    const selectedOption = locationOptions[selectedIndex];
-    setStateValue(selectedOption);
-  };
-
-  const handleSearching = () => {
-    setSearchValue(searchQuery);
-    if (stateValue) {
-      setLocations([...locations, stateValue]);
-    } else {
-      // Handle the case where the stateValue is undefined
-      console.error("Please select a valid location");
-    }
-  };
 
   const handleChangePage = (event, newPage) => {
     event.preventDefault();
@@ -178,55 +161,13 @@ const Listings = () => {
 
                 {/* full search bar */}
                 {/* search */}
-                <div className="laptop:absolute w-auto mt-9 laptop:-mt-8 laptop:flex laptop:mx-[10rem] laptop:w-[51%] rounded-md bg-white px-2 py-2 border-none">
-                  {/* laptop:w-[65%] laptop:mx-[5rem] */}
-                  <span className="flex">
-                    {/* <img src={Search} className="laptop:w-[13%] p-1 mr-1" alt="search" /> */}
-                    <span className="my-3 mx-2">
-                      <BiSearch size={25} />
-                    </span>
-                    <input
-                      type="text"
-                      value={searchQuery}
-                      className="border-b-[#7C8493] laptop:w-auto w-[77%] outline-none mr-[2rem] p-2 border-2 border-t-white border-x-white text-[#7C8493]"
-                      placeholder="Apartment/Workspace"
-                      autoComplete="true"
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                    />
-                  </span>
-
-                  {/* location */}
-                  <span className="flex ">
-                    {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
-                    <span className="my-3 mx-2">
-                      <GrLocation size={25} />
-                    </span>
-                    <select
-                      className="laptop:w-auto laptop:mr-[] w-[78%] p-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
-                      name="Location"
-                      value={stateQuery}
-                      onChange={handleStateSelect}
-                    >
-                      {locationOptions.map((item) => (
-                        <option
-                          key={item.id}
-                          className="py-4"
-                          value={item.value}
-                        >
-                          {item.label}
-                        </option>
-                      ))}
-                    </select>
-                  </span>
-
-                  {/* search button */}
-                  <button
-                    onClick={handleSearching}
-                    className="btn rounded-none w-[80%] mt-3 laptop:w-auto normal-case py-2 mx-10 mb-4 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white"
-                  >
-                    Search
-                  </button>
-                </div>
+                <SearchComponent
+                  setSearchValue={setSearchValue}
+                  stateQuery={stateQuery}
+                  setStateQuery={setStateQuery}
+                  locations={locations}
+                  setLocations={setLocations}
+                />
                 {/* end of search */}
               </div>
             </div>
@@ -257,50 +198,14 @@ const Listings = () => {
             </div>
 
             {/* search */}
-            <div className="mt-[] laptop: laptop:flex justify-between laptop:mx-[] rounded-md bg-white p-2 px-4 border-2 border-none">
-              {/* laptop:w-[65%] laptop:mx-[5rem] */}
-              <span className="flex">
-                <span className="my-3 mx-2">
-                  <BiSearch size={25} />
-                </span>
+            <SearchComponent
+              setSearchValue={setSearchValue}
+              stateQuery={stateQuery}
+              setStateQuery={setStateQuery}
+              locations={locations}
+              setLocations={setLocations}
+            />
 
-                <input
-                  type="text"
-                  value={searchQuery}
-                  className="border-b-[#7C8493] w-full  mr-[2rem] laptop:px-0 px-2 py-2 border-2 border-t-white border-x-white outline-none text-[#7C8493]"
-                  autoComplete="true"
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  size={40}
-                />
-              </span>
-              {/* location */}
-              <span className="flex w-auto ">
-                <span className="my-3 mx-2">
-                  <GrLocation size={25} />
-                </span>
-
-                {/* <img src={Location} className="laptop:w-[13%] p-1 mr-1" alt="location" /> */}
-                <select
-                  className="laptop:w-full pr-[12rem] w-[78%] tablet:w-[90%] py-2 border-b-[#7C8493] border-2 border-t-white border-x-white outline-none text-[#7C8493]"
-                  name="Location"
-                  value={stateQuery}
-                  onChange={handleStateSelect}
-                >
-                  {locationOptions.map((item) => (
-                    <option key={item.id} className="py-4" value={item.value}>
-                      {item.label}
-                    </option>
-                  ))}
-                </select>
-              </span>
-
-              <button
-                onClick={handleSearching}
-                className="btn laptop:mx-[1rem] tablet:mx-[4.5rem] mx-[2rem] rounded-none w-[80%] mt-3 laptop:w-auto laptop:mt-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white"
-              >
-                Search
-              </button>
-            </div>
             {/* end of search */}
 
             {/* <p className="text-[#515B6F] py-4 laptop:mx-1 mx-8 w-auto">
