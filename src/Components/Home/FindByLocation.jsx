@@ -2,7 +2,6 @@ import { BlueCircle, LeftArrow } from "../../assets";
 import PropTypes from "prop-types";
 
 const FindByLocation = ({ data }) => {
-  console.log(data);
   return (
     <>
       <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3 tablet:grid-cols-2 tablet:mx-3 laptop:mx-0 laptop:gap-8">
