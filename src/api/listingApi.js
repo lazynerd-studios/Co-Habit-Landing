@@ -1,10 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { baseUrl } from "./apiConfig";
+// import { baseUrl } from "./apiConfig";
 
 export const listingApi = createApi({
   reducerPath: "listing",
   baseQuery: fetchBaseQuery({
-    baseUrl: `${baseUrl}`,
+    baseUrl: `/api/`,
     prepareHeaders: (headers) => {
       headers.set("Accept", "application/json");
       return headers;
