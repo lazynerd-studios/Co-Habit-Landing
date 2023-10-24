@@ -20,7 +20,7 @@ import {
 } from "../../api/listingApi";
 import FindByLocation from "./FindByLocation";
 import { BsArrowRight } from "react-icons/bs";
-import SearchComponent from "../SearchComponent";
+// import SearchComponent from "../SearchComponent";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -63,11 +63,11 @@ const Home = () => {
     findByError,
   ]);
 
-  const [stateQuery, setStateQuery] = useState();
-  const [locations, setLocations] = useState([]);
-  const [searchValue, setSearchValue] = useState("");
+  // const [stateQuery, setStateQuery] = useState();
+  // const [locations, setLocations] = useState([]);
+  // const [searchValue, setSearchValue] = useState("");
 
-  console.log(searchValue);
+  // console.log(searchValue);
 
   useEffect(() => {
     sessionStorage.clear();
@@ -120,13 +120,13 @@ const Home = () => {
 
                 {/* full search bar */}
                 <div className="laptop:absolute  w-full  laptop:w-[50%] mt-9 laptop:-mt-[3rem] laptop:flex rounded-md  px-4 py-2">
-                  <SearchComponent
+                  {/* <SearchComponent
                     setSearchValue={setSearchValue}
                     stateQuery={stateQuery}
                     setStateQuery={setStateQuery}
                     locations={locations}
                     setLocations={setLocations}
-                  />
+                  /> */}
                   {/* <span className="flex">
                     <span className="my-3 mr-2">
                       <BiSearch size={25} />
