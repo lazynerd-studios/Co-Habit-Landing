@@ -289,7 +289,7 @@ const Listings = () => {
                   ) : (
                     houseData?.map((item, index) => {
                       return (
-                        <Link to="/details" key={index}>
+                        <Link to={`/details/${item.id}`} key={index}>
                           <div className=" border-2 rounded-[1rem]">
                             <img
                               src={item.image}

@@ -119,7 +119,7 @@ const Home = () => {
                 />
 
                 {/* full search bar */}
-                <div className="laptop:absolute place-content-center w-full laptop:w-auto laptop:mx-0 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-2">
+                <div className="laptop:absolute  w-full  laptop:w-[50%] mt-9 laptop:-mt-[3rem] laptop:flex rounded-md  px-4 py-2">
                   <SearchComponent
                     setSearchValue={setSearchValue}
                     stateQuery={stateQuery}
@@ -280,7 +280,7 @@ const Home = () => {
 
         {/* find by location */}
         <div className="w-full bg-white">
-          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B] w-auto">
             <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">
               Find By Location
             </h1>
@@ -290,12 +290,12 @@ const Home = () => {
               <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
+            {findByLoading ? (
+              "Loading... "
+            ) : (
+              <FindByLocation data={findByLocationData} />
+            )}
           </div>
-          {findByLoading ? (
-            "Loading... "
-          ) : (
-            <FindByLocation data={findByLocationData} />
-          )}
         </div>
         {/* end of 'find by location' */}
 
