@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { NavbarData } from "./NavbarData";
 import CoHabit from "../../assets/Cohabit Logo C 1.png";
@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <div className="navbar bg-white border-none fixed top-0 -mt-1 z-[100]">
       <div className="navbar-start laptop:ml-[6.5rem]">
-        <a>
+        <Link to="/">
           <img className="logo w-full" src={CoHabit} alt="web Logo" />
-        </a>
+        </Link>
       </div>
 
       {/* displays on wide screen */}
@@ -31,11 +31,10 @@ const Navbar = () => {
                   to={item.path}
                   className={({ isActive }) =>
                     isActive
-                      ? 'flex min-w-max rounded-none mx-2 pb-[0.3rem] border-b-[3px] px-1 border-[#010886]'
-                      : 'font-medium min-w-max px-1 mx-2'
+                      ? "flex min-w-max rounded-none mx-2 pb-[0.3rem] border-b-[3px] px-1 border-[#010886]"
+                      : "font-medium min-w-max px-1 mx-2"
                   }
                   onClick={() => handleNavLinkClick(item.path)} // Handle click here
-
                 >
                   <span className={item.className}>{item.title}</span>
                 </NavLink>
@@ -82,8 +81,8 @@ const Navbar = () => {
                       to={item.path}
                       className={({ isActive }) =>
                         isActive
-                          ? 'flex min-w-max rounded-none font-semibold focus:bg-white p-2 border-b-[3px] border-[#305D96]'
-                          : 'flex rounded-none focus:bg-white min-w-max py-2 px-2'
+                          ? "flex min-w-max rounded-none font-semibold focus:bg-white p-2 border-b-[3px] border-[#305D96]"
+                          : "flex rounded-none focus:bg-white min-w-max py-2 px-2"
                       }
                       onClick={() => handleNavLinkClick(item.path)} // Handle click here
                     >

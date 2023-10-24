@@ -12,8 +12,7 @@ import Users from "../../assets/u_users-alt.svg";
 import { ReviewDetails } from "./content";
 
 import Stars from "../../assets/Stars.png";
-import { BiSearch } from "react-icons/bi";
-import { GrLocation } from "react-icons/gr";
+
 import RecentlyUploaded from "./RecentlyUploaded";
 import {
   useGetFindByLocationQuery,
@@ -21,6 +20,7 @@ import {
 } from "../../api/listingApi";
 import FindByLocation from "./FindByLocation";
 import { BsArrowRight } from "react-icons/bs";
+import SearchComponent from "../SearchComponent";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -63,7 +63,15 @@ const Home = () => {
     findByError,
   ]);
 
-  console.log(findByLocationData);
+  const [stateQuery, setStateQuery] = useState();
+  const [locations, setLocations] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
+
+  console.log(searchValue);
+
+  useEffect(() => {
+    sessionStorage.clear();
+  }, []);
   return (
     <section className=" top-0">
       <motion.div
@@ -111,8 +119,15 @@ const Home = () => {
                 />
 
                 {/* full search bar */}
-                <div className="laptop:absolute place-content-center w-full laptop:w-auto laptop:mx-0 mt-9 laptop:-mt-8 laptop:flex rounded-md bg-white px-4 py-2">
-                  <span className="flex">
+                <div className="laptop:absolute  w-full  laptop:w-[50%] mt-9 laptop:-mt-[3rem] laptop:flex rounded-md  px-4 py-2">
+                  <SearchComponent
+                    setSearchValue={setSearchValue}
+                    stateQuery={stateQuery}
+                    setStateQuery={setStateQuery}
+                    locations={locations}
+                    setLocations={setLocations}
+                  />
+                  {/* <span className="flex">
                     <span className="my-3 mr-2">
                       <BiSearch size={25} />
                     </span>
@@ -122,31 +137,19 @@ const Home = () => {
                       placeholder="Apartment/Workspace"
                       autoComplete="true"
                     />
-                  </span>
+                  </span> */}
 
-                  {/* location */}
+                  {/* location
                   <span className="flex">
                     <span className="my-3 mr-2">
                       <GrLocation size={25} />
                     </span>
-                    <select
-                      className="laptop:w-auto laptop:mr-[] w-[100%] px-2 outline-none border-b-[#7C8493] border-2 border-t-white border-x-white text-[#7C8493]"
-                      name="Location"
-                    >
-                      <option value="Apartment/Workspace">Lagos/Abuja</option>
-                      <option value="Apartment/Workspace">Ogun/Oyo</option>
-                      <option value="Apartment/Workspace">
-                        Port-Harcourt/Delta
-                      </option>
-                      <option value="Apartment/Workspace">Ibadan/Abuja</option>
-                      <option value="Apartment/Workspace">Edo/Minna</option>
-                    </select>
-                  </span>
+                  </span> */}
 
                   {/* search button */}
-                  <button className="btn laptop:ml-4 rounded-none w-full laptop:mt-0 mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
+                  {/* <button className="btn laptop:ml-4 rounded-none w-full laptop:mt-0 mt-3 laptop:w-auto normal-case py-2 px-6 font-bold text-[1.125rem] bg-[#010886f1] hover:bg-[#010886] text-white hover:text-white">
                     Search
-                  </button>
+                  </button> */}
                 </div>
                 {/* end of search */}
               </div>
@@ -277,7 +280,7 @@ const Home = () => {
 
         {/* find by location */}
         <div className="w-full bg-white">
-          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B]">
+          <div className="laptop:mx-[8rem] mx-2 mt-8 text-[#25324B] w-auto">
             <h1 className="text-[1.5rem] pt-6 mx-2 text-left tablet:text-center laptop:text-center mb-4 font-bold">
               Find By Location
             </h1>
@@ -287,12 +290,12 @@ const Home = () => {
               <br className="laptop:flex hidden" />
               find what is right for you.
             </p>
+            {findByLoading ? (
+              "Loading... "
+            ) : (
+              <FindByLocation data={findByLocationData} />
+            )}
           </div>
-          {findByLoading ? (
-            "Loading... "
-          ) : (
-            <FindByLocation data={findByLocationData} />
-          )}
         </div>
         {/* end of 'find by location' */}
 

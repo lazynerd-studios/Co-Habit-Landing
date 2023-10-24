@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
 import { BathIcon, BedIcon, LineImg, LocationIcon } from "../../assets";
+import { useNavigate } from "react-router-dom";
 
 const RecentlyUploaded = ({ data }) => {
+  const navigate = useNavigate();
   return (
     <div className="laptop:grid tablet:mx-4 laptop:mx-0 tablet:grid laptop:grid-cols-3 grid-cols-1 tablet:grid-cols-2 tablet:gap-6 laptop:gap-8">
       {data?.map((item) => {
@@ -66,10 +68,14 @@ const RecentlyUploaded = ({ data }) => {
                   {item.location}
                 </p>
               </span>
-              <span>
-                <a className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]">
-                  View
-                </a>
+
+              <span
+                onClick={() => {
+                  navigate(`/details/${item?.id}`);
+                }}
+                className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]"
+              >
+                View
               </span>
             </span>
           </div>

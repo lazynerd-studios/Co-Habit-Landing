@@ -17,6 +17,7 @@ export const listingApi = createApi({
     "HouseTypes",
     "Budgets",
     "Areas",
+    "SingleListings",
   ],
   endpoints: (builder) => ({
     getRecentlyUploaded: builder.query({
@@ -45,6 +46,10 @@ export const listingApi = createApi({
       query: ({ path }) => `${path}`,
       providesTags: ["Listings"],
     }),
+    getSingleListings: builder.query({
+      query: (id) => `listings/${id}`,
+      providesTags: ["SingleListings"],
+    }),
   }),
 });
 
@@ -55,4 +60,5 @@ export const {
   useGetHouseTypesQuery,
   useGetListingsQuery,
   useGetRecentlyUploadedQuery,
+  useGetSingleListingsQuery,
 } = listingApi;
