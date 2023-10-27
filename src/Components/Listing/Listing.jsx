@@ -215,7 +215,7 @@ const Listings = () => {
         </div>
 
         {/* listings */}
-        <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]">
+        <div className="bg-white flex py-8 px-4  laptop:mx-[7rem]" id="results">
           {/* sidebar */}
           <span className="-mr- laptop:-ml-8 hidden laptop:flex tablet:hidden">
             <SidebarWithContentSeparator
