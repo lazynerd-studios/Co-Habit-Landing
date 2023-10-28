@@ -20,9 +20,12 @@ const SearchComponent = ({
   const location = useLocation();
   const navigate = useNavigate();
 
-  console.log(location.pathname);
-
   const handleSearching = () => {
+    const nextSection = document.getElementById("results");
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
     setSearchValue(searchQuery);
     if (stateValue) {
       setLocations([...locations, stateValue]);
@@ -43,8 +46,6 @@ const SearchComponent = ({
     const selectedOption = locationOptions[selectedIndex];
     setStateValue(selectedOption);
   };
-
-  console.log(stateQuery);
 
   return (
     <div className="mt-5 flex flex-col gap-2 w-full laptop:w-[85%] laptop:mx-auto p-[1rem] bg-white rounded-md mb-3 ">

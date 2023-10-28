@@ -73,7 +73,7 @@ const RecentlyUploaded = ({ data }) => {
                 onClick={() => {
                   navigate(`/details/${item?.id}`);
                 }}
-                className="inline-block cursor-pointer px-6 py-1 rounded-md border-none normal-case font-normal ml-[rem] laptop:ml-[rem] hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]"
+                className="h-[40px] flex items-center justify-center p-3 rounded-md  hover:bg-[#010886] bg-[#010886eb]  text-[white] text-[0.875rem]"
               >
                 View
               </span>
