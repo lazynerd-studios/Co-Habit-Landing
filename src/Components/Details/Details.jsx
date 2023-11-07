@@ -1,24 +1,20 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
-import Bungalow01small from "../../assets/Bungalow01small.png";
-import MobileBungalowsmall from "../../assets/MobileBungalowsmall.png";
 import BathIcon from "../../assets/u_bath.svg";
 import BedIcon from "../../assets/u_bed-double.svg";
 
-import ProgressBar from "../../assets/Progress Bar.png";
-import FourStars from "../../assets/4 stars.png";
 import "./styles.css";
 
 import HouseBg01 from "../../assets/HouseBg01.png";
 import HouseBg02 from "../../assets/HouseBg02.png";
 
-import BasicRating from "./Rating";
 import RichTextArea from "./RichTextArea";
 import { useParams } from "react-router-dom";
-import { useGetSingleListingsQuery } from "../../api/listingApi";
-import { Alert, LinearProgress } from "@mui/material";
-// import MobileLines from "../../assets/Mobile lines.png"
+import {
+  useGetRecentlyUploadedQuery,
+  useGetSingleListingsQuery,
+} from "../../api/listingApi";
+import { Alert, CircularProgress, Rating } from "@mui/material";
 
 const animationConfiguration = {
   initial: { opacity: 0 },
@@ -29,26 +25,38 @@ const animationConfiguration = {
 const Details = () => {
   const { id } = useParams();
   const [listingData, setListingData] = useState();
+  const [recentlyListingData, setRecentlyListingData] = useState();
   const { data, isLoading, isSuccess, isError } = useGetSingleListingsQuery(
     id ?? ""
   );
+  const {
+    data: recentlyData,
+    isLoading: recentlyLoading,
+    isSuccess: recentlySuccess,
+    isError: recentlyError,
+  } = useGetRecentlyUploadedQuery({});
+
+  const [rating, setRating] = useState(0);
 
   useEffect(() => {
     if (isSuccess) {
       setListingData(data?.data);
     }
-    if (isError) {
-      <Alert severity="error">Error getting listing details</Alert>;
+    if (recentlySuccess) {
+      setRecentlyListingData(recentlyData?.data);
     }
-  }, [isSuccess, data, isError]);
 
-  console.log(listingData);
+    if (isError || recentlyError) {
+      <Alert severity="error">Error getting data</Alert>;
+    }
+  }, [isSuccess, data, isError, recentlySuccess, recentlyData, recentlyError]);
+
   return (
     <section className="">
       {isLoading ? (
-        <>
-          <LinearProgress />
-        </>
+        <div className="flex  items-center justify-center my-[14rem]">
+          <CircularProgress />
+        </div>
       ) : (
         <motion.div
           variants={animationConfiguration}
@@ -75,7 +83,10 @@ const Details = () => {
                     className="rounded-[0.5rem] mb-4 laptop:w-[70%]"
                     alt=""
                   />
-                  <span className="flex items-center gap-2 bg-[#FEEEE5] px-[1.25rem] py-[0.62rem] border border-[#F6513B]">
+                  <a
+                    href="https://cohabit-web.netlify.app/sign-in"
+                    className="flex items-center gap-2 bg-[#FEEEE5] px-[1.25rem] py-[0.62rem] cursor-pointer border border-[#F6513B]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
@@ -91,12 +102,7 @@ const Details = () => {
                     <p className="text-[#F6513B] font-normal leading-[1.4rem] text-[0.975rem]">
                       Save
                     </p>
-                  </span>
-                  {/* <span className="flex mt-4 items-center gap-2 bg-[#E5F6F3] px-[1.25rem] py-[0.62rem] border border-[#010886]">
-                                    <p className="text-[#010886] font-normal leading-[1.4rem] text-[0.975rem]">
-                                        Add to favorites
-                                    </p>
-                                </span> */}
+                  </a>
                 </span>
                 <span>
                   <span className="flex">
@@ -133,7 +139,7 @@ const Details = () => {
                         fill="#515B6F"
                       />
                     </svg>
-                    Lagos Mainland
+                    {listingData?.location}
                   </p>
                   <span className="flex gap-2 my-6">
                     <img
@@ -142,7 +148,9 @@ const Details = () => {
                       alt="bed-icon"
                     />
 
-                    <p className="py-1 text-[0.875rem]">2 Rooms</p>
+                    <p className="py-1 text-[0.875rem]">
+                      {listingData?.extras[0]?.value} Rooms
+                    </p>
                   </span>
 
                   <span className="flex gap-2 my-6">
@@ -152,7 +160,9 @@ const Details = () => {
                       alt="bath-icon"
                     />
 
-                    <p className="py-1 text-[0.875rem]">2 Baths</p>
+                    <p className="py-1 text-[0.875rem]">
+                      {listingData?.extras[1]?.value} Baths
+                    </p>
                   </span>
 
                   <p className="text-[#010886] font-bold leading-[1.8rem] mb-4 text-[1.5rem] mt-[1.5rem] ">
@@ -281,82 +291,18 @@ const Details = () => {
                 </h1>
 
                 <div className="laptop:flex tablet:flex gap-2">
-                  <span className="flex laptop:hidden tablet:hidden">
+                  <span className="flex ">
                     <span className="">
                       <h1 className=" laptop:text-center tablet:text-center mx-12 tablet:mx-0 font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
-                        4.5
+                        {rating}
                       </h1>
-                      <img src={FourStars} className="" alt="4 stars" />
-                    </span>
-
-                    {/* line */}
-                    <span className="px-4">
-                      <svg
-                        width="2"
-                        height="122"
-                        viewBox="0 0 2 122"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <line
-                          x1="0.561523"
-                          x2="0.561523"
-                          y2="122"
-                          stroke="#515B6F"
-                        />
-                      </svg>
-                    </span>
-                  </span>
-
-                  <span className="hidden laptop:block tablet:block">
-                    <h1 className=" laptop:text-center tablet:text-center mx-12 tablet:mx-0 font-medium leading-[2.4rem] pb-4 text-[2rem] text-black">
-                      4.5
-                    </h1>
-                    <img src={FourStars} className="" alt="4 stars" />
-                  </span>
-
-                  {/* line */}
-                  <span className="px-2 hidden laptop:block tablet:block">
-                    <svg
-                      width="2"
-                      height="122"
-                      viewBox="0 0 2 122"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="0.561523"
-                        x2="0.561523"
-                        y2="122"
-                        stroke="#515B6F"
+                      <Rating
+                        value={rating}
+                        className=" scale-[200%] mx-9"
+                        readOnly
                       />
-                    </svg>
+                    </span>
                   </span>
-                  {/* end of line */}
-
-                  {/* Progress Bars */}
-                  <div className="laptop:-mt-4 tablet:-mt-4 mt-8 grid grid-cols-1 gap-6 laptop:grid-cols-2 tablet:grid-cols-2 tablet:gap-4 laptop:gap-4">
-                    <span className="bg-[#F8F8FD] p-4">
-                      <p className="pb-2">Property</p>
-                      <img src={ProgressBar} className="" alt="Progress Bar" />
-                    </span>
-
-                    <span className="bg-[#F8F8FD] p-4">
-                      <p className="pb-2">Very Neat</p>
-                      <img src={ProgressBar} className="" alt="Progress Bar" />
-                    </span>
-
-                    <span className="bg-[#F8F8FD] p-4">
-                      <p className="pb-2">Location</p>
-                      <img src={ProgressBar} className="" alt="Progress Bar" />
-                    </span>
-
-                    <span className="bg-[#F8F8FD] p-4">
-                      <p className="pb-2">Good Service</p>
-                      <img src={ProgressBar} className="" alt="Progress Bar" />
-                    </span>
-                  </div>
-                  {/* End of Progress Bars */}
                 </div>
               </div>
 
@@ -400,14 +346,20 @@ const Details = () => {
                       Rating
                     </p>
 
-                    <BasicRating />
+                    <Rating
+                      value={rating}
+                      onChange={(newValue) => {
+                        setRating(newValue);
+                      }}
+                      className=" scale-[200%] mx-9"
+                    />
                   </span>
 
-                  <span className="">
+                  <a href="https://cohabit-web.netlify.app/sign-in">
                     <button className="btn normal-case laptop:mt-0 tablet:mt-6 mt-6 rounded-none px-[3.5rem] font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] h-full hover:bg-[#515B6F] text-white">
                       Submit
                     </button>
-                  </span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -417,7 +369,17 @@ const Details = () => {
               <div className="p-2 border laptop:block tablet:block hidden">
                 <span className="flex justify-between gap-4">
                   {/* share */}
-                  <span className="flex items-center gap-2 bg-[#E5F6F3] px-[1.25rem] py-[0.62rem] border border-[#010886]">
+                  <span
+                    onClick={() => {
+                      window.navigator.clipboard.writeText(
+                        `https://cohabit-landing.netlify.app/details/${id}`
+                      );
+                      <Alert severity="success">
+                        Link Copied to clipboard
+                      </Alert>;
+                    }}
+                    className="flex items-center gap-2 bg-[#E5F6F3] px-[1.25rem] py-[0.62rem] border border-[#010886]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
@@ -436,7 +398,10 @@ const Details = () => {
                   </span>
 
                   {/* save */}
-                  <span className="flex items-center gap-2 bg-[#FEEEE5] px-[1.25rem] py-[0.62rem] border border-[#F6513B]">
+                  <a
+                    href="https://cohabit-web.netlify.app/sign-in"
+                    className="flex cursor-pointer items-center gap-2 bg-[#FEEEE5] px-[1.25rem] py-[0.62rem] border border-[#F6513B]"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
@@ -452,7 +417,7 @@ const Details = () => {
                     <p className="text-[#F6513B] font-normal leading-[1.4rem] text-[0.975rem]">
                       Save
                     </p>
-                  </span>
+                  </a>
                 </span>
 
                 {/* add to favourites */}
@@ -496,173 +461,66 @@ const Details = () => {
                   className="different-font border-2 border-[#898E9A] rounded rounded-t-lg rounded-b-none font-normal p-2 w-full"
                   placeholder="Description"
                 ></textarea>
-                <span className="">
+                <a href="https://cohabit-web.netlify.app/sign-in">
                   <button className="btn normal-case rounded-none px-[3.5rem] laptop:mx-8 tablet:mx-8 font-bold text-[1.125rem] py-[0.88rem] bg-[#515B6F]/[.9] hover:bg-[#515B6F] text-white">
                     Submit
                   </button>
-                </span>
+                </a>
               </span>
 
               <div className="border mt-4 p-1 h-[] mb-[4rem]">
                 <p className="font-medium mb-2 text-[1.125rem] text-center">
                   Featured Property
                 </p>
+                {recentlyLoading ? (
+                  <></>
+                ) : (
+                  recentlyListingData?.map((item) => (
+                    <div className="my-4" key={item?.id}>
+                      <img
+                        src={item?.image}
+                        className="w-full "
+                        alt={item?.house_type}
+                      />
 
-                {/* 01 */}
-                <div className="my-4">
-                  <span className="">
-                    <img
-                      src={Bungalow01small}
-                      className="hidden laptop:block tablet:block"
-                      alt="Bungalow01"
-                    />
-                    <img
-                      src={MobileBungalowsmall}
-                      className="laptop:hidden tablet:hidden"
-                      alt="Bungalow01"
-                    />
-                  </span>
+                      <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
+                        <span className="flex gap justify-between py-2">
+                          <p className="text-[#616A6A] font-medium leading-[1.6rem]">
+                            {item?.house_type}
+                          </p>
+                          <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
+                            NGN {item?.amount}
+                          </p>
+                        </span>
+                        <span className="flex justify-between">
+                          <span className="flex gap-1">
+                            <img
+                              src={BedIcon}
+                              className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
+                              alt="bed-icon"
+                            />
 
-                  <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
-                    <span className="flex gap justify-between py-2">
-                      <p className="text-[#616A6A] font-medium leading-[1.6rem]">
-                        Bungalow
-                      </p>
-                      <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
-                        NGN150,000
-                      </p>
-                    </span>
-                    <span className="flex justify-between">
-                      <span className="flex gap-1">
-                        <img
-                          src={BedIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bed-icon"
-                        />
+                            <p className="py-1 text-[#515B6F] font-normal">
+                              {item?.extras[0]?.value} Rooms
+                            </p>
+                          </span>
 
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Rooms
-                        </p>
-                      </span>
+                          <span className="flex gap-1">
+                            <img
+                              src={BathIcon}
+                              className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
+                              alt="bath-icon"
+                            />
 
-                      <span className="flex gap-1">
-                        <img
-                          src={BathIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bath-icon"
-                        />
-
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Baths
-                        </p>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* 02 */}
-                <div className="my-4">
-                  <span className="">
-                    <img
-                      src={Bungalow01small}
-                      className="hidden laptop:block tablet:block"
-                      alt="Bungalow01"
-                    />
-                    <img
-                      src={MobileBungalowsmall}
-                      className="laptop:hidden tablet:hidden"
-                      alt="Bungalow01"
-                    />
-                  </span>
-
-                  <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
-                    <span className="flex gap justify-between py-2">
-                      <p className="text-[#616A6A] font-medium leading-[1.6rem]">
-                        Bungalow
-                      </p>
-                      <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
-                        NGN150,000
-                      </p>
-                    </span>
-                    <span className="flex justify-between">
-                      <span className="flex gap-1">
-                        <img
-                          src={BedIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bed-icon"
-                        />
-
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Rooms
-                        </p>
-                      </span>
-
-                      <span className="flex gap-1">
-                        <img
-                          src={BathIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bath-icon"
-                        />
-
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Baths
-                        </p>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-
-                {/* 03 */}
-                <div className="my-4">
-                  <span className="">
-                    <img
-                      src={Bungalow01small}
-                      className="hidden laptop:block tablet:block"
-                      alt="Bungalow01"
-                    />
-                    <img
-                      src={MobileBungalowsmall}
-                      className="laptop:hidden tablet:hidden"
-                      alt="Bungalow01"
-                    />
-                  </span>
-
-                  <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg rounded-t-none px-2 pb-4">
-                    <span className="flex gap justify-between py-2">
-                      <p className="text-[#616A6A] font-medium leading-[1.6rem]">
-                        Bungalow
-                      </p>
-                      <p className="different-font font-bold text-[#010886] leading-[1.6rem]">
-                        NGN150,000
-                      </p>
-                    </span>
-                    <span className="flex justify-between">
-                      <span className="flex gap-1">
-                        <img
-                          src={BedIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bed-icon"
-                        />
-
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Rooms
-                        </p>
-                      </span>
-
-                      <span className="flex gap-1">
-                        <img
-                          src={BathIcon}
-                          className="p-2 bg-[#EDF1F9] mr-1 rounded-full"
-                          alt="bath-icon"
-                        />
-
-                        <p className="py-1 text-[#515B6F] font-normal">
-                          2 Baths
-                        </p>
-                      </span>
-                    </span>
-                  </div>
-                </div>
+                            <p className="py-1 text-[#515B6F] font-normal">
+                              {item?.extras[1]?.value} Baths
+                            </p>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
           </div>
